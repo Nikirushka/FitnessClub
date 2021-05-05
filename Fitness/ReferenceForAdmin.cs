@@ -16,5 +16,10 @@ namespace Fitness
         {
             InitializeComponent();
         }
+
+        private void ReferenceForAdmin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

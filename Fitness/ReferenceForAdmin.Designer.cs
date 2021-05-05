@@ -101,6 +101,7 @@ namespace Fitness
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ReferenceForAdmin";
             this.Text = "ReferenceForAdmin";
+            this.Load += new System.EventHandler(this.ReferenceForAdmin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

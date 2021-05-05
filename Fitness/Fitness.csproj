@@ -62,6 +62,12 @@
     <Compile Include="Admin.Designer.cs">
       <DependentUpon>Admin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Couch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Couch.Designer.cs">
+      <DependentUpon>Couch.cs</DependentUpon>
+    </Compile>
     <Compile Include="Client.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,6 +85,12 @@
     </Compile>
     <Compile Include="MainMenu.Designer.cs">
       <DependentUpon>MainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewWorker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewWorker.Designer.cs">
+      <DependentUpon>NewWorker.cs</DependentUpon>
     </Compile>
     <Compile Include="NewCouch.cs">
       <SubType>Form</SubType>
@@ -112,6 +124,9 @@
     <EmbeddedResource Include="Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Couch.resx">
+      <DependentUpon>Couch.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Client.resx">
       <DependentUpon>Client.cs</DependentUpon>
     </EmbeddedResource>
@@ -120,6 +135,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewWorker.resx">
+      <DependentUpon>NewWorker.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NewCouch.resx">
       <DependentUpon>NewCouch.cs</DependentUpon>

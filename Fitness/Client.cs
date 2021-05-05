@@ -62,11 +62,17 @@ namespace Fitness
         private void UserButton_Click(object sender, EventArgs e)
         {
             openChildForm(new Profile(UserID));
+            buyabon.Hide();
         }
 
         private void gunaButton1_Click(object sender, EventArgs e)
         {
-            openChildForm(new NewClient());
+            buyabon.Show();
+        }
+
+        private void gunaButton2_Click(object sender, EventArgs e)
+        {
+            buyabon.Hide();
         }
     }
 }

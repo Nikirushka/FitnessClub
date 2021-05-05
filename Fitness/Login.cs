@@ -19,7 +19,7 @@ namespace Fitness
         DataSet ds;
         SqlDataAdapter adapter;
 
-        string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;AttachDbFilename='|DataDirectory|FitnessClub.mdf';Integrated Security=True";
+        string connectionString = @"Server=tcp:fitnessclub.database.windows.net,1433;Initial Catalog=fitnessclub;Persist Security Info=False;User ID=Vlad;Password=Chernick123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
         public Вход()
         {
             InitializeComponent();
@@ -101,7 +101,39 @@ namespace Fitness
                             }
                             else
                             {
+                                reader.Close();
+                                query = $"SELECT * FROM [Couch] WHERE [ID_user]='{UserID}'";
+                                cmd = new SqlCommand(query, connection);
+                                reader = cmd.ExecuteReader();
+                                if (reader.HasRows)
+                                {
+                                    reader.Close();
+                                    this.Hide();
+                                    Couch couch = new Couch(UserID);
+                                    DialogResult dialogResult = new DialogResult();
+                                    dialogResult = couch.ShowDialog();
+                                    this.Show();
+                                }
+                                else
+                                {
+                                    reader.Close();
+                                    query = $"SELECT * FROM [Worker] WHERE [ID_user]='{UserID}'";
+                                    cmd = new SqlCommand(query, connection);
+                                    reader = cmd.ExecuteReader();
+                                    if (reader.HasRows)
+                                    {
+                                        reader.Close();
+                                        this.Hide();
+                                        Client client = new Client(UserID);
+                                        DialogResult dialogResult = new DialogResult();
+                                        dialogResult = client.ShowDialog();
+                                        this.Show();
+                                    }
+                                    else
+                                    {
 
+                                    }
+                                }
                             }
                         }  
                     }

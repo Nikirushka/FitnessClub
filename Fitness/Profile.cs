@@ -19,7 +19,7 @@ namespace Fitness
         DataSet ds;
         SqlDataAdapter adapter;
 
-        string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;AttachDbFilename='|DataDirectory|FitnessClub.mdf';Integrated Security=True";
+        string connectionString = @"Server=tcp:fitnessclub.database.windows.net,1433;Initial Catalog=fitnessclub;Persist Security Info=False;User ID=Vlad;Password=Chernick123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
         public Profile()
         {
             InitializeComponent();
@@ -30,6 +30,12 @@ namespace Fitness
             InitializeComponent();
             UserID = uid;
             UpdateProfile();
+        }
+        public Profile(int uid,int s)
+        {
+            InitializeComponent();
+            UserID = uid;
+            UpdateProfileCouch();
         }
 
         private void UpdateProfile()
@@ -45,6 +51,39 @@ namespace Fitness
                 {
                     gunaTextBox1.Text = reader.GetString(0);
                     gunaTextBox2.Text= reader.GetString(1);
+                    gunaTextBox3.Text = reader.GetString(2);
+                    gunaTextBox4.Text = reader.GetString(3);
+                    gunaTextBox5.Text = reader.GetString(4);
+                    gunaTextBox6.Text = reader.GetString(5);
+                    gunaTextBox7.Text = reader.GetString(6);
+                    gunaDateTimePicker1.Value = reader.GetDateTime(7);
+                    gunaTextBox9.Text = reader.GetDouble(8).ToString();
+                    gunaTextBox8.Text = reader.GetDouble(9).ToString();
+                    gunaLabel11.Text = $"{ gunaTextBox1.Text} {gunaTextBox2.Text} {gunaTextBox3.Text}";
+                    gunaLabel12.Text = $"Тел: {gunaTextBox4.Text}";
+                    gunaLabel13.Text = $"Email: {gunaTextBox5.Text}";
+                }
+                connection.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void UpdateProfileCouch()
+        {
+            try
+            {
+                connection = new SqlConnection(connectionString);
+                connection.Open();
+                string query = $"exec CouchProfileInfo {UserID}";
+                cmd = new SqlCommand(query, connection);
+                reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    gunaTextBox1.Text = reader.GetString(0);
+                    gunaTextBox2.Text = reader.GetString(1);
                     gunaTextBox3.Text = reader.GetString(2);
                     gunaTextBox4.Text = reader.GetString(3);
                     gunaTextBox5.Text = reader.GetString(4);

@@ -19,7 +19,7 @@ namespace Fitness
         DataSet dataSet;
         SqlDataAdapter adapter;
 
-        string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=Fitness-Club;Integrated Security=True";
+        string connectionString = @"Server=tcp:fitnessclub.database.windows.net,1433;Initial Catalog=fitnessclub;Persist Security Info=False;User ID=Vlad;Password=Chernick123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
         public NewCouch()
         {
             InitializeComponent();
