@@ -50,12 +50,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddRedSub.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AddRedSub.Designer.cs">
-      <DependentUpon>AddRedSub.cs</DependentUpon>
-    </Compile>
     <Compile Include="Admin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,15 +106,42 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewMembership.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewMembership.Designer.cs">
+      <DependentUpon>NewMembership.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReferenceForWorker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReferenceForWorker.Designer.cs">
+      <DependentUpon>ReferenceForWorker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReferenceForCouch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReferenceForCouch.Designer.cs">
+      <DependentUpon>ReferenceForCouch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReferenceForClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReferenceForClient.Designer.cs">
+      <DependentUpon>ReferenceForClient.cs</DependentUpon>
+    </Compile>
     <Compile Include="ReferenceForAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ReferenceForAdmin.Designer.cs">
       <DependentUpon>ReferenceForAdmin.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AddRedSub.resx">
-      <DependentUpon>AddRedSub.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
     </EmbeddedResource>
@@ -158,6 +179,21 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewMembership.resx">
+      <DependentUpon>NewMembership.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReferenceForWorker.resx">
+      <DependentUpon>ReferenceForWorker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReferenceForCouch.resx">
+      <DependentUpon>ReferenceForCouch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReferenceForClient.resx">
+      <DependentUpon>ReferenceForClient.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ReferenceForAdmin.resx">
       <DependentUpon>ReferenceForAdmin.cs</DependentUpon>
     </EmbeddedResource>

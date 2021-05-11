@@ -88,6 +88,7 @@
             this.gunaButton5.BackColor = System.Drawing.Color.Transparent;
             this.gunaButton5.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(47)))), ((int)(((byte)(40)))));
             this.gunaButton5.BorderColor = System.Drawing.Color.Black;
+            this.gunaButton5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.gunaButton5.DialogResult = System.Windows.Forms.DialogResult.None;
             this.gunaButton5.FocusedColor = System.Drawing.Color.Empty;
             this.gunaButton5.Font = new System.Drawing.Font("Trebuchet MS", 12F);
@@ -103,7 +104,7 @@
             this.gunaButton5.OnPressedColor = System.Drawing.Color.Black;
             this.gunaButton5.Radius = 15;
             this.gunaButton5.Size = new System.Drawing.Size(160, 42);
-            this.gunaButton5.TabIndex = 9;
+            this.gunaButton5.TabIndex = 11;
             this.gunaButton5.Text = "Добавить";
             this.gunaButton5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.gunaButton5.Click += new System.EventHandler(this.gunaButton5_Click);
@@ -124,8 +125,9 @@
             this.gunaTextBox1.PasswordChar = '\0';
             this.gunaTextBox1.Radius = 10;
             this.gunaTextBox1.Size = new System.Drawing.Size(184, 33);
-            this.gunaTextBox1.TabIndex = 10;
+            this.gunaTextBox1.TabIndex = 2;
             this.gunaTextBox1.Text = "Имя";
+            this.gunaTextBox1.Enter += new System.EventHandler(this.gunaTextBox1_Enter);
             // 
             // gunaLabel1
             // 
@@ -165,8 +167,9 @@
             this.gunaTextBox2.PasswordChar = '\0';
             this.gunaTextBox2.Radius = 10;
             this.gunaTextBox2.Size = new System.Drawing.Size(184, 33);
-            this.gunaTextBox2.TabIndex = 10;
+            this.gunaTextBox2.TabIndex = 1;
             this.gunaTextBox2.Text = "Фамилия";
+            this.gunaTextBox2.Enter += new System.EventHandler(this.gunaTextBox2_Enter);
             // 
             // gunaLabel3
             // 
@@ -195,8 +198,9 @@
             this.gunaTextBox3.PasswordChar = '\0';
             this.gunaTextBox3.Radius = 10;
             this.gunaTextBox3.Size = new System.Drawing.Size(184, 33);
-            this.gunaTextBox3.TabIndex = 10;
+            this.gunaTextBox3.TabIndex = 3;
             this.gunaTextBox3.Text = "Отчество";
+            this.gunaTextBox3.Enter += new System.EventHandler(this.gunaTextBox3_Enter);
             // 
             // gunaTextBox4
             // 
@@ -214,8 +218,9 @@
             this.gunaTextBox4.PasswordChar = '\0';
             this.gunaTextBox4.Radius = 10;
             this.gunaTextBox4.Size = new System.Drawing.Size(184, 33);
-            this.gunaTextBox4.TabIndex = 10;
+            this.gunaTextBox4.TabIndex = 4;
             this.gunaTextBox4.Text = "Телефон";
+            this.gunaTextBox4.Enter += new System.EventHandler(this.gunaTextBox4_Enter);
             // 
             // gunaLabel4
             // 
@@ -255,9 +260,10 @@
             this.gunaTextBox5.PasswordChar = '\0';
             this.gunaTextBox5.Radius = 10;
             this.gunaTextBox5.Size = new System.Drawing.Size(184, 33);
-            this.gunaTextBox5.TabIndex = 10;
+            this.gunaTextBox5.TabIndex = 5;
             this.gunaTextBox5.Text = "Email";
             this.gunaTextBox5.TextChanged += new System.EventHandler(this.gunaTextBox5_TextChanged);
+            this.gunaTextBox5.Enter += new System.EventHandler(this.gunaTextBox5_Enter);
             // 
             // gunaTextBox6
             // 
@@ -275,8 +281,9 @@
             this.gunaTextBox6.PasswordChar = '\0';
             this.gunaTextBox6.Radius = 10;
             this.gunaTextBox6.Size = new System.Drawing.Size(184, 33);
-            this.gunaTextBox6.TabIndex = 10;
+            this.gunaTextBox6.TabIndex = 6;
             this.gunaTextBox6.Text = "Логин";
+            this.gunaTextBox6.Enter += new System.EventHandler(this.gunaTextBox6_Enter);
             // 
             // gunaLabel6
             // 
@@ -316,9 +323,9 @@
             this.gunaTextBox7.PasswordChar = '\0';
             this.gunaTextBox7.Radius = 10;
             this.gunaTextBox7.Size = new System.Drawing.Size(184, 33);
-            this.gunaTextBox7.TabIndex = 10;
+            this.gunaTextBox7.TabIndex = 7;
             this.gunaTextBox7.Text = "Пароль";
-            this.gunaTextBox7.TextChanged += new System.EventHandler(this.gunaTextBox7_TextChanged);
+            this.gunaTextBox7.Enter += new System.EventHandler(this.gunaTextBox7_Enter);
             // 
             // gunaLabel8
             // 
@@ -364,7 +371,7 @@
             this.gunaDateTimePicker1.OnPressedColor = System.Drawing.Color.Black;
             this.gunaDateTimePicker1.Radius = 10;
             this.gunaDateTimePicker1.Size = new System.Drawing.Size(184, 33);
-            this.gunaDateTimePicker1.TabIndex = 12;
+            this.gunaDateTimePicker1.TabIndex = 8;
             this.gunaDateTimePicker1.Text = "31.03.2021";
             this.gunaDateTimePicker1.Value = new System.DateTime(2021, 3, 31, 13, 5, 29, 799);
             // 
@@ -384,9 +391,10 @@
             this.gunaTextBox8.PasswordChar = '\0';
             this.gunaTextBox8.Radius = 10;
             this.gunaTextBox8.Size = new System.Drawing.Size(184, 33);
-            this.gunaTextBox8.TabIndex = 10;
+            this.gunaTextBox8.TabIndex = 9;
             this.gunaTextBox8.Text = "Рост";
             this.gunaTextBox8.TextChanged += new System.EventHandler(this.gunaTextBox5_TextChanged);
+            this.gunaTextBox8.Enter += new System.EventHandler(this.gunaTextBox8_Enter);
             // 
             // gunaTextBox9
             // 
@@ -406,6 +414,7 @@
             this.gunaTextBox9.Size = new System.Drawing.Size(184, 33);
             this.gunaTextBox9.TabIndex = 10;
             this.gunaTextBox9.Text = "Вес";
+            this.gunaTextBox9.Enter += new System.EventHandler(this.gunaTextBox9_Enter);
             // 
             // gunaLabel10
             // 
@@ -437,13 +446,14 @@
             this.gunaButton1.BackColor = System.Drawing.Color.Transparent;
             this.gunaButton1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(47)))), ((int)(((byte)(40)))));
             this.gunaButton1.BorderColor = System.Drawing.Color.Black;
+            this.gunaButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.gunaButton1.DialogResult = System.Windows.Forms.DialogResult.None;
             this.gunaButton1.FocusedColor = System.Drawing.Color.Empty;
             this.gunaButton1.Font = new System.Drawing.Font("Trebuchet MS", 12F);
             this.gunaButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(56)))));
             this.gunaButton1.Image = null;
             this.gunaButton1.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton1.Location = new System.Drawing.Point(105, 371);
+            this.gunaButton1.Location = new System.Drawing.Point(105, 372);
             this.gunaButton1.Name = "gunaButton1";
             this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton1.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -452,7 +462,7 @@
             this.gunaButton1.OnPressedColor = System.Drawing.Color.Black;
             this.gunaButton1.Radius = 15;
             this.gunaButton1.Size = new System.Drawing.Size(160, 42);
-            this.gunaButton1.TabIndex = 13;
+            this.gunaButton1.TabIndex = 12;
             this.gunaButton1.Text = "Изменить";
             this.gunaButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.gunaButton1.Click += new System.EventHandler(this.gunaButton1_Click);

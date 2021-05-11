@@ -144,5 +144,60 @@ namespace Fitness
             }
             this.Close();
         }
+
+        private void gunaTextBox2_Enter(object sender, EventArgs e)
+        {
+            gunaTextBox2.Text = "";
+        }
+
+        private void gunaTextBox1_Enter(object sender, EventArgs e)
+        {
+            gunaTextBox1.Text = "";
+        }
+
+        private void gunaTextBox3_Leave(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gunaTextBox3_Enter(object sender, EventArgs e)
+        {
+            gunaTextBox3.Text = "";
+        }
+
+        private void gunaTextBox4_Enter(object sender, EventArgs e)
+        {
+            gunaTextBox4.Text = "";
+        }
+
+        private void gunaTextBox5_Enter(object sender, EventArgs e)
+        {
+            gunaTextBox5.Text = "";
+        }
+
+        private void gunaTextBox6_Enter(object sender, EventArgs e)
+        {
+            gunaTextBox6.Text = "";
+        }
+
+        private void gunaTextBox7_Enter(object sender, EventArgs e)
+        {
+            gunaTextBox7.Text = "";
+        }
+
+        private void gunaTextBox8_Enter(object sender, EventArgs e)
+        {
+            gunaTextBox8.Text = "";
+        }
+
+        private void gunaTextBox9_Enter(object sender, EventArgs e)
+        {
+            gunaTextBox9.Text = "";
+        }
+
+        private void gunaTextBox10_Enter(object sender, EventArgs e)
+        {
+            gunaTextBox10.Text = "";
+        }
     }
 }

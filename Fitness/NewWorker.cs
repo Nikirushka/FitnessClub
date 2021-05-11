@@ -56,7 +56,7 @@ namespace Fitness
 
         private void NewClient_Load(object sender, EventArgs e)
         {
-
+            gunaDateTimePicker1.Value = DateTime.Now ;
         }
 
         private void gunaTextBox7_TextChanged(object sender, EventArgs e)
@@ -141,6 +141,51 @@ namespace Fitness
                 MessageBox.Show(ex.Message);
             }
             this.Close();
+        }
+
+        private void gunaLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gunaTextBox2_Enter(object sender, EventArgs e)
+        {
+            gunaTextBox2.Text = "";
+        }
+
+        private void gunaTextBox1_Enter(object sender, EventArgs e)
+        {
+            gunaTextBox1.Text = "";
+        }
+
+        private void gunaTextBox3_Enter(object sender, EventArgs e)
+        {
+            gunaTextBox3.Text = "";
+        }
+
+        private void gunaTextBox4_Enter(object sender, EventArgs e)
+        {
+            gunaTextBox4.Text = "";
+        }
+
+        private void gunaTextBox5_Enter(object sender, EventArgs e)
+        {
+            gunaTextBox5.Text = "";
+        }
+
+        private void gunaTextBox6_Enter(object sender, EventArgs e)
+        {
+            gunaTextBox6.Text = "";
+        }
+
+        private void gunaTextBox7_Enter(object sender, EventArgs e)
+        {
+            gunaTextBox7.Text = "";
+        }
+
+        private void gunaTextBox9_Enter(object sender, EventArgs e)
+        {
+            gunaTextBox9.Text = "";
         }
     }
 }

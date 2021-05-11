@@ -153,7 +153,7 @@
             this.gunaButton1.OnPressedColor = System.Drawing.Color.Black;
             this.gunaButton1.Radius = 7;
             this.gunaButton1.Size = new System.Drawing.Size(294, 42);
-            this.gunaButton1.TabIndex = 0;
+            this.gunaButton1.TabIndex = 4;
             this.gunaButton1.Text = "Создать новый аккаунт";
             this.gunaButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.gunaButton1.Click += new System.EventHandler(this.gunaButton1_Click);
