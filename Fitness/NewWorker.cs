@@ -113,6 +113,7 @@ namespace Fitness
                 {
                     MessageBox.Show(ex.Message);
                 }
+                MessageBox.Show("Работник успешно добавлен", "Работник добавлен", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Close();
             }
             else

@@ -21,11 +21,9 @@ E:\GitHub\FitnessClub\FitnessClub\Fitness\bin\Debug\Fitness.exe.config
 E:\GitHub\FitnessClub\FitnessClub\Fitness\bin\Debug\Fitness.exe
 E:\GitHub\FitnessClub\FitnessClub\Fitness\bin\Debug\Fitness.pdb
 E:\GitHub\FitnessClub\FitnessClub\Fitness\obj\Debug\Fitness.csprojAssemblyReference.cache
-E:\GitHub\FitnessClub\FitnessClub\Fitness\obj\Debug\Fitness.AddRedSub.resources
 E:\GitHub\FitnessClub\FitnessClub\Fitness\obj\Debug\Fitness.Admin.resources
 E:\GitHub\FitnessClub\FitnessClub\Fitness\obj\Debug\Fitness.Client.resources
 E:\GitHub\FitnessClub\FitnessClub\Fitness\obj\Debug\Fitness.Вход.resources
-E:\GitHub\FitnessClub\FitnessClub\Fitness\obj\Debug\Fitness.MainMenu.resources
 E:\GitHub\FitnessClub\FitnessClub\Fitness\obj\Debug\Fitness.NewCouch.resources
 E:\GitHub\FitnessClub\FitnessClub\Fitness\obj\Debug\Fitness.NewClient.resources
 E:\GitHub\FitnessClub\FitnessClub\Fitness\obj\Debug\Fitness.Profile.resources
@@ -38,3 +36,8 @@ E:\GitHub\FitnessClub\FitnessClub\Fitness\obj\Debug\Fitness.exe
 E:\GitHub\FitnessClub\FitnessClub\Fitness\obj\Debug\Fitness.pdb
 E:\GitHub\FitnessClub\FitnessClub\Fitness\obj\Debug\Fitness.NewWorker.resources
 E:\GitHub\FitnessClub\FitnessClub\Fitness\obj\Debug\Fitness.Couch.resources
+E:\GitHub\FitnessClub\FitnessClub\Fitness\obj\Debug\Fitness.About.resources
+E:\GitHub\FitnessClub\FitnessClub\Fitness\obj\Debug\Fitness.NewMembership.resources
+E:\GitHub\FitnessClub\FitnessClub\Fitness\obj\Debug\Fitness.ReferenceForWorker.resources
+E:\GitHub\FitnessClub\FitnessClub\Fitness\obj\Debug\Fitness.ReferenceForCouch.resources
+E:\GitHub\FitnessClub\FitnessClub\Fitness\obj\Debug\Fitness.ReferenceForClient.resources

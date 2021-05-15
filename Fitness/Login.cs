@@ -44,7 +44,7 @@ namespace Fitness
                 reader = cmd.ExecuteReader();
                 if (!reader.HasRows)
                 {
-                    MessageBox.Show("Неправильный логин", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
+                    MessageBox.Show("Неправильный логин", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     reader.Close();
                     return;
                 }
@@ -57,7 +57,7 @@ namespace Fitness
                     if (!reader.HasRows)
                     {
                         reader.Close();
-                        MessageBox.Show("Неправильный пароль", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
+                        MessageBox.Show("Неправильный пароль", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         return;
                     }
                     else

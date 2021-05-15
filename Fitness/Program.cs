@@ -16,7 +16,7 @@ namespace Fitness
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new NewWorker());
+            Application.Run(new Вход());
         }
     }
 }

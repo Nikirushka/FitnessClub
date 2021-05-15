@@ -116,6 +116,8 @@ namespace Fitness
                     MessageBox.Show(ex.Message);
                 }
                 this.Close();
+
+                MessageBox.Show("Тренер успешно добавлен", "Тренер добавлен", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {

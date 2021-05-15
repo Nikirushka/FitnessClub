@@ -52,7 +52,9 @@ namespace Fitness
 
         private void Client_Load(object sender, EventArgs e)
         {
+            openChildForm(new Profile(UserID, 1));
             AllDataGridView.Hide();
+            gunaButton19.Hide();
         }
 
         private Form activeForm = null;

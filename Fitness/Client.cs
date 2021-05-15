@@ -56,7 +56,7 @@ namespace Fitness
                 {
                     connection = new SqlConnection(connectionString);
                     connection.Open();
-                    string query = $"select [Name] from [User] where id= {UserID}";
+                    string query = $"select [Name] from [User] where [id_user]= {UserID}";
                     cmd = new SqlCommand(query, connection);
                     reader = cmd.ExecuteReader();
                     while (reader.Read())
@@ -69,9 +69,10 @@ namespace Fitness
                 {
                     MessageBox.Show(ex.Message);
                 }
-            main_menu.Show();
+            
             mainpanel.Hide();
             buyabon.Hide();
+            main_menu.Show();
         }
 
         private Form activeForm = null;
@@ -112,6 +113,7 @@ namespace Fitness
             openChildForm(new Profile(UserID));
             buyabon.Hide();
             main_menu.Hide();
+            mainpanel.Show();
         }
 
         private void gunaButton5_Click(object sender, EventArgs e)
@@ -130,16 +132,18 @@ namespace Fitness
 
         private void gunaButton8_Click(object sender, EventArgs e)
         {
-            openChildForm(new Profile(UserID));
+            openChildForm(new ReferenceForClient());
             buyabon.Hide();
             main_menu.Hide();
+            mainpanel.Show();
         }
 
         private void gunaButton9_Click(object sender, EventArgs e)
         {
-            openChildForm(new About);
+            openChildForm(new About());
             buyabon.Hide();
             main_menu.Hide();
+            mainpanel.Show();
         }
 
         private void main_menu_Paint(object sender, PaintEventArgs e)
@@ -150,6 +154,13 @@ namespace Fitness
         private void gunaButton7_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            mainpanel.Hide();
+            buyabon.Hide();
+            main_menu.Show();
         }
     }
 }

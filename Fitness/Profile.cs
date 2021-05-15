@@ -30,12 +30,16 @@ namespace Fitness
             InitializeComponent();
             UserID = uid;
             UpdateProfile();
+            gunaLabel10.Text = "Рост";
+            gunaLabel9.Text = "Вес";
         }
         public Profile(int uid,int s)
         {
             InitializeComponent();
             UserID = uid;
             UpdateProfileCouch();
+            gunaLabel10.Text = "Специализация";
+            gunaLabel9.Text = "Стаж";
         }
 
         private void UpdateProfile()
@@ -90,8 +94,8 @@ namespace Fitness
                     gunaTextBox6.Text = reader.GetString(5);
                     gunaTextBox7.Text = reader.GetString(6);
                     gunaDateTimePicker1.Value = reader.GetDateTime(7);
-                    gunaTextBox9.Text = reader.GetDouble(8).ToString();
-                    gunaTextBox8.Text = reader.GetDouble(9).ToString();
+                    gunaTextBox9.Text = reader.GetString(8);
+                    gunaTextBox8.Text = reader.GetDouble(10).ToString();
                     gunaLabel11.Text = $"{ gunaTextBox1.Text} {gunaTextBox2.Text} {gunaTextBox3.Text}";
                     gunaLabel12.Text = $"Тел: {gunaTextBox4.Text}";
                     gunaLabel13.Text = $"Email: {gunaTextBox5.Text}";
