@@ -73,6 +73,16 @@ namespace Fitness.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _Олимпийский_025_18181024fb84d32b21a0dd183b43500a16 {
+            get {
+                object obj = ResourceManager.GetObject("_Олимпийский_025.18181024fb84d32b21a0dd183b43500a16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Admin {
             get {
                 object obj = ResourceManager.GetObject("Admin", resourceCulture);
@@ -126,6 +136,16 @@ namespace Fitness.Properties {
         internal static System.Drawing.Bitmap MainMenu {
             get {
                 object obj = ResourceManager.GetObject("MainMenu", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MainMenu1 {
+            get {
+                object obj = ResourceManager.GetObject("MainMenu1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

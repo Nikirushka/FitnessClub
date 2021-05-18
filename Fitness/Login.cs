@@ -157,12 +157,12 @@ namespace Fitness
 
         private void label2_MouseEnter(object sender, EventArgs e)
         {
-            label2.ForeColor = Color.Black;
+            label2.ForeColor = Color.White;
         }
 
         private void label2_MouseLeave(object sender, EventArgs e)
         {
-            label2.ForeColor = Color.White;
+            label2.ForeColor = Color.Yellow;
         }
 
         private void LoginTextBox_Click(object sender, EventArgs e)

@@ -62,6 +62,7 @@ namespace Fitness
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::Fitness.Properties.Resources.ProfilePic;
             this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
@@ -73,11 +74,12 @@ namespace Fitness
             // gunaLabel1
             // 
             this.gunaLabel1.AutoSize = true;
-            this.gunaLabel1.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gunaLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(47)))), ((int)(((byte)(40)))));
-            this.gunaLabel1.Location = new System.Drawing.Point(174, 12);
+            this.gunaLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.gunaLabel1.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.gunaLabel1.ForeColor = System.Drawing.Color.Yellow;
+            this.gunaLabel1.Location = new System.Drawing.Point(202, 12);
             this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(106, 27);
+            this.gunaLabel1.Size = new System.Drawing.Size(117, 29);
             this.gunaLabel1.TabIndex = 11;
             this.gunaLabel1.Text = "Фамилия";
             // 
@@ -90,12 +92,12 @@ namespace Fitness
             this.gunaTextBox1.FocusedBaseColor = System.Drawing.Color.White;
             this.gunaTextBox1.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gunaTextBox1.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.gunaTextBox1.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gunaTextBox1.Location = new System.Drawing.Point(179, 42);
+            this.gunaTextBox1.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.gunaTextBox1.Location = new System.Drawing.Point(207, 42);
             this.gunaTextBox1.Name = "gunaTextBox1";
             this.gunaTextBox1.PasswordChar = '\0';
             this.gunaTextBox1.Radius = 7;
-            this.gunaTextBox1.Size = new System.Drawing.Size(193, 35);
+            this.gunaTextBox1.Size = new System.Drawing.Size(257, 38);
             this.gunaTextBox1.TabIndex = 12;
             // 
             // gunaTextBox2
@@ -107,33 +109,35 @@ namespace Fitness
             this.gunaTextBox2.FocusedBaseColor = System.Drawing.Color.White;
             this.gunaTextBox2.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gunaTextBox2.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.gunaTextBox2.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gunaTextBox2.Location = new System.Drawing.Point(378, 42);
+            this.gunaTextBox2.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.gunaTextBox2.Location = new System.Drawing.Point(470, 42);
             this.gunaTextBox2.Name = "gunaTextBox2";
             this.gunaTextBox2.PasswordChar = '\0';
             this.gunaTextBox2.Radius = 7;
-            this.gunaTextBox2.Size = new System.Drawing.Size(193, 35);
+            this.gunaTextBox2.Size = new System.Drawing.Size(257, 38);
             this.gunaTextBox2.TabIndex = 14;
             // 
             // gunaLabel2
             // 
             this.gunaLabel2.AutoSize = true;
-            this.gunaLabel2.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gunaLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(47)))), ((int)(((byte)(40)))));
-            this.gunaLabel2.Location = new System.Drawing.Point(373, 12);
+            this.gunaLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.gunaLabel2.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.gunaLabel2.ForeColor = System.Drawing.Color.Yellow;
+            this.gunaLabel2.Location = new System.Drawing.Point(465, 12);
             this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(54, 27);
+            this.gunaLabel2.Size = new System.Drawing.Size(60, 29);
             this.gunaLabel2.TabIndex = 13;
             this.gunaLabel2.Text = "Имя";
             // 
             // gunaLabel3
             // 
             this.gunaLabel3.AutoSize = true;
-            this.gunaLabel3.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gunaLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(47)))), ((int)(((byte)(40)))));
-            this.gunaLabel3.Location = new System.Drawing.Point(572, 12);
+            this.gunaLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.gunaLabel3.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.gunaLabel3.ForeColor = System.Drawing.Color.Yellow;
+            this.gunaLabel3.Location = new System.Drawing.Point(730, 12);
             this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(105, 27);
+            this.gunaLabel3.Size = new System.Drawing.Size(121, 29);
             this.gunaLabel3.TabIndex = 13;
             this.gunaLabel3.Text = "Отчество";
             // 
@@ -146,22 +150,23 @@ namespace Fitness
             this.gunaTextBox3.FocusedBaseColor = System.Drawing.Color.White;
             this.gunaTextBox3.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gunaTextBox3.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.gunaTextBox3.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gunaTextBox3.Location = new System.Drawing.Point(577, 42);
+            this.gunaTextBox3.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.gunaTextBox3.Location = new System.Drawing.Point(733, 42);
             this.gunaTextBox3.Name = "gunaTextBox3";
             this.gunaTextBox3.PasswordChar = '\0';
             this.gunaTextBox3.Radius = 7;
-            this.gunaTextBox3.Size = new System.Drawing.Size(193, 35);
+            this.gunaTextBox3.Size = new System.Drawing.Size(257, 38);
             this.gunaTextBox3.TabIndex = 14;
             // 
             // gunaLabel4
             // 
             this.gunaLabel4.AutoSize = true;
-            this.gunaLabel4.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gunaLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(47)))), ((int)(((byte)(40)))));
-            this.gunaLabel4.Location = new System.Drawing.Point(174, 82);
+            this.gunaLabel4.BackColor = System.Drawing.Color.Transparent;
+            this.gunaLabel4.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.gunaLabel4.ForeColor = System.Drawing.Color.Yellow;
+            this.gunaLabel4.Location = new System.Drawing.Point(202, 82);
             this.gunaLabel4.Name = "gunaLabel4";
-            this.gunaLabel4.Size = new System.Drawing.Size(104, 27);
+            this.gunaLabel4.Size = new System.Drawing.Size(118, 29);
             this.gunaLabel4.TabIndex = 11;
             this.gunaLabel4.Text = "Телефон";
             // 
@@ -174,22 +179,23 @@ namespace Fitness
             this.gunaTextBox4.FocusedBaseColor = System.Drawing.Color.White;
             this.gunaTextBox4.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gunaTextBox4.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.gunaTextBox4.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gunaTextBox4.Location = new System.Drawing.Point(179, 112);
+            this.gunaTextBox4.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.gunaTextBox4.Location = new System.Drawing.Point(207, 112);
             this.gunaTextBox4.Name = "gunaTextBox4";
             this.gunaTextBox4.PasswordChar = '\0';
             this.gunaTextBox4.Radius = 7;
-            this.gunaTextBox4.Size = new System.Drawing.Size(193, 35);
+            this.gunaTextBox4.Size = new System.Drawing.Size(257, 38);
             this.gunaTextBox4.TabIndex = 12;
             // 
             // gunaLabel5
             // 
             this.gunaLabel5.AutoSize = true;
-            this.gunaLabel5.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gunaLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(47)))), ((int)(((byte)(40)))));
-            this.gunaLabel5.Location = new System.Drawing.Point(373, 82);
+            this.gunaLabel5.BackColor = System.Drawing.Color.Transparent;
+            this.gunaLabel5.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.gunaLabel5.ForeColor = System.Drawing.Color.Yellow;
+            this.gunaLabel5.Location = new System.Drawing.Point(465, 82);
             this.gunaLabel5.Name = "gunaLabel5";
-            this.gunaLabel5.Size = new System.Drawing.Size(65, 27);
+            this.gunaLabel5.Size = new System.Drawing.Size(75, 29);
             this.gunaLabel5.TabIndex = 13;
             this.gunaLabel5.Text = "Email";
             // 
@@ -202,22 +208,23 @@ namespace Fitness
             this.gunaTextBox5.FocusedBaseColor = System.Drawing.Color.White;
             this.gunaTextBox5.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gunaTextBox5.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.gunaTextBox5.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gunaTextBox5.Location = new System.Drawing.Point(378, 112);
+            this.gunaTextBox5.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.gunaTextBox5.Location = new System.Drawing.Point(470, 112);
             this.gunaTextBox5.Name = "gunaTextBox5";
             this.gunaTextBox5.PasswordChar = '\0';
             this.gunaTextBox5.Radius = 7;
-            this.gunaTextBox5.Size = new System.Drawing.Size(193, 35);
+            this.gunaTextBox5.Size = new System.Drawing.Size(257, 38);
             this.gunaTextBox5.TabIndex = 14;
             // 
             // gunaLabel6
             // 
             this.gunaLabel6.AutoSize = true;
-            this.gunaLabel6.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gunaLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(47)))), ((int)(((byte)(40)))));
-            this.gunaLabel6.Location = new System.Drawing.Point(572, 82);
+            this.gunaLabel6.BackColor = System.Drawing.Color.Transparent;
+            this.gunaLabel6.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.gunaLabel6.ForeColor = System.Drawing.Color.Yellow;
+            this.gunaLabel6.Location = new System.Drawing.Point(728, 82);
             this.gunaLabel6.Name = "gunaLabel6";
-            this.gunaLabel6.Size = new System.Drawing.Size(167, 27);
+            this.gunaLabel6.Size = new System.Drawing.Size(193, 29);
             this.gunaLabel6.TabIndex = 13;
             this.gunaLabel6.Text = "Дата рождения";
             // 
@@ -229,10 +236,10 @@ namespace Fitness
             this.gunaDateTimePicker1.CustomFormat = null;
             this.gunaDateTimePicker1.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
             this.gunaDateTimePicker1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaDateTimePicker1.Font = new System.Drawing.Font("Trebuchet MS", 15.75F);
+            this.gunaDateTimePicker1.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.gunaDateTimePicker1.ForeColor = System.Drawing.Color.Black;
             this.gunaDateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.gunaDateTimePicker1.Location = new System.Drawing.Point(577, 114);
+            this.gunaDateTimePicker1.Location = new System.Drawing.Point(733, 112);
             this.gunaDateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.gunaDateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.gunaDateTimePicker1.Name = "gunaDateTimePicker1";
@@ -241,7 +248,7 @@ namespace Fitness
             this.gunaDateTimePicker1.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gunaDateTimePicker1.OnPressedColor = System.Drawing.Color.Black;
             this.gunaDateTimePicker1.Radius = 7;
-            this.gunaDateTimePicker1.Size = new System.Drawing.Size(193, 33);
+            this.gunaDateTimePicker1.Size = new System.Drawing.Size(257, 38);
             this.gunaDateTimePicker1.TabIndex = 15;
             this.gunaDateTimePicker1.Text = "24.04.2021";
             this.gunaDateTimePicker1.Value = new System.DateTime(2021, 4, 24, 14, 45, 2, 365);
@@ -252,24 +259,24 @@ namespace Fitness
             this.EditButton.AnimationHoverSpeed = 0.07F;
             this.EditButton.AnimationSpeed = 0.03F;
             this.EditButton.BackColor = System.Drawing.Color.Transparent;
-            this.EditButton.BaseColor = System.Drawing.Color.White;
+            this.EditButton.BaseColor = System.Drawing.Color.Yellow;
             this.EditButton.BorderColor = System.Drawing.Color.Black;
             this.EditButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.EditButton.DialogResult = System.Windows.Forms.DialogResult.None;
             this.EditButton.FocusedColor = System.Drawing.Color.Empty;
-            this.EditButton.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.EditButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(47)))), ((int)(((byte)(40)))));
+            this.EditButton.Font = new System.Drawing.Font("Trebuchet MS", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.EditButton.ForeColor = System.Drawing.Color.Black;
             this.EditButton.Image = null;
             this.EditButton.ImageSize = new System.Drawing.Size(20, 20);
-            this.EditButton.Location = new System.Drawing.Point(592, 310);
+            this.EditButton.Location = new System.Drawing.Point(735, 311);
             this.EditButton.Name = "EditButton";
-            this.EditButton.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.EditButton.OnHoverBaseColor = System.Drawing.Color.Yellow;
             this.EditButton.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.EditButton.OnHoverForeColor = System.Drawing.Color.Turquoise;
+            this.EditButton.OnHoverForeColor = System.Drawing.Color.White;
             this.EditButton.OnHoverImage = null;
             this.EditButton.OnPressedColor = System.Drawing.Color.Black;
             this.EditButton.Radius = 7;
-            this.EditButton.Size = new System.Drawing.Size(172, 42);
+            this.EditButton.Size = new System.Drawing.Size(255, 42);
             this.EditButton.TabIndex = 16;
             this.EditButton.Text = "Изменить";
             this.EditButton.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -278,11 +285,12 @@ namespace Fitness
             // gunaLabel7
             // 
             this.gunaLabel7.AutoSize = true;
-            this.gunaLabel7.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gunaLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(47)))), ((int)(((byte)(40)))));
-            this.gunaLabel7.Location = new System.Drawing.Point(373, 153);
+            this.gunaLabel7.BackColor = System.Drawing.Color.Transparent;
+            this.gunaLabel7.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.gunaLabel7.ForeColor = System.Drawing.Color.Yellow;
+            this.gunaLabel7.Location = new System.Drawing.Point(465, 155);
             this.gunaLabel7.Name = "gunaLabel7";
-            this.gunaLabel7.Size = new System.Drawing.Size(74, 27);
+            this.gunaLabel7.Size = new System.Drawing.Size(83, 29);
             this.gunaLabel7.TabIndex = 11;
             this.gunaLabel7.Text = "Логин";
             // 
@@ -295,22 +303,23 @@ namespace Fitness
             this.gunaTextBox6.FocusedBaseColor = System.Drawing.Color.White;
             this.gunaTextBox6.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gunaTextBox6.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.gunaTextBox6.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gunaTextBox6.Location = new System.Drawing.Point(378, 183);
+            this.gunaTextBox6.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.gunaTextBox6.Location = new System.Drawing.Point(470, 185);
             this.gunaTextBox6.Name = "gunaTextBox6";
             this.gunaTextBox6.PasswordChar = '\0';
             this.gunaTextBox6.Radius = 7;
-            this.gunaTextBox6.Size = new System.Drawing.Size(193, 35);
+            this.gunaTextBox6.Size = new System.Drawing.Size(257, 38);
             this.gunaTextBox6.TabIndex = 12;
             // 
             // gunaLabel8
             // 
             this.gunaLabel8.AutoSize = true;
-            this.gunaLabel8.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gunaLabel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(47)))), ((int)(((byte)(40)))));
-            this.gunaLabel8.Location = new System.Drawing.Point(572, 153);
+            this.gunaLabel8.BackColor = System.Drawing.Color.Transparent;
+            this.gunaLabel8.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.gunaLabel8.ForeColor = System.Drawing.Color.Yellow;
+            this.gunaLabel8.Location = new System.Drawing.Point(728, 155);
             this.gunaLabel8.Name = "gunaLabel8";
-            this.gunaLabel8.Size = new System.Drawing.Size(85, 27);
+            this.gunaLabel8.Size = new System.Drawing.Size(97, 29);
             this.gunaLabel8.TabIndex = 13;
             this.gunaLabel8.Text = "Пароль";
             // 
@@ -323,12 +332,12 @@ namespace Fitness
             this.gunaTextBox7.FocusedBaseColor = System.Drawing.Color.White;
             this.gunaTextBox7.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gunaTextBox7.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.gunaTextBox7.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gunaTextBox7.Location = new System.Drawing.Point(577, 183);
+            this.gunaTextBox7.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.gunaTextBox7.Location = new System.Drawing.Point(735, 185);
             this.gunaTextBox7.Name = "gunaTextBox7";
             this.gunaTextBox7.PasswordChar = '\0';
             this.gunaTextBox7.Radius = 7;
-            this.gunaTextBox7.Size = new System.Drawing.Size(193, 35);
+            this.gunaTextBox7.Size = new System.Drawing.Size(255, 38);
             this.gunaTextBox7.TabIndex = 14;
             // 
             // gunaTextBox8
@@ -340,22 +349,23 @@ namespace Fitness
             this.gunaTextBox8.FocusedBaseColor = System.Drawing.Color.White;
             this.gunaTextBox8.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gunaTextBox8.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.gunaTextBox8.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gunaTextBox8.Location = new System.Drawing.Point(577, 254);
+            this.gunaTextBox8.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.gunaTextBox8.Location = new System.Drawing.Point(735, 256);
             this.gunaTextBox8.Name = "gunaTextBox8";
             this.gunaTextBox8.PasswordChar = '\0';
             this.gunaTextBox8.Radius = 7;
-            this.gunaTextBox8.Size = new System.Drawing.Size(193, 35);
+            this.gunaTextBox8.Size = new System.Drawing.Size(255, 38);
             this.gunaTextBox8.TabIndex = 20;
             // 
             // gunaLabel9
             // 
             this.gunaLabel9.AutoSize = true;
-            this.gunaLabel9.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gunaLabel9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(47)))), ((int)(((byte)(40)))));
-            this.gunaLabel9.Location = new System.Drawing.Point(572, 224);
+            this.gunaLabel9.BackColor = System.Drawing.Color.Transparent;
+            this.gunaLabel9.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.gunaLabel9.ForeColor = System.Drawing.Color.Yellow;
+            this.gunaLabel9.Location = new System.Drawing.Point(730, 226);
             this.gunaLabel9.Name = "gunaLabel9";
-            this.gunaLabel9.Size = new System.Drawing.Size(48, 27);
+            this.gunaLabel9.Size = new System.Drawing.Size(53, 29);
             this.gunaLabel9.TabIndex = 19;
             this.gunaLabel9.Text = "Вес";
             // 
@@ -368,54 +378,58 @@ namespace Fitness
             this.gunaTextBox9.FocusedBaseColor = System.Drawing.Color.White;
             this.gunaTextBox9.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gunaTextBox9.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.gunaTextBox9.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gunaTextBox9.Location = new System.Drawing.Point(378, 254);
+            this.gunaTextBox9.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.gunaTextBox9.Location = new System.Drawing.Point(470, 256);
             this.gunaTextBox9.Name = "gunaTextBox9";
             this.gunaTextBox9.PasswordChar = '\0';
             this.gunaTextBox9.Radius = 7;
-            this.gunaTextBox9.Size = new System.Drawing.Size(193, 35);
+            this.gunaTextBox9.Size = new System.Drawing.Size(257, 38);
             this.gunaTextBox9.TabIndex = 18;
             // 
             // gunaLabel10
             // 
             this.gunaLabel10.AutoSize = true;
-            this.gunaLabel10.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gunaLabel10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(47)))), ((int)(((byte)(40)))));
-            this.gunaLabel10.Location = new System.Drawing.Point(373, 224);
+            this.gunaLabel10.BackColor = System.Drawing.Color.Transparent;
+            this.gunaLabel10.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.gunaLabel10.ForeColor = System.Drawing.Color.Yellow;
+            this.gunaLabel10.Location = new System.Drawing.Point(465, 226);
             this.gunaLabel10.Name = "gunaLabel10";
-            this.gunaLabel10.Size = new System.Drawing.Size(57, 27);
+            this.gunaLabel10.Size = new System.Drawing.Size(65, 29);
             this.gunaLabel10.TabIndex = 17;
             this.gunaLabel10.Text = "Рост";
             // 
             // gunaLabel11
             // 
-            this.gunaLabel11.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gunaLabel11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(47)))), ((int)(((byte)(40)))));
+            this.gunaLabel11.BackColor = System.Drawing.Color.Transparent;
+            this.gunaLabel11.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.gunaLabel11.ForeColor = System.Drawing.Color.Yellow;
             this.gunaLabel11.Location = new System.Drawing.Point(12, 193);
             this.gunaLabel11.Name = "gunaLabel11";
-            this.gunaLabel11.Size = new System.Drawing.Size(360, 27);
+            this.gunaLabel11.Size = new System.Drawing.Size(452, 27);
             this.gunaLabel11.TabIndex = 21;
             this.gunaLabel11.Text = "ФИО";
             this.gunaLabel11.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // gunaLabel12
             // 
-            this.gunaLabel12.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gunaLabel12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(47)))), ((int)(((byte)(40)))));
+            this.gunaLabel12.BackColor = System.Drawing.Color.Transparent;
+            this.gunaLabel12.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.gunaLabel12.ForeColor = System.Drawing.Color.Yellow;
             this.gunaLabel12.Location = new System.Drawing.Point(12, 220);
             this.gunaLabel12.Name = "gunaLabel12";
-            this.gunaLabel12.Size = new System.Drawing.Size(360, 27);
+            this.gunaLabel12.Size = new System.Drawing.Size(452, 27);
             this.gunaLabel12.TabIndex = 21;
             this.gunaLabel12.Text = "Телефон";
             this.gunaLabel12.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // gunaLabel13
             // 
-            this.gunaLabel13.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gunaLabel13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(47)))), ((int)(((byte)(40)))));
+            this.gunaLabel13.BackColor = System.Drawing.Color.Transparent;
+            this.gunaLabel13.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.gunaLabel13.ForeColor = System.Drawing.Color.Yellow;
             this.gunaLabel13.Location = new System.Drawing.Point(12, 247);
             this.gunaLabel13.Name = "gunaLabel13";
-            this.gunaLabel13.Size = new System.Drawing.Size(360, 27);
+            this.gunaLabel13.Size = new System.Drawing.Size(452, 27);
             this.gunaLabel13.TabIndex = 21;
             this.gunaLabel13.Text = "Емаил";
             this.gunaLabel13.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -430,7 +444,9 @@ namespace Fitness
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(56)))));
-            this.ClientSize = new System.Drawing.Size(776, 364);
+            this.BackgroundImage = global::Fitness.Properties.Resources._Олимпийский_025_18181024fb84d32b21a0dd183b43500a16;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1011, 592);
             this.Controls.Add(this.gunaLabel13);
             this.Controls.Add(this.gunaLabel12);
             this.Controls.Add(this.gunaLabel11);
