@@ -83,6 +83,16 @@ namespace Fitness.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BuyMembership {
+            get {
+                object obj = ResourceManager.GetObject("BuyMembership", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap j3hMNYM4VXA {
             get {
                 object obj = ResourceManager.GetObject("j3hMNYM4VXA", resourceCulture);
@@ -96,6 +106,26 @@ namespace Fitness.Properties {
         internal static System.Drawing.Bitmap j3hMNYM4VXA1 {
             get {
                 object obj = ResourceManager.GetObject("j3hMNYM4VXA1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Login {
+            get {
+                object obj = ResourceManager.GetObject("Login", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MainMenu {
+            get {
+                object obj = ResourceManager.GetObject("MainMenu", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

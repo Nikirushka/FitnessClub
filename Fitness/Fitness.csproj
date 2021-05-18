@@ -213,5 +213,14 @@
   <ItemGroup>
     <None Include="Properties\Pictures\-bwcxQXHKlo.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Pictures\Login.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Pictures\BuyMembership.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Pictures\MainMenu.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
