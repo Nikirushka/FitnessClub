@@ -133,8 +133,9 @@ namespace Fitness
             this.gunaButton1.Radius = 15;
             this.gunaButton1.Size = new System.Drawing.Size(160, 42);
             this.gunaButton1.TabIndex = 21;
-            this.gunaButton1.Text = "Купить";
+            this.gunaButton1.Text = "Оформить";
             this.gunaButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaButton1.Click += new System.EventHandler(this.gunaButton1_Click);
             // 
             // gunaButton2
             // 
@@ -310,6 +311,7 @@ namespace Fitness
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "NewMembership";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "NewMembership";
             this.Load += new System.EventHandler(this.ReferenceForAdmin_Load);
             this.ResumeLayout(false);

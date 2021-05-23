@@ -113,5 +113,10 @@ namespace Fitness
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void gunaButton1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
