@@ -130,6 +130,9 @@
   <data name="BuyMembership" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Pictures\BuyMembership.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="_Олимпийский_025.18181024fb84d32b21a0dd183b43500a16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Pictures\_Олимпийский_025.18181024fb84d32b21a0dd183b43500a16.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="-bwcxQXHKlo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Pictures\-bwcxQXHKlo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -145,7 +148,7 @@
   <data name="j3hMNYM4VXA1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>Pictures\j3hMNYM4VXA.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="_Олимпийский_025.18181024fb84d32b21a0dd183b43500a16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>Pictures\_Олимпийский_025.18181024fb84d32b21a0dd183b43500a16.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Профиль" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Pictures\Профиль.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

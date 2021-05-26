@@ -33,20 +33,14 @@ namespace Fitness
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NewMembership));
             this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
-            this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.gunaComboBox1 = new Guna.UI.WinForms.GunaComboBox();
             this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
             this.gunaButton2 = new Guna.UI.WinForms.GunaButton();
             this.gunaComboBox2 = new Guna.UI.WinForms.GunaComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.gunaCheckBox1 = new Guna.UI.WinForms.GunaCheckBox();
-            this.gunaCheckBox2 = new Guna.UI.WinForms.GunaCheckBox();
-            this.gunaCheckBox3 = new Guna.UI.WinForms.GunaCheckBox();
-            this.gunaCheckBox4 = new Guna.UI.WinForms.GunaCheckBox();
-            this.gunaCheckBox5 = new Guna.UI.WinForms.GunaCheckBox();
-            this.gunaCheckBox6 = new Guna.UI.WinForms.GunaCheckBox();
-            this.gunaCheckBox7 = new Guna.UI.WinForms.GunaCheckBox();
+            this.gunaDateTimePicker1 = new Guna.UI.WinForms.GunaDateTimePicker();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // gunaElipse1
@@ -65,23 +59,12 @@ namespace Fitness
             this.gunaLabel1.Text = "Новый абонемент";
             this.gunaLabel1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(47)))), ((int)(((byte)(40)))));
-            this.label3.Location = new System.Drawing.Point(12, 55);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(238, 27);
-            this.label3.TabIndex = 18;
-            this.label3.Text = "Выберите дни недели :";
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(47)))), ((int)(((byte)(40)))));
-            this.label1.Location = new System.Drawing.Point(12, 247);
+            this.label1.Location = new System.Drawing.Point(23, 123);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(205, 27);
             this.label1.TabIndex = 19;
@@ -100,7 +83,7 @@ namespace Fitness
             this.gunaComboBox1.Font = new System.Drawing.Font("Trebuchet MS", 15.75F);
             this.gunaComboBox1.ForeColor = System.Drawing.Color.Black;
             this.gunaComboBox1.FormattingEnabled = true;
-            this.gunaComboBox1.Location = new System.Drawing.Point(18, 277);
+            this.gunaComboBox1.Location = new System.Drawing.Point(29, 153);
             this.gunaComboBox1.Name = "gunaComboBox1";
             this.gunaComboBox1.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gunaComboBox1.OnHoverItemForeColor = System.Drawing.Color.White;
@@ -114,16 +97,16 @@ namespace Fitness
             this.gunaButton1.AnimationHoverSpeed = 0.07F;
             this.gunaButton1.AnimationSpeed = 0.03F;
             this.gunaButton1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(47)))), ((int)(((byte)(40)))));
+            this.gunaButton1.BaseColor = System.Drawing.Color.White;
             this.gunaButton1.BorderColor = System.Drawing.Color.Black;
             this.gunaButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.gunaButton1.DialogResult = System.Windows.Forms.DialogResult.None;
             this.gunaButton1.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton1.Font = new System.Drawing.Font("Trebuchet MS", 12F);
-            this.gunaButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(56)))));
+            this.gunaButton1.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.gunaButton1.ForeColor = System.Drawing.Color.Black;
             this.gunaButton1.Image = null;
             this.gunaButton1.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton1.Location = new System.Drawing.Point(132, 334);
+            this.gunaButton1.Location = new System.Drawing.Point(132, 257);
             this.gunaButton1.Name = "gunaButton1";
             this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton1.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -177,7 +160,7 @@ namespace Fitness
             this.gunaComboBox2.Font = new System.Drawing.Font("Trebuchet MS", 15.75F);
             this.gunaComboBox2.ForeColor = System.Drawing.Color.Black;
             this.gunaComboBox2.FormattingEnabled = true;
-            this.gunaComboBox2.Location = new System.Drawing.Point(19, 211);
+            this.gunaComboBox2.Location = new System.Drawing.Point(30, 87);
             this.gunaComboBox2.Name = "gunaComboBox2";
             this.gunaComboBox2.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gunaComboBox2.OnHoverItemForeColor = System.Drawing.Color.White;
@@ -190,123 +173,59 @@ namespace Fitness
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(47)))), ((int)(((byte)(40)))));
-            this.label2.Location = new System.Drawing.Point(13, 181);
+            this.label2.Location = new System.Drawing.Point(24, 57);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(222, 27);
             this.label2.TabIndex = 23;
             this.label2.Text = "Выберите категорию:";
             // 
-            // gunaCheckBox1
+            // gunaDateTimePicker1
             // 
-            this.gunaCheckBox1.BaseColor = System.Drawing.Color.White;
-            this.gunaCheckBox1.CheckedOffColor = System.Drawing.Color.Gray;
-            this.gunaCheckBox1.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaCheckBox1.FillColor = System.Drawing.Color.White;
-            this.gunaCheckBox1.Font = new System.Drawing.Font("Trebuchet MS", 20.25F, System.Drawing.FontStyle.Bold);
-            this.gunaCheckBox1.Location = new System.Drawing.Point(12, 85);
-            this.gunaCheckBox1.Name = "gunaCheckBox1";
-            this.gunaCheckBox1.Size = new System.Drawing.Size(70, 37);
-            this.gunaCheckBox1.TabIndex = 25;
-            this.gunaCheckBox1.Text = "Пн";
+            this.gunaDateTimePicker1.BaseColor = System.Drawing.Color.White;
+            this.gunaDateTimePicker1.BorderColor = System.Drawing.Color.Silver;
+            this.gunaDateTimePicker1.CustomFormat = null;
+            this.gunaDateTimePicker1.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.gunaDateTimePicker1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaDateTimePicker1.Font = new System.Drawing.Font("Trebuchet MS", 15.75F);
+            this.gunaDateTimePicker1.ForeColor = System.Drawing.Color.Black;
+            this.gunaDateTimePicker1.Location = new System.Drawing.Point(30, 219);
+            this.gunaDateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.gunaDateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.gunaDateTimePicker1.Name = "gunaDateTimePicker1";
+            this.gunaDateTimePicker1.OnHoverBaseColor = System.Drawing.Color.White;
+            this.gunaDateTimePicker1.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaDateTimePicker1.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaDateTimePicker1.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaDateTimePicker1.Size = new System.Drawing.Size(359, 32);
+            this.gunaDateTimePicker1.TabIndex = 25;
+            this.gunaDateTimePicker1.Text = "среда, 26 мая 2021 г.";
+            this.gunaDateTimePicker1.Value = new System.DateTime(2021, 5, 26, 23, 48, 36, 46);
             // 
-            // gunaCheckBox2
+            // label3
             // 
-            this.gunaCheckBox2.BaseColor = System.Drawing.Color.White;
-            this.gunaCheckBox2.CheckedOffColor = System.Drawing.Color.Gray;
-            this.gunaCheckBox2.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaCheckBox2.FillColor = System.Drawing.Color.White;
-            this.gunaCheckBox2.Font = new System.Drawing.Font("Trebuchet MS", 20.25F, System.Drawing.FontStyle.Bold);
-            this.gunaCheckBox2.Location = new System.Drawing.Point(88, 85);
-            this.gunaCheckBox2.Name = "gunaCheckBox2";
-            this.gunaCheckBox2.Size = new System.Drawing.Size(65, 37);
-            this.gunaCheckBox2.TabIndex = 25;
-            this.gunaCheckBox2.Text = "Вт";
-            // 
-            // gunaCheckBox3
-            // 
-            this.gunaCheckBox3.BaseColor = System.Drawing.Color.White;
-            this.gunaCheckBox3.CheckedOffColor = System.Drawing.Color.Gray;
-            this.gunaCheckBox3.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaCheckBox3.FillColor = System.Drawing.Color.White;
-            this.gunaCheckBox3.Font = new System.Drawing.Font("Trebuchet MS", 20.25F, System.Drawing.FontStyle.Bold);
-            this.gunaCheckBox3.Location = new System.Drawing.Point(164, 85);
-            this.gunaCheckBox3.Name = "gunaCheckBox3";
-            this.gunaCheckBox3.Size = new System.Drawing.Size(68, 37);
-            this.gunaCheckBox3.TabIndex = 25;
-            this.gunaCheckBox3.Text = "Ср";
-            // 
-            // gunaCheckBox4
-            // 
-            this.gunaCheckBox4.BaseColor = System.Drawing.Color.White;
-            this.gunaCheckBox4.CheckedOffColor = System.Drawing.Color.Gray;
-            this.gunaCheckBox4.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaCheckBox4.FillColor = System.Drawing.Color.White;
-            this.gunaCheckBox4.Font = new System.Drawing.Font("Trebuchet MS", 20.25F, System.Drawing.FontStyle.Bold);
-            this.gunaCheckBox4.Location = new System.Drawing.Point(240, 85);
-            this.gunaCheckBox4.Name = "gunaCheckBox4";
-            this.gunaCheckBox4.Size = new System.Drawing.Size(66, 37);
-            this.gunaCheckBox4.TabIndex = 25;
-            this.gunaCheckBox4.Text = "Чт";
-            // 
-            // gunaCheckBox5
-            // 
-            this.gunaCheckBox5.BaseColor = System.Drawing.Color.White;
-            this.gunaCheckBox5.CheckedOffColor = System.Drawing.Color.Gray;
-            this.gunaCheckBox5.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaCheckBox5.FillColor = System.Drawing.Color.White;
-            this.gunaCheckBox5.Font = new System.Drawing.Font("Trebuchet MS", 20.25F, System.Drawing.FontStyle.Bold);
-            this.gunaCheckBox5.Location = new System.Drawing.Point(316, 85);
-            this.gunaCheckBox5.Name = "gunaCheckBox5";
-            this.gunaCheckBox5.Size = new System.Drawing.Size(67, 37);
-            this.gunaCheckBox5.TabIndex = 25;
-            this.gunaCheckBox5.Text = "Пт";
-            // 
-            // gunaCheckBox6
-            // 
-            this.gunaCheckBox6.BaseColor = System.Drawing.Color.White;
-            this.gunaCheckBox6.CheckedOffColor = System.Drawing.Color.Gray;
-            this.gunaCheckBox6.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaCheckBox6.FillColor = System.Drawing.Color.White;
-            this.gunaCheckBox6.Font = new System.Drawing.Font("Trebuchet MS", 20.25F, System.Drawing.FontStyle.Bold);
-            this.gunaCheckBox6.Location = new System.Drawing.Point(196, 128);
-            this.gunaCheckBox6.Name = "gunaCheckBox6";
-            this.gunaCheckBox6.Size = new System.Drawing.Size(66, 37);
-            this.gunaCheckBox6.TabIndex = 26;
-            this.gunaCheckBox6.Text = "Вс";
-            // 
-            // gunaCheckBox7
-            // 
-            this.gunaCheckBox7.BaseColor = System.Drawing.Color.White;
-            this.gunaCheckBox7.CheckedOffColor = System.Drawing.Color.Gray;
-            this.gunaCheckBox7.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.gunaCheckBox7.FillColor = System.Drawing.Color.White;
-            this.gunaCheckBox7.Font = new System.Drawing.Font("Trebuchet MS", 20.25F, System.Drawing.FontStyle.Bold);
-            this.gunaCheckBox7.Location = new System.Drawing.Point(120, 128);
-            this.gunaCheckBox7.Name = "gunaCheckBox7";
-            this.gunaCheckBox7.Size = new System.Drawing.Size(68, 37);
-            this.gunaCheckBox7.TabIndex = 27;
-            this.gunaCheckBox7.Text = "Сб";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(47)))), ((int)(((byte)(40)))));
+            this.label3.Location = new System.Drawing.Point(25, 189);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(267, 27);
+            this.label3.TabIndex = 26;
+            this.label3.Text = "Дата первой тренировки :";
             // 
             // NewMembership
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Yellow;
-            this.ClientSize = new System.Drawing.Size(419, 394);
-            this.Controls.Add(this.gunaCheckBox6);
-            this.Controls.Add(this.gunaCheckBox7);
-            this.Controls.Add(this.gunaCheckBox5);
-            this.Controls.Add(this.gunaCheckBox4);
-            this.Controls.Add(this.gunaCheckBox3);
-            this.Controls.Add(this.gunaCheckBox2);
-            this.Controls.Add(this.gunaCheckBox1);
+            this.ClientSize = new System.Drawing.Size(419, 310);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.gunaDateTimePicker1);
             this.Controls.Add(this.gunaComboBox2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.gunaButton2);
             this.Controls.Add(this.gunaButton1);
             this.Controls.Add(this.gunaComboBox1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.gunaLabel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -325,17 +244,11 @@ namespace Fitness
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
         private Guna.UI.WinForms.GunaComboBox gunaComboBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label3;
         private Guna.UI.WinForms.GunaButton gunaButton1;
         private Guna.UI.WinForms.GunaButton gunaButton2;
         private Guna.UI.WinForms.GunaComboBox gunaComboBox2;
         private System.Windows.Forms.Label label2;
-        private Guna.UI.WinForms.GunaCheckBox gunaCheckBox6;
-        private Guna.UI.WinForms.GunaCheckBox gunaCheckBox7;
-        private Guna.UI.WinForms.GunaCheckBox gunaCheckBox5;
-        private Guna.UI.WinForms.GunaCheckBox gunaCheckBox4;
-        private Guna.UI.WinForms.GunaCheckBox gunaCheckBox3;
-        private Guna.UI.WinForms.GunaCheckBox gunaCheckBox2;
-        private Guna.UI.WinForms.GunaCheckBox gunaCheckBox1;
+        private System.Windows.Forms.Label label3;
+        private Guna.UI.WinForms.GunaDateTimePicker gunaDateTimePicker1;
     }
 }

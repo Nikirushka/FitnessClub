@@ -33,48 +33,48 @@
             this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.gunaDragControl1 = new Guna.UI.WinForms.GunaDragControl(this.components);
             this.gunaDragControl2 = new Guna.UI.WinForms.GunaDragControl(this.components);
+            this.mainpanel = new System.Windows.Forms.Panel();
+            this.gunaElipse2 = new Guna.UI.WinForms.GunaElipse(this.components);
+            this.gunaElipse3 = new Guna.UI.WinForms.GunaElipse(this.components);
+            this.gunaDragControl3 = new Guna.UI.WinForms.GunaDragControl(this.components);
+            this.gunaElipse4 = new Guna.UI.WinForms.GunaElipse(this.components);
+            this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
+            this.gunaButton2 = new Guna.UI.WinForms.GunaButton();
+            this.buyabon = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
+            this.gunaButton11 = new Guna.UI.WinForms.GunaButton();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.gunaButton10 = new Guna.UI.WinForms.GunaButton();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.gunaButton4 = new Guna.UI.WinForms.GunaButton();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.gunaButton3 = new Guna.UI.WinForms.GunaButton();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.main_menu = new System.Windows.Forms.Panel();
             this.gunaButton9 = new Guna.UI.WinForms.GunaButton();
             this.gunaButton8 = new Guna.UI.WinForms.GunaButton();
             this.gunaButton7 = new Guna.UI.WinForms.GunaButton();
             this.gunaButton6 = new Guna.UI.WinForms.GunaButton();
             this.gunaButton5 = new Guna.UI.WinForms.GunaButton();
-            this.label11 = new System.Windows.Forms.Label();
             this.gunaButton19 = new Guna.UI.WinForms.GunaButton();
-            this.mainpanel = new System.Windows.Forms.Panel();
-            this.gunaElipse2 = new Guna.UI.WinForms.GunaElipse(this.components);
-            this.gunaElipse3 = new Guna.UI.WinForms.GunaElipse(this.components);
-            this.buyabon = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.gunaDragControl3 = new Guna.UI.WinForms.GunaDragControl(this.components);
-            this.gunaElipse4 = new Guna.UI.WinForms.GunaElipse(this.components);
-            this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
-            this.gunaButton2 = new Guna.UI.WinForms.GunaButton();
-            this.gunaButton3 = new Guna.UI.WinForms.GunaButton();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.gunaButton4 = new Guna.UI.WinForms.GunaButton();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.gunaButton10 = new Guna.UI.WinForms.GunaButton();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label10 = new System.Windows.Forms.Label();
-            this.gunaButton11 = new Guna.UI.WinForms.GunaButton();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.main_menu.SuspendLayout();
+            this.label11 = new System.Windows.Forms.Label();
             this.buyabon.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.main_menu.SuspendLayout();
             this.SuspendLayout();
             // 
             // gunaElipse1
@@ -89,6 +89,390 @@
             // gunaDragControl2
             // 
             this.gunaDragControl2.TargetControl = this.main_menu;
+            // 
+            // mainpanel
+            // 
+            this.mainpanel.BackColor = System.Drawing.Color.Yellow;
+            this.mainpanel.Location = new System.Drawing.Point(335, 184);
+            this.mainpanel.Name = "mainpanel";
+            this.mainpanel.Size = new System.Drawing.Size(1011, 592);
+            this.mainpanel.TabIndex = 10;
+            // 
+            // gunaElipse2
+            // 
+            this.gunaElipse2.Radius = 10;
+            this.gunaElipse2.TargetControl = this.mainpanel;
+            // 
+            // gunaElipse3
+            // 
+            this.gunaElipse3.Radius = 10;
+            this.gunaElipse3.TargetControl = this.buyabon;
+            // 
+            // gunaDragControl3
+            // 
+            this.gunaDragControl3.TargetControl = this.mainpanel;
+            // 
+            // gunaElipse4
+            // 
+            this.gunaElipse4.Radius = 10;
+            this.gunaElipse4.TargetControl = this.main_menu;
+            // 
+            // gunaButton1
+            // 
+            this.gunaButton1.Animated = true;
+            this.gunaButton1.AnimationHoverSpeed = 0.07F;
+            this.gunaButton1.AnimationSpeed = 0.03F;
+            this.gunaButton1.BackColor = System.Drawing.Color.Transparent;
+            this.gunaButton1.BaseColor = System.Drawing.Color.Yellow;
+            this.gunaButton1.BorderColor = System.Drawing.Color.Black;
+            this.gunaButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gunaButton1.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaButton1.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaButton1.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.gunaButton1.ForeColor = System.Drawing.Color.Black;
+            this.gunaButton1.Image = null;
+            this.gunaButton1.ImageSize = new System.Drawing.Size(20, 20);
+            this.gunaButton1.Location = new System.Drawing.Point(12, 385);
+            this.gunaButton1.Name = "gunaButton1";
+            this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.Yellow;
+            this.gunaButton1.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaButton1.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaButton1.OnHoverImage = null;
+            this.gunaButton1.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaButton1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.gunaButton1.Size = new System.Drawing.Size(196, 40);
+            this.gunaButton1.TabIndex = 8;
+            this.gunaButton1.Text = "Главное меню";
+            this.gunaButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaButton1.Click += new System.EventHandler(this.gunaButton1_Click_1);
+            // 
+            // gunaButton2
+            // 
+            this.gunaButton2.Animated = true;
+            this.gunaButton2.AnimationHoverSpeed = 0.07F;
+            this.gunaButton2.AnimationSpeed = 0.03F;
+            this.gunaButton2.BackColor = System.Drawing.Color.Transparent;
+            this.gunaButton2.BaseColor = System.Drawing.Color.Yellow;
+            this.gunaButton2.BorderColor = System.Drawing.Color.Black;
+            this.gunaButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gunaButton2.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaButton2.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaButton2.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.gunaButton2.ForeColor = System.Drawing.Color.Black;
+            this.gunaButton2.Image = null;
+            this.gunaButton2.ImageSize = new System.Drawing.Size(20, 20);
+            this.gunaButton2.Location = new System.Drawing.Point(12, 483);
+            this.gunaButton2.Name = "gunaButton2";
+            this.gunaButton2.OnHoverBaseColor = System.Drawing.Color.Yellow;
+            this.gunaButton2.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaButton2.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaButton2.OnHoverImage = null;
+            this.gunaButton2.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaButton2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.gunaButton2.Size = new System.Drawing.Size(18, 18);
+            this.gunaButton2.TabIndex = 13;
+            this.gunaButton2.Text = "X";
+            this.gunaButton2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaButton2.Click += new System.EventHandler(this.gunaButton2_Click_1);
+            // 
+            // buyabon
+            // 
+            this.buyabon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(56)))));
+            this.buyabon.BackgroundImage = global::Fitness.Properties.Resources.BuyMembership;
+            this.buyabon.Controls.Add(this.panel4);
+            this.buyabon.Controls.Add(this.panel2);
+            this.buyabon.Controls.Add(this.panel1);
+            this.buyabon.Controls.Add(this.panel3);
+            this.buyabon.Location = new System.Drawing.Point(1, 11);
+            this.buyabon.Name = "buyabon";
+            this.buyabon.Size = new System.Drawing.Size(1011, 592);
+            this.buyabon.TabIndex = 11;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.Controls.Add(this.label10);
+            this.panel4.Controls.Add(this.gunaButton11);
+            this.panel4.Controls.Add(this.label12);
+            this.panel4.Controls.Add(this.label13);
+            this.panel4.Location = new System.Drawing.Point(749, 21);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(214, 322);
+            this.panel4.TabIndex = 0;
+            // 
+            // label10
+            // 
+            this.label10.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label10.Location = new System.Drawing.Point(4, 102);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(208, 164);
+            this.label10.TabIndex = 2;
+            this.label10.Text = "РЕМЯ: 8:00-14:00\r\n\r\nПри посещении необходимо предъявить документ, удостоверяющий " +
+    "личность.\r\n\r\n\r\n";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // gunaButton11
+            // 
+            this.gunaButton11.Animated = true;
+            this.gunaButton11.AnimationHoverSpeed = 0.07F;
+            this.gunaButton11.AnimationSpeed = 0.03F;
+            this.gunaButton11.BackColor = System.Drawing.Color.Transparent;
+            this.gunaButton11.BaseColor = System.Drawing.Color.Yellow;
+            this.gunaButton11.BorderColor = System.Drawing.Color.Black;
+            this.gunaButton11.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gunaButton11.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaButton11.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaButton11.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.gunaButton11.ForeColor = System.Drawing.Color.Black;
+            this.gunaButton11.Image = null;
+            this.gunaButton11.ImageSize = new System.Drawing.Size(20, 20);
+            this.gunaButton11.Location = new System.Drawing.Point(29, 269);
+            this.gunaButton11.Name = "gunaButton11";
+            this.gunaButton11.OnHoverBaseColor = System.Drawing.Color.Yellow;
+            this.gunaButton11.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaButton11.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaButton11.OnHoverImage = null;
+            this.gunaButton11.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaButton11.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.gunaButton11.Size = new System.Drawing.Size(155, 40);
+            this.gunaButton11.TabIndex = 9;
+            this.gunaButton11.Text = "Купить";
+            this.gunaButton11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaButton11.Click += new System.EventHandler(this.gunaButton11_Click);
+            // 
+            // label12
+            // 
+            this.label12.Font = new System.Drawing.Font("Trebuchet MS", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label12.Location = new System.Drawing.Point(4, 58);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(207, 32);
+            this.label12.TabIndex = 1;
+            this.label12.Text = "0,00 BYN";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label13
+            // 
+            this.label13.Font = new System.Drawing.Font("Trebuchet MS", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label13.Location = new System.Drawing.Point(4, 9);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(207, 31);
+            this.label13.TabIndex = 0;
+            this.label13.Text = "Абонемент 3";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.label6);
+            this.panel2.Controls.Add(this.gunaButton10);
+            this.panel2.Controls.Add(this.label7);
+            this.panel2.Controls.Add(this.label9);
+            this.panel2.Location = new System.Drawing.Point(515, 21);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(214, 322);
+            this.panel2.TabIndex = 0;
+            // 
+            // label6
+            // 
+            this.label6.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label6.Location = new System.Drawing.Point(4, 102);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(208, 164);
+            this.label6.TabIndex = 2;
+            this.label6.Text = "РЕМЯ: 8:00-14:00\r\n\r\nПри посещении необходимо предъявить документ, удостоверяющий " +
+    "личность.\r\n\r\n\r\n";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // gunaButton10
+            // 
+            this.gunaButton10.Animated = true;
+            this.gunaButton10.AnimationHoverSpeed = 0.07F;
+            this.gunaButton10.AnimationSpeed = 0.03F;
+            this.gunaButton10.BackColor = System.Drawing.Color.Transparent;
+            this.gunaButton10.BaseColor = System.Drawing.Color.Yellow;
+            this.gunaButton10.BorderColor = System.Drawing.Color.Black;
+            this.gunaButton10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gunaButton10.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaButton10.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaButton10.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.gunaButton10.ForeColor = System.Drawing.Color.Black;
+            this.gunaButton10.Image = null;
+            this.gunaButton10.ImageSize = new System.Drawing.Size(20, 20);
+            this.gunaButton10.Location = new System.Drawing.Point(29, 269);
+            this.gunaButton10.Name = "gunaButton10";
+            this.gunaButton10.OnHoverBaseColor = System.Drawing.Color.Yellow;
+            this.gunaButton10.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaButton10.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaButton10.OnHoverImage = null;
+            this.gunaButton10.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaButton10.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.gunaButton10.Size = new System.Drawing.Size(155, 40);
+            this.gunaButton10.TabIndex = 9;
+            this.gunaButton10.Text = "Купить";
+            this.gunaButton10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaButton10.Click += new System.EventHandler(this.gunaButton10_Click);
+            // 
+            // label7
+            // 
+            this.label7.Font = new System.Drawing.Font("Trebuchet MS", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label7.Location = new System.Drawing.Point(4, 58);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(207, 32);
+            this.label7.TabIndex = 1;
+            this.label7.Text = "29 BYN";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label9
+            // 
+            this.label9.Font = new System.Drawing.Font("Trebuchet MS", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label9.Location = new System.Drawing.Point(4, 9);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(207, 37);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "СТУДЕНЧЕСКИЙ ";
+            this.label9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.gunaButton4);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Location = new System.Drawing.Point(281, 21);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(214, 322);
+            this.panel1.TabIndex = 0;
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.Location = new System.Drawing.Point(4, 102);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(208, 164);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "1 месяц\r\n\r\nПриобретается при предъявлении документов, подтверждающих родство.\r\n";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // gunaButton4
+            // 
+            this.gunaButton4.Animated = true;
+            this.gunaButton4.AnimationHoverSpeed = 0.07F;
+            this.gunaButton4.AnimationSpeed = 0.03F;
+            this.gunaButton4.BackColor = System.Drawing.Color.Transparent;
+            this.gunaButton4.BaseColor = System.Drawing.Color.Yellow;
+            this.gunaButton4.BorderColor = System.Drawing.Color.Black;
+            this.gunaButton4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gunaButton4.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaButton4.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaButton4.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.gunaButton4.ForeColor = System.Drawing.Color.Black;
+            this.gunaButton4.Image = null;
+            this.gunaButton4.ImageSize = new System.Drawing.Size(20, 20);
+            this.gunaButton4.Location = new System.Drawing.Point(29, 269);
+            this.gunaButton4.Name = "gunaButton4";
+            this.gunaButton4.OnHoverBaseColor = System.Drawing.Color.Yellow;
+            this.gunaButton4.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaButton4.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaButton4.OnHoverImage = null;
+            this.gunaButton4.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaButton4.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.gunaButton4.Size = new System.Drawing.Size(155, 40);
+            this.gunaButton4.TabIndex = 9;
+            this.gunaButton4.Text = "Купить";
+            this.gunaButton4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaButton4.Click += new System.EventHandler(this.gunaButton4_Click);
+            // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("Trebuchet MS", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.Location = new System.Drawing.Point(4, 58);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(207, 32);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "149 BYN";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label5
+            // 
+            this.label5.Font = new System.Drawing.Font("Trebuchet MS", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label5.Location = new System.Drawing.Point(4, 9);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(207, 31);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "СЕМЕЙНЫЙ БЕЗЛИМИТ";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.label2);
+            this.panel3.Controls.Add(this.gunaButton3);
+            this.panel3.Controls.Add(this.label8);
+            this.panel3.Controls.Add(this.label1);
+            this.panel3.Location = new System.Drawing.Point(47, 21);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(214, 199);
+            this.panel3.TabIndex = 0;
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.Location = new System.Drawing.Point(4, 102);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(208, 38);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "1 посещение";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // gunaButton3
+            // 
+            this.gunaButton3.Animated = true;
+            this.gunaButton3.AnimationHoverSpeed = 0.07F;
+            this.gunaButton3.AnimationSpeed = 0.03F;
+            this.gunaButton3.BackColor = System.Drawing.Color.Transparent;
+            this.gunaButton3.BaseColor = System.Drawing.Color.Yellow;
+            this.gunaButton3.BorderColor = System.Drawing.Color.Black;
+            this.gunaButton3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gunaButton3.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaButton3.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaButton3.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.gunaButton3.ForeColor = System.Drawing.Color.Black;
+            this.gunaButton3.Image = null;
+            this.gunaButton3.ImageSize = new System.Drawing.Size(20, 20);
+            this.gunaButton3.Location = new System.Drawing.Point(28, 143);
+            this.gunaButton3.Name = "gunaButton3";
+            this.gunaButton3.OnHoverBaseColor = System.Drawing.Color.Yellow;
+            this.gunaButton3.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaButton3.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaButton3.OnHoverImage = null;
+            this.gunaButton3.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaButton3.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.gunaButton3.Size = new System.Drawing.Size(155, 40);
+            this.gunaButton3.TabIndex = 9;
+            this.gunaButton3.Text = "Купить";
+            this.gunaButton3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaButton3.Click += new System.EventHandler(this.gunaButton3_Click);
+            // 
+            // label8
+            // 
+            this.label8.Font = new System.Drawing.Font("Trebuchet MS", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label8.Location = new System.Drawing.Point(4, 58);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(207, 32);
+            this.label8.TabIndex = 1;
+            this.label8.Text = "14  BYN";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Trebuchet MS", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.Location = new System.Drawing.Point(4, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(207, 31);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "РАЗОВОЕ ПОСЕЩЕНИЕ";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // main_menu
             // 
@@ -252,18 +636,6 @@
             this.gunaButton5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.gunaButton5.Click += new System.EventHandler(this.gunaButton5_Click);
             // 
-            // label11
-            // 
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Trebuchet MS", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label11.ForeColor = System.Drawing.Color.Yellow;
-            this.label11.Location = new System.Drawing.Point(-2, 15);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(1006, 100);
-            this.label11.TabIndex = 8;
-            this.label11.Text = "Здравствуйте, имя!\r\nВыберите действие :\r\n\r\n";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
             // gunaButton19
             // 
             this.gunaButton19.Animated = true;
@@ -293,391 +665,17 @@
             this.gunaButton19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.gunaButton19.Click += new System.EventHandler(this.gunaButton19_Click);
             // 
-            // mainpanel
+            // label11
             // 
-            this.mainpanel.BackColor = System.Drawing.Color.Yellow;
-            this.mainpanel.Location = new System.Drawing.Point(335, 184);
-            this.mainpanel.Name = "mainpanel";
-            this.mainpanel.Size = new System.Drawing.Size(1011, 592);
-            this.mainpanel.TabIndex = 10;
-            // 
-            // gunaElipse2
-            // 
-            this.gunaElipse2.Radius = 10;
-            this.gunaElipse2.TargetControl = this.mainpanel;
-            // 
-            // gunaElipse3
-            // 
-            this.gunaElipse3.Radius = 10;
-            this.gunaElipse3.TargetControl = this.buyabon;
-            // 
-            // buyabon
-            // 
-            this.buyabon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(56)))));
-            this.buyabon.BackgroundImage = global::Fitness.Properties.Resources.BuyMembership;
-            this.buyabon.Controls.Add(this.panel4);
-            this.buyabon.Controls.Add(this.panel2);
-            this.buyabon.Controls.Add(this.panel1);
-            this.buyabon.Controls.Add(this.panel3);
-            this.buyabon.Location = new System.Drawing.Point(80, 36);
-            this.buyabon.Name = "buyabon";
-            this.buyabon.Size = new System.Drawing.Size(1011, 592);
-            this.buyabon.TabIndex = 11;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.label2);
-            this.panel3.Controls.Add(this.gunaButton3);
-            this.panel3.Controls.Add(this.label8);
-            this.panel3.Controls.Add(this.label1);
-            this.panel3.Location = new System.Drawing.Point(47, 21);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(214, 322);
-            this.panel3.TabIndex = 0;
-            // 
-            // label8
-            // 
-            this.label8.Font = new System.Drawing.Font("Trebuchet MS", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label8.Location = new System.Drawing.Point(4, 58);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(207, 32);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "0,00 BYN";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label1
-            // 
-            this.label1.Font = new System.Drawing.Font("Trebuchet MS", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(4, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(207, 31);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Абонемент пробный";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // gunaDragControl3
-            // 
-            this.gunaDragControl3.TargetControl = this.mainpanel;
-            // 
-            // gunaElipse4
-            // 
-            this.gunaElipse4.Radius = 10;
-            this.gunaElipse4.TargetControl = this.main_menu;
-            // 
-            // gunaButton1
-            // 
-            this.gunaButton1.Animated = true;
-            this.gunaButton1.AnimationHoverSpeed = 0.07F;
-            this.gunaButton1.AnimationSpeed = 0.03F;
-            this.gunaButton1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton1.BaseColor = System.Drawing.Color.Yellow;
-            this.gunaButton1.BorderColor = System.Drawing.Color.Black;
-            this.gunaButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.gunaButton1.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton1.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton1.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gunaButton1.ForeColor = System.Drawing.Color.Black;
-            this.gunaButton1.Image = null;
-            this.gunaButton1.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton1.Location = new System.Drawing.Point(12, 385);
-            this.gunaButton1.Name = "gunaButton1";
-            this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.Yellow;
-            this.gunaButton1.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaButton1.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaButton1.OnHoverImage = null;
-            this.gunaButton1.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.gunaButton1.Size = new System.Drawing.Size(196, 40);
-            this.gunaButton1.TabIndex = 8;
-            this.gunaButton1.Text = "Главное меню";
-            this.gunaButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.gunaButton1.Click += new System.EventHandler(this.gunaButton1_Click_1);
-            // 
-            // gunaButton2
-            // 
-            this.gunaButton2.Animated = true;
-            this.gunaButton2.AnimationHoverSpeed = 0.07F;
-            this.gunaButton2.AnimationSpeed = 0.03F;
-            this.gunaButton2.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton2.BaseColor = System.Drawing.Color.Yellow;
-            this.gunaButton2.BorderColor = System.Drawing.Color.Black;
-            this.gunaButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.gunaButton2.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton2.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton2.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gunaButton2.ForeColor = System.Drawing.Color.Black;
-            this.gunaButton2.Image = null;
-            this.gunaButton2.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton2.Location = new System.Drawing.Point(12, 481);
-            this.gunaButton2.Name = "gunaButton2";
-            this.gunaButton2.OnHoverBaseColor = System.Drawing.Color.Yellow;
-            this.gunaButton2.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaButton2.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaButton2.OnHoverImage = null;
-            this.gunaButton2.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.gunaButton2.Size = new System.Drawing.Size(35, 35);
-            this.gunaButton2.TabIndex = 13;
-            this.gunaButton2.Text = "X";
-            this.gunaButton2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.gunaButton2.Click += new System.EventHandler(this.gunaButton2_Click_1);
-            // 
-            // gunaButton3
-            // 
-            this.gunaButton3.Animated = true;
-            this.gunaButton3.AnimationHoverSpeed = 0.07F;
-            this.gunaButton3.AnimationSpeed = 0.03F;
-            this.gunaButton3.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton3.BaseColor = System.Drawing.Color.Yellow;
-            this.gunaButton3.BorderColor = System.Drawing.Color.Black;
-            this.gunaButton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.gunaButton3.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton3.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton3.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gunaButton3.ForeColor = System.Drawing.Color.Black;
-            this.gunaButton3.Image = null;
-            this.gunaButton3.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton3.Location = new System.Drawing.Point(29, 269);
-            this.gunaButton3.Name = "gunaButton3";
-            this.gunaButton3.OnHoverBaseColor = System.Drawing.Color.Yellow;
-            this.gunaButton3.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaButton3.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaButton3.OnHoverImage = null;
-            this.gunaButton3.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.gunaButton3.Size = new System.Drawing.Size(155, 40);
-            this.gunaButton3.TabIndex = 9;
-            this.gunaButton3.Text = "Купить";
-            this.gunaButton3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.gunaButton3.Click += new System.EventHandler(this.gunaButton3_Click);
-            // 
-            // label2
-            // 
-            this.label2.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(4, 102);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(208, 164);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "РЕМЯ: 8:00-14:00\r\n\r\nПри посещении необходимо предъявить документ, удостоверяющий " +
-    "личность.\r\n\r\n\r\n";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.gunaButton4);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Location = new System.Drawing.Point(281, 21);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(214, 322);
-            this.panel1.TabIndex = 0;
-            // 
-            // label3
-            // 
-            this.label3.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(4, 102);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(208, 164);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "РЕМЯ: 8:00-14:00\r\n\r\nПри посещении необходимо предъявить документ, удостоверяющий " +
-    "личность.\r\n\r\n\r\n";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // gunaButton4
-            // 
-            this.gunaButton4.Animated = true;
-            this.gunaButton4.AnimationHoverSpeed = 0.07F;
-            this.gunaButton4.AnimationSpeed = 0.03F;
-            this.gunaButton4.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton4.BaseColor = System.Drawing.Color.Yellow;
-            this.gunaButton4.BorderColor = System.Drawing.Color.Black;
-            this.gunaButton4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.gunaButton4.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton4.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton4.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gunaButton4.ForeColor = System.Drawing.Color.Black;
-            this.gunaButton4.Image = null;
-            this.gunaButton4.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton4.Location = new System.Drawing.Point(29, 269);
-            this.gunaButton4.Name = "gunaButton4";
-            this.gunaButton4.OnHoverBaseColor = System.Drawing.Color.Yellow;
-            this.gunaButton4.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaButton4.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaButton4.OnHoverImage = null;
-            this.gunaButton4.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.gunaButton4.Size = new System.Drawing.Size(155, 40);
-            this.gunaButton4.TabIndex = 9;
-            this.gunaButton4.Text = "Купить";
-            this.gunaButton4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.gunaButton4.Click += new System.EventHandler(this.gunaButton4_Click);
-            // 
-            // label4
-            // 
-            this.label4.Font = new System.Drawing.Font("Trebuchet MS", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(4, 58);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(207, 32);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "0,00 BYN";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label5
-            // 
-            this.label5.Font = new System.Drawing.Font("Trebuchet MS", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(4, 9);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(207, 31);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Абонемент 1";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.gunaButton10);
-            this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.label9);
-            this.panel2.Location = new System.Drawing.Point(515, 21);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(214, 322);
-            this.panel2.TabIndex = 0;
-            // 
-            // label6
-            // 
-            this.label6.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.Location = new System.Drawing.Point(4, 102);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(208, 164);
-            this.label6.TabIndex = 2;
-            this.label6.Text = "РЕМЯ: 8:00-14:00\r\n\r\nПри посещении необходимо предъявить документ, удостоверяющий " +
-    "личность.\r\n\r\n\r\n";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // gunaButton10
-            // 
-            this.gunaButton10.Animated = true;
-            this.gunaButton10.AnimationHoverSpeed = 0.07F;
-            this.gunaButton10.AnimationSpeed = 0.03F;
-            this.gunaButton10.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton10.BaseColor = System.Drawing.Color.Yellow;
-            this.gunaButton10.BorderColor = System.Drawing.Color.Black;
-            this.gunaButton10.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.gunaButton10.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton10.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton10.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gunaButton10.ForeColor = System.Drawing.Color.Black;
-            this.gunaButton10.Image = null;
-            this.gunaButton10.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton10.Location = new System.Drawing.Point(29, 269);
-            this.gunaButton10.Name = "gunaButton10";
-            this.gunaButton10.OnHoverBaseColor = System.Drawing.Color.Yellow;
-            this.gunaButton10.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaButton10.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaButton10.OnHoverImage = null;
-            this.gunaButton10.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton10.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.gunaButton10.Size = new System.Drawing.Size(155, 40);
-            this.gunaButton10.TabIndex = 9;
-            this.gunaButton10.Text = "Купить";
-            this.gunaButton10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.gunaButton10.Click += new System.EventHandler(this.gunaButton10_Click);
-            // 
-            // label7
-            // 
-            this.label7.Font = new System.Drawing.Font("Trebuchet MS", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label7.Location = new System.Drawing.Point(4, 58);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(207, 32);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "0,00 BYN";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label9
-            // 
-            this.label9.Font = new System.Drawing.Font("Trebuchet MS", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label9.Location = new System.Drawing.Point(4, 9);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(207, 31);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "Абонемент 2";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.Controls.Add(this.label10);
-            this.panel4.Controls.Add(this.gunaButton11);
-            this.panel4.Controls.Add(this.label12);
-            this.panel4.Controls.Add(this.label13);
-            this.panel4.Location = new System.Drawing.Point(749, 21);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(214, 322);
-            this.panel4.TabIndex = 0;
-            // 
-            // label10
-            // 
-            this.label10.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label10.Location = new System.Drawing.Point(4, 102);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(208, 164);
-            this.label10.TabIndex = 2;
-            this.label10.Text = "РЕМЯ: 8:00-14:00\r\n\r\nПри посещении необходимо предъявить документ, удостоверяющий " +
-    "личность.\r\n\r\n\r\n";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // gunaButton11
-            // 
-            this.gunaButton11.Animated = true;
-            this.gunaButton11.AnimationHoverSpeed = 0.07F;
-            this.gunaButton11.AnimationSpeed = 0.03F;
-            this.gunaButton11.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton11.BaseColor = System.Drawing.Color.Yellow;
-            this.gunaButton11.BorderColor = System.Drawing.Color.Black;
-            this.gunaButton11.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.gunaButton11.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton11.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton11.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gunaButton11.ForeColor = System.Drawing.Color.Black;
-            this.gunaButton11.Image = null;
-            this.gunaButton11.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton11.Location = new System.Drawing.Point(29, 269);
-            this.gunaButton11.Name = "gunaButton11";
-            this.gunaButton11.OnHoverBaseColor = System.Drawing.Color.Yellow;
-            this.gunaButton11.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaButton11.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaButton11.OnHoverImage = null;
-            this.gunaButton11.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton11.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.gunaButton11.Size = new System.Drawing.Size(155, 40);
-            this.gunaButton11.TabIndex = 9;
-            this.gunaButton11.Text = "Купить";
-            this.gunaButton11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.gunaButton11.Click += new System.EventHandler(this.gunaButton11_Click);
-            // 
-            // label12
-            // 
-            this.label12.Font = new System.Drawing.Font("Trebuchet MS", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label12.Location = new System.Drawing.Point(4, 58);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(207, 32);
-            this.label12.TabIndex = 1;
-            this.label12.Text = "0,00 BYN";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label13
-            // 
-            this.label13.Font = new System.Drawing.Font("Trebuchet MS", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label13.Location = new System.Drawing.Point(4, 9);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(207, 31);
-            this.label13.TabIndex = 0;
-            this.label13.Text = "Абонемент 3";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label11.BackColor = System.Drawing.Color.Transparent;
+            this.label11.Font = new System.Drawing.Font("Trebuchet MS", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label11.ForeColor = System.Drawing.Color.Yellow;
+            this.label11.Location = new System.Drawing.Point(-2, 15);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(1006, 100);
+            this.label11.TabIndex = 8;
+            this.label11.Text = "Здравствуйте, имя!\r\nВыберите действие :\r\n\r\n";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // Client
             // 
@@ -685,9 +683,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1024, 615);
+            this.Controls.Add(this.buyabon);
             this.Controls.Add(this.gunaButton1);
             this.Controls.Add(this.gunaButton2);
-            this.Controls.Add(this.buyabon);
             this.Controls.Add(this.main_menu);
             this.Controls.Add(this.mainpanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -696,12 +694,12 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Client";
             this.Load += new System.EventHandler(this.Client_Load);
-            this.main_menu.ResumeLayout(false);
             this.buyabon.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.main_menu.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

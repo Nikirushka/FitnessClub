@@ -182,7 +182,7 @@ namespace Fitness
         }
 
         Point but_loc = new Point(407, 525);
-        Point close_loc = new Point(952, 39);
+        Point close_loc = new Point(986, 20);
 
         private void gunaButton2_Click_1(object sender, EventArgs e)
         {

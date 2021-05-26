@@ -444,7 +444,7 @@ namespace Fitness
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(56)))));
-            this.BackgroundImage = global::Fitness.Properties.Resources._Олимпийский_025_18181024fb84d32b21a0dd183b43500a16;
+            this.BackgroundImage = global::Fitness.Properties.Resources.Профиль;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1011, 592);
             this.Controls.Add(this.gunaLabel13);

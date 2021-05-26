@@ -225,5 +225,8 @@
   <ItemGroup>
     <None Include="Properties\Pictures\_Олимпийский_025.18181024fb84d32b21a0dd183b43500a16.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Pictures\Профиль.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

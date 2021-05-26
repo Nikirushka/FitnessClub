@@ -44,7 +44,6 @@
             this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
             this.UserButton = new Guna.UI.WinForms.GunaButton();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.ClientPanel = new System.Windows.Forms.Panel();
             this.gunaButton18 = new Guna.UI.WinForms.GunaButton();
             this.gunaButton19 = new Guna.UI.WinForms.GunaButton();
@@ -71,8 +70,6 @@
             this.gunaButton12 = new Guna.UI.WinForms.GunaButton();
             this.gunaElipse5 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.ClientPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AllDataGridView)).BeginInit();
             this.choosepanel.SuspendLayout();
@@ -104,7 +101,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(56)))));
+            this.panel1.BackColor = System.Drawing.Color.Yellow;
             this.panel1.Controls.Add(this.gunaButton11);
             this.panel1.Controls.Add(this.gunaButton4);
             this.panel1.Controls.Add(this.gunaButton3);
@@ -130,7 +127,7 @@
             this.gunaButton11.Dock = System.Windows.Forms.DockStyle.Left;
             this.gunaButton11.FocusedColor = System.Drawing.Color.Empty;
             this.gunaButton11.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gunaButton11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(47)))), ((int)(((byte)(40)))));
+            this.gunaButton11.ForeColor = System.Drawing.Color.Black;
             this.gunaButton11.Image = null;
             this.gunaButton11.ImageSize = new System.Drawing.Size(20, 20);
             this.gunaButton11.Location = new System.Drawing.Point(673, 0);
@@ -158,7 +155,7 @@
             this.gunaButton4.Dock = System.Windows.Forms.DockStyle.Left;
             this.gunaButton4.FocusedColor = System.Drawing.Color.Empty;
             this.gunaButton4.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gunaButton4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(47)))), ((int)(((byte)(40)))));
+            this.gunaButton4.ForeColor = System.Drawing.Color.Black;
             this.gunaButton4.Image = null;
             this.gunaButton4.ImageSize = new System.Drawing.Size(20, 20);
             this.gunaButton4.Location = new System.Drawing.Point(558, 0);
@@ -185,7 +182,7 @@
             this.gunaButton3.Dock = System.Windows.Forms.DockStyle.Left;
             this.gunaButton3.FocusedColor = System.Drawing.Color.Empty;
             this.gunaButton3.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gunaButton3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(47)))), ((int)(((byte)(40)))));
+            this.gunaButton3.ForeColor = System.Drawing.Color.Black;
             this.gunaButton3.Image = null;
             this.gunaButton3.ImageSize = new System.Drawing.Size(20, 20);
             this.gunaButton3.Location = new System.Drawing.Point(443, 0);
@@ -214,7 +211,7 @@
             this.gunaButton2.Dock = System.Windows.Forms.DockStyle.Left;
             this.gunaButton2.FocusedColor = System.Drawing.Color.Empty;
             this.gunaButton2.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gunaButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(47)))), ((int)(((byte)(40)))));
+            this.gunaButton2.ForeColor = System.Drawing.Color.Black;
             this.gunaButton2.Image = null;
             this.gunaButton2.ImageSize = new System.Drawing.Size(20, 20);
             this.gunaButton2.Location = new System.Drawing.Point(328, 0);
@@ -243,7 +240,7 @@
             this.gunaButton1.Dock = System.Windows.Forms.DockStyle.Left;
             this.gunaButton1.FocusedColor = System.Drawing.Color.Empty;
             this.gunaButton1.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gunaButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(47)))), ((int)(((byte)(40)))));
+            this.gunaButton1.ForeColor = System.Drawing.Color.Black;
             this.gunaButton1.Image = null;
             this.gunaButton1.ImageSize = new System.Drawing.Size(20, 20);
             this.gunaButton1.Location = new System.Drawing.Point(228, 0);
@@ -272,7 +269,7 @@
             this.UserButton.Dock = System.Windows.Forms.DockStyle.Left;
             this.UserButton.FocusedColor = System.Drawing.Color.Empty;
             this.UserButton.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.UserButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(47)))), ((int)(((byte)(40)))));
+            this.UserButton.ForeColor = System.Drawing.Color.Black;
             this.UserButton.Image = null;
             this.UserButton.ImageSize = new System.Drawing.Size(20, 20);
             this.UserButton.Location = new System.Drawing.Point(128, 0);
@@ -290,29 +287,15 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(128, 68);
             this.panel2.TabIndex = 9;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::Fitness.Properties.Resources.j3hMNYM4VXA1;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(128, 68);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 9;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // ClientPanel
             // 
-            this.ClientPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(56)))));
+            this.ClientPanel.BackColor = System.Drawing.Color.Yellow;
             this.ClientPanel.Controls.Add(this.gunaButton18);
             this.ClientPanel.Controls.Add(this.gunaButton19);
             this.ClientPanel.Controls.Add(this.gunaButton20);
@@ -323,7 +306,7 @@
             this.ClientPanel.Controls.Add(this.gunaButton6);
             this.ClientPanel.Controls.Add(this.gunaButton5);
             this.ClientPanel.Controls.Add(this.AllDataGridView);
-            this.ClientPanel.Location = new System.Drawing.Point(12, 73);
+            this.ClientPanel.Location = new System.Drawing.Point(9, 71);
             this.ClientPanel.Name = "ClientPanel";
             this.ClientPanel.Size = new System.Drawing.Size(776, 365);
             this.ClientPanel.TabIndex = 9;
@@ -334,12 +317,12 @@
             this.gunaButton18.AnimationHoverSpeed = 0.07F;
             this.gunaButton18.AnimationSpeed = 0.03F;
             this.gunaButton18.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton18.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(47)))), ((int)(((byte)(40)))));
+            this.gunaButton18.BaseColor = System.Drawing.Color.White;
             this.gunaButton18.BorderColor = System.Drawing.Color.Black;
             this.gunaButton18.DialogResult = System.Windows.Forms.DialogResult.None;
             this.gunaButton18.FocusedColor = System.Drawing.Color.Empty;
             this.gunaButton18.Font = new System.Drawing.Font("Trebuchet MS", 12F);
-            this.gunaButton18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(56)))));
+            this.gunaButton18.ForeColor = System.Drawing.Color.Black;
             this.gunaButton18.Image = null;
             this.gunaButton18.ImageSize = new System.Drawing.Size(20, 20);
             this.gunaButton18.Location = new System.Drawing.Point(447, 311);
@@ -362,12 +345,12 @@
             this.gunaButton19.AnimationHoverSpeed = 0.07F;
             this.gunaButton19.AnimationSpeed = 0.03F;
             this.gunaButton19.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton19.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(47)))), ((int)(((byte)(40)))));
+            this.gunaButton19.BaseColor = System.Drawing.Color.White;
             this.gunaButton19.BorderColor = System.Drawing.Color.Black;
             this.gunaButton19.DialogResult = System.Windows.Forms.DialogResult.None;
             this.gunaButton19.FocusedColor = System.Drawing.Color.Empty;
             this.gunaButton19.Font = new System.Drawing.Font("Trebuchet MS", 12F);
-            this.gunaButton19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(56)))));
+            this.gunaButton19.ForeColor = System.Drawing.Color.Black;
             this.gunaButton19.Image = null;
             this.gunaButton19.ImageSize = new System.Drawing.Size(20, 20);
             this.gunaButton19.Location = new System.Drawing.Point(281, 311);
@@ -390,12 +373,12 @@
             this.gunaButton20.AnimationHoverSpeed = 0.07F;
             this.gunaButton20.AnimationSpeed = 0.03F;
             this.gunaButton20.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton20.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(47)))), ((int)(((byte)(40)))));
+            this.gunaButton20.BaseColor = System.Drawing.Color.White;
             this.gunaButton20.BorderColor = System.Drawing.Color.Black;
             this.gunaButton20.DialogResult = System.Windows.Forms.DialogResult.None;
             this.gunaButton20.FocusedColor = System.Drawing.Color.Empty;
             this.gunaButton20.Font = new System.Drawing.Font("Trebuchet MS", 12F);
-            this.gunaButton20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(56)))));
+            this.gunaButton20.ForeColor = System.Drawing.Color.Black;
             this.gunaButton20.Image = null;
             this.gunaButton20.ImageSize = new System.Drawing.Size(20, 20);
             this.gunaButton20.Location = new System.Drawing.Point(115, 311);
@@ -418,12 +401,12 @@
             this.gunaButton10.AnimationHoverSpeed = 0.07F;
             this.gunaButton10.AnimationSpeed = 0.03F;
             this.gunaButton10.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton10.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(47)))), ((int)(((byte)(40)))));
+            this.gunaButton10.BaseColor = System.Drawing.Color.White;
             this.gunaButton10.BorderColor = System.Drawing.Color.Black;
             this.gunaButton10.DialogResult = System.Windows.Forms.DialogResult.None;
             this.gunaButton10.FocusedColor = System.Drawing.Color.Empty;
             this.gunaButton10.Font = new System.Drawing.Font("Trebuchet MS", 12F);
-            this.gunaButton10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(56)))));
+            this.gunaButton10.ForeColor = System.Drawing.Color.Black;
             this.gunaButton10.Image = null;
             this.gunaButton10.ImageSize = new System.Drawing.Size(20, 20);
             this.gunaButton10.Location = new System.Drawing.Point(447, 311);
@@ -446,12 +429,12 @@
             this.gunaButton7.AnimationHoverSpeed = 0.07F;
             this.gunaButton7.AnimationSpeed = 0.03F;
             this.gunaButton7.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton7.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(47)))), ((int)(((byte)(40)))));
+            this.gunaButton7.BaseColor = System.Drawing.Color.White;
             this.gunaButton7.BorderColor = System.Drawing.Color.Black;
             this.gunaButton7.DialogResult = System.Windows.Forms.DialogResult.None;
             this.gunaButton7.FocusedColor = System.Drawing.Color.Empty;
             this.gunaButton7.Font = new System.Drawing.Font("Trebuchet MS", 12F);
-            this.gunaButton7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(56)))));
+            this.gunaButton7.ForeColor = System.Drawing.Color.Black;
             this.gunaButton7.Image = null;
             this.gunaButton7.ImageSize = new System.Drawing.Size(20, 20);
             this.gunaButton7.Location = new System.Drawing.Point(447, 311);
@@ -474,12 +457,12 @@
             this.gunaButton9.AnimationHoverSpeed = 0.07F;
             this.gunaButton9.AnimationSpeed = 0.03F;
             this.gunaButton9.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton9.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(47)))), ((int)(((byte)(40)))));
+            this.gunaButton9.BaseColor = System.Drawing.Color.White;
             this.gunaButton9.BorderColor = System.Drawing.Color.Black;
             this.gunaButton9.DialogResult = System.Windows.Forms.DialogResult.None;
             this.gunaButton9.FocusedColor = System.Drawing.Color.Empty;
             this.gunaButton9.Font = new System.Drawing.Font("Trebuchet MS", 12F);
-            this.gunaButton9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(56)))));
+            this.gunaButton9.ForeColor = System.Drawing.Color.Black;
             this.gunaButton9.Image = null;
             this.gunaButton9.ImageSize = new System.Drawing.Size(20, 20);
             this.gunaButton9.Location = new System.Drawing.Point(281, 311);
@@ -502,12 +485,12 @@
             this.gunaButton8.AnimationHoverSpeed = 0.07F;
             this.gunaButton8.AnimationSpeed = 0.03F;
             this.gunaButton8.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton8.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(47)))), ((int)(((byte)(40)))));
+            this.gunaButton8.BaseColor = System.Drawing.Color.White;
             this.gunaButton8.BorderColor = System.Drawing.Color.Black;
             this.gunaButton8.DialogResult = System.Windows.Forms.DialogResult.None;
             this.gunaButton8.FocusedColor = System.Drawing.Color.Empty;
             this.gunaButton8.Font = new System.Drawing.Font("Trebuchet MS", 12F);
-            this.gunaButton8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(56)))));
+            this.gunaButton8.ForeColor = System.Drawing.Color.Black;
             this.gunaButton8.Image = null;
             this.gunaButton8.ImageSize = new System.Drawing.Size(20, 20);
             this.gunaButton8.Location = new System.Drawing.Point(115, 311);
@@ -530,12 +513,12 @@
             this.gunaButton6.AnimationHoverSpeed = 0.07F;
             this.gunaButton6.AnimationSpeed = 0.03F;
             this.gunaButton6.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton6.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(47)))), ((int)(((byte)(40)))));
+            this.gunaButton6.BaseColor = System.Drawing.Color.White;
             this.gunaButton6.BorderColor = System.Drawing.Color.Black;
             this.gunaButton6.DialogResult = System.Windows.Forms.DialogResult.None;
             this.gunaButton6.FocusedColor = System.Drawing.Color.Empty;
             this.gunaButton6.Font = new System.Drawing.Font("Trebuchet MS", 12F);
-            this.gunaButton6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(56)))));
+            this.gunaButton6.ForeColor = System.Drawing.Color.Black;
             this.gunaButton6.Image = null;
             this.gunaButton6.ImageSize = new System.Drawing.Size(20, 20);
             this.gunaButton6.Location = new System.Drawing.Point(281, 311);
@@ -558,12 +541,12 @@
             this.gunaButton5.AnimationHoverSpeed = 0.07F;
             this.gunaButton5.AnimationSpeed = 0.03F;
             this.gunaButton5.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton5.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(47)))), ((int)(((byte)(40)))));
+            this.gunaButton5.BaseColor = System.Drawing.Color.White;
             this.gunaButton5.BorderColor = System.Drawing.Color.Black;
             this.gunaButton5.DialogResult = System.Windows.Forms.DialogResult.None;
             this.gunaButton5.FocusedColor = System.Drawing.Color.Empty;
             this.gunaButton5.Font = new System.Drawing.Font("Trebuchet MS", 12F);
-            this.gunaButton5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(56)))));
+            this.gunaButton5.ForeColor = System.Drawing.Color.Black;
             this.gunaButton5.Image = null;
             this.gunaButton5.ImageSize = new System.Drawing.Size(20, 20);
             this.gunaButton5.Location = new System.Drawing.Point(115, 311);
@@ -657,7 +640,7 @@
             // 
             // mainpanel
             // 
-            this.mainpanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(56)))));
+            this.mainpanel.BackColor = System.Drawing.Color.Yellow;
             this.mainpanel.Location = new System.Drawing.Point(12, 71);
             this.mainpanel.Name = "mainpanel";
             this.mainpanel.Size = new System.Drawing.Size(776, 364);
@@ -670,7 +653,7 @@
             // 
             // choosepanel
             // 
-            this.choosepanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(56)))));
+            this.choosepanel.BackColor = System.Drawing.Color.Yellow;
             this.choosepanel.Controls.Add(this.label1);
             this.choosepanel.Controls.Add(this.gunaButton17);
             this.choosepanel.Controls.Add(this.gunaButton16);
@@ -678,7 +661,7 @@
             this.choosepanel.Controls.Add(this.gunaButton15);
             this.choosepanel.Controls.Add(this.gunaButton13);
             this.choosepanel.Controls.Add(this.gunaButton12);
-            this.choosepanel.Location = new System.Drawing.Point(9, 70);
+            this.choosepanel.Location = new System.Drawing.Point(6, 70);
             this.choosepanel.Name = "choosepanel";
             this.choosepanel.Size = new System.Drawing.Size(776, 365);
             this.choosepanel.TabIndex = 10;
@@ -686,7 +669,7 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(47)))), ((int)(((byte)(40)))));
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(0, 10);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(776, 61);
@@ -700,12 +683,12 @@
             this.gunaButton17.AnimationHoverSpeed = 0.07F;
             this.gunaButton17.AnimationSpeed = 0.03F;
             this.gunaButton17.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton17.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(47)))), ((int)(((byte)(40)))));
+            this.gunaButton17.BaseColor = System.Drawing.Color.White;
             this.gunaButton17.BorderColor = System.Drawing.Color.Black;
             this.gunaButton17.DialogResult = System.Windows.Forms.DialogResult.None;
             this.gunaButton17.FocusedColor = System.Drawing.Color.Empty;
             this.gunaButton17.Font = new System.Drawing.Font("Trebuchet MS", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gunaButton17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(56)))));
+            this.gunaButton17.ForeColor = System.Drawing.Color.Black;
             this.gunaButton17.Image = null;
             this.gunaButton17.ImageSize = new System.Drawing.Size(20, 20);
             this.gunaButton17.Location = new System.Drawing.Point(488, 189);
@@ -728,12 +711,12 @@
             this.gunaButton16.AnimationHoverSpeed = 0.07F;
             this.gunaButton16.AnimationSpeed = 0.03F;
             this.gunaButton16.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton16.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(47)))), ((int)(((byte)(40)))));
+            this.gunaButton16.BaseColor = System.Drawing.Color.White;
             this.gunaButton16.BorderColor = System.Drawing.Color.Black;
             this.gunaButton16.DialogResult = System.Windows.Forms.DialogResult.None;
             this.gunaButton16.FocusedColor = System.Drawing.Color.Empty;
             this.gunaButton16.Font = new System.Drawing.Font("Trebuchet MS", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gunaButton16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(56)))));
+            this.gunaButton16.ForeColor = System.Drawing.Color.Black;
             this.gunaButton16.Image = null;
             this.gunaButton16.ImageSize = new System.Drawing.Size(20, 20);
             this.gunaButton16.Location = new System.Drawing.Point(300, 189);
@@ -755,12 +738,12 @@
             this.gunaButton14.AnimationHoverSpeed = 0.07F;
             this.gunaButton14.AnimationSpeed = 0.03F;
             this.gunaButton14.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton14.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(47)))), ((int)(((byte)(40)))));
+            this.gunaButton14.BaseColor = System.Drawing.Color.White;
             this.gunaButton14.BorderColor = System.Drawing.Color.Black;
             this.gunaButton14.DialogResult = System.Windows.Forms.DialogResult.None;
             this.gunaButton14.FocusedColor = System.Drawing.Color.Empty;
             this.gunaButton14.Font = new System.Drawing.Font("Trebuchet MS", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gunaButton14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(56)))));
+            this.gunaButton14.ForeColor = System.Drawing.Color.Black;
             this.gunaButton14.Image = null;
             this.gunaButton14.ImageSize = new System.Drawing.Size(20, 20);
             this.gunaButton14.Location = new System.Drawing.Point(488, 119);
@@ -783,12 +766,12 @@
             this.gunaButton15.AnimationHoverSpeed = 0.07F;
             this.gunaButton15.AnimationSpeed = 0.03F;
             this.gunaButton15.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton15.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(47)))), ((int)(((byte)(40)))));
+            this.gunaButton15.BaseColor = System.Drawing.Color.White;
             this.gunaButton15.BorderColor = System.Drawing.Color.Black;
             this.gunaButton15.DialogResult = System.Windows.Forms.DialogResult.None;
             this.gunaButton15.FocusedColor = System.Drawing.Color.Empty;
             this.gunaButton15.Font = new System.Drawing.Font("Trebuchet MS", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gunaButton15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(56)))));
+            this.gunaButton15.ForeColor = System.Drawing.Color.Black;
             this.gunaButton15.Image = null;
             this.gunaButton15.ImageSize = new System.Drawing.Size(20, 20);
             this.gunaButton15.Location = new System.Drawing.Point(112, 189);
@@ -810,12 +793,12 @@
             this.gunaButton13.AnimationHoverSpeed = 0.07F;
             this.gunaButton13.AnimationSpeed = 0.03F;
             this.gunaButton13.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton13.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(47)))), ((int)(((byte)(40)))));
+            this.gunaButton13.BaseColor = System.Drawing.Color.White;
             this.gunaButton13.BorderColor = System.Drawing.Color.Black;
             this.gunaButton13.DialogResult = System.Windows.Forms.DialogResult.None;
             this.gunaButton13.FocusedColor = System.Drawing.Color.Empty;
             this.gunaButton13.Font = new System.Drawing.Font("Trebuchet MS", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gunaButton13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(56)))));
+            this.gunaButton13.ForeColor = System.Drawing.Color.Black;
             this.gunaButton13.Image = null;
             this.gunaButton13.ImageSize = new System.Drawing.Size(20, 20);
             this.gunaButton13.Location = new System.Drawing.Point(300, 119);
@@ -838,12 +821,12 @@
             this.gunaButton12.AnimationHoverSpeed = 0.07F;
             this.gunaButton12.AnimationSpeed = 0.03F;
             this.gunaButton12.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton12.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(47)))), ((int)(((byte)(40)))));
+            this.gunaButton12.BaseColor = System.Drawing.Color.White;
             this.gunaButton12.BorderColor = System.Drawing.Color.Black;
             this.gunaButton12.DialogResult = System.Windows.Forms.DialogResult.None;
             this.gunaButton12.FocusedColor = System.Drawing.Color.Empty;
             this.gunaButton12.Font = new System.Drawing.Font("Trebuchet MS", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gunaButton12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(197)))), ((int)(((byte)(56)))));
+            this.gunaButton12.ForeColor = System.Drawing.Color.Black;
             this.gunaButton12.Image = null;
             this.gunaButton12.ImageSize = new System.Drawing.Size(20, 20);
             this.gunaButton12.Location = new System.Drawing.Point(112, 119);
@@ -883,8 +866,6 @@
             this.Load += new System.EventHandler(this.Admin_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ClientPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.AllDataGridView)).EndInit();
             this.choosepanel.ResumeLayout(false);
@@ -899,7 +880,6 @@
         private Guna.UI.WinForms.GunaDragControl gunaDragControl1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private Guna.UI.WinForms.GunaButton UserButton;
         private Guna.UI.WinForms.GunaButton gunaButton2;
         private Guna.UI.WinForms.GunaButton gunaButton1;
