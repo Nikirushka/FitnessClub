@@ -29,7 +29,7 @@ namespace Fitness
 
         }
         int UserID;
-        public NewWorker(int UserID_,string sur, string name,string patr, string phone, string email, string login, string pass, DateTime birth, string rost)
+        public NewWorker(int UserID_, string sur, string name, string patr, string phone, string email, string login, string pass, DateTime birth)
         {
             InitializeComponent();
             gunaButton1.Show();
@@ -41,7 +41,6 @@ namespace Fitness
             gunaTextBox5.Text = email;
             gunaTextBox6.Text = login;
             gunaTextBox7.Text = pass;
-            gunaTextBox9.Text= rost.ToString();
 
             gunaDateTimePicker1.Value = birth;
             UserID = UserID_;
@@ -56,7 +55,7 @@ namespace Fitness
 
         private void NewClient_Load(object sender, EventArgs e)
         {
-            gunaDateTimePicker1.Value = DateTime.Now ;
+            gunaDateTimePicker1.Value = DateTime.Now;
         }
 
         private void gunaTextBox7_TextChanged(object sender, EventArgs e)
@@ -85,42 +84,36 @@ namespace Fitness
         }
         private void gunaButton5_Click(object sender, EventArgs e)
         {
-            if (IsDigitsOnly(gunaTextBox9.Text))
-            {
-                try
-                {
 
-                    connection = new SqlConnection(connectionString);
-                    connection.Open();
-                    string query = $"insert into [User] values(N'{gunaTextBox2.Text}',N'{gunaTextBox1.Text}',N'{gunaTextBox3.Text}',N'{gunaTextBox4.Text}',N'{gunaTextBox5.Text}',N'{gunaTextBox6.Text}',N'{gunaTextBox7.Text}',N'{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}',GETDATE())";
-                    cmd = new SqlCommand(query, connection);
-                    cmd.ExecuteNonQuery();
-                    query = $"exec GetID N'{gunaTextBox6.Text}',N'{gunaTextBox7.Text}'";
-                    cmd = new SqlCommand(query, connection);
-                    reader = cmd.ExecuteReader();
-                    int UserID = 0;
-                    while (reader.Read())
-                    {
-                        UserID = reader.GetInt32(0);
-                    }
-                    reader.Close();
-                    query = $"insert into [Worker] values({UserID},N'{gunaTextBox9.Text}')";
-                    cmd = new SqlCommand(query, connection);
-                    reader = cmd.ExecuteReader();
-                    connection.Close();
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-                MessageBox.Show("Работник успешно добавлен", "Работник добавлен", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                this.Close();
-            }
-            else
+            try
             {
-                MessageBox.Show("Неправильный ввод", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
+
+                connection = new SqlConnection(connectionString);
+                connection.Open();
+                string query = $"insert into [User] values(N'{gunaTextBox2.Text}',N'{gunaTextBox1.Text}',N'{gunaTextBox3.Text}',N'{gunaTextBox4.Text}',N'{gunaTextBox5.Text}',N'{gunaTextBox6.Text}',N'{gunaTextBox7.Text}',N'{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}',GETDATE())";
+                cmd = new SqlCommand(query, connection);
+                cmd.ExecuteNonQuery();
+                query = $"exec GetID N'{gunaTextBox6.Text}',N'{gunaTextBox7.Text}'";
+                cmd = new SqlCommand(query, connection);
+                reader = cmd.ExecuteReader();
+                int UserID = 0;
+                while (reader.Read())
+                {
+                    UserID = reader.GetInt32(0);
+                }
+                reader.Close();
+                query = $"insert into [Admin] values({UserID})";
+                cmd = new SqlCommand(query, connection);
+                reader = cmd.ExecuteReader();
+                connection.Close();
             }
-            
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            MessageBox.Show("Работник успешно добавлен", "Работник добавлен", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            this.Close();
+
         }
 
         private void gunaButton1_Click(object sender, EventArgs e)
@@ -130,9 +123,6 @@ namespace Fitness
                 connection = new SqlConnection(connectionString);
                 connection.Open();
                 string query = $"update [User] set Surname=N'{gunaTextBox2.Text}', Name=N'{gunaTextBox1.Text}', Patronymic=N'{gunaTextBox3.Text}', Phone=N'{gunaTextBox4.Text}', Date_birth=N'{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}', Email=N'{gunaTextBox5.Text}',Login=N'{gunaTextBox6.Text}',Password=N'{gunaTextBox7.Text}' where ID_user={UserID}";
-                cmd = new SqlCommand(query, connection);
-                cmd.ExecuteNonQuery();
-                query = $"update [Worker] set Salary=N'{gunaTextBox9.Text}' where ID_user={UserID}";
                 cmd = new SqlCommand(query, connection);
                 cmd.ExecuteNonQuery();
                 connection.Close();
@@ -186,7 +176,6 @@ namespace Fitness
 
         private void gunaTextBox9_Enter(object sender, EventArgs e)
         {
-            gunaTextBox9.Text = "";
         }
     }
 }

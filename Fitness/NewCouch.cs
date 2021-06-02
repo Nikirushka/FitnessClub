@@ -58,7 +58,6 @@ namespace Fitness
 
         private void NewClient_Load(object sender, EventArgs e)
         {
-
         }
 
         private void gunaTextBox7_TextChanged(object sender, EventArgs e)

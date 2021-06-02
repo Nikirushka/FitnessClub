@@ -117,22 +117,8 @@ namespace Fitness
                                 else
                                 {
                                     reader.Close();
-                                    query = $"SELECT * FROM [Worker] WHERE [ID_user]='{UserID}'";
-                                    cmd = new SqlCommand(query, connection);
-                                    reader = cmd.ExecuteReader();
-                                    if (reader.HasRows)
-                                    {
-                                        reader.Close();
-                                        this.Hide();
-                                        Client client = new Client(UserID);
-                                        DialogResult dialogResult = new DialogResult();
-                                        dialogResult = client.ShowDialog();
-                                        this.Show();
-                                    }
-                                    else
-                                    {
-
-                                    }
+                                    MessageBox.Show("Ошибка подключения", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                    return;
                                 }
                             }
                         }  

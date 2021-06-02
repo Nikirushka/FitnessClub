@@ -417,6 +417,7 @@ namespace Fitness
 
         private void gunaButton2_Click(object sender, EventArgs e)
         {
+            choosepanel.Hide();
             mainpanel.Hide();
             ClientPanel.Show();
             UpdateWorker();
@@ -465,6 +466,9 @@ namespace Fitness
 
         private void gunaButton3_Click(object sender, EventArgs e)
         {
+            choosepanel.Hide();
+            ClientPanel.Show();
+            mainpanel.Hide();
             gunaButton20.Visible = false;
             gunaButton19.Visible = false;
             gunaButton18.Visible = false;
@@ -506,14 +510,13 @@ namespace Fitness
             string ee = (AllDataGridView[4, index].Value.ToString());
             string f = (AllDataGridView[5, index].Value.ToString());
             string g = (AllDataGridView[6, index].Value.ToString());
-            string h = (AllDataGridView[8, index].Value.ToString());
             DateTime date = Convert.ToDateTime((AllDataGridView[7, index].Value));
             int index1 = 0;
             foreach (DataGridViewCell cell in AllDataGridView.SelectedCells)
             {
                 index1 = cell.RowIndex;
             }
-            string query = $"select * from [user] join worker on [User].ID_user=worker.Id_user";
+            string query = $"select * from [user] join admin on [User].ID_user=admin.Id_user";
             AllDataGridView.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             AllDataGridView.AllowUserToAddRows = false;
 
@@ -532,7 +535,7 @@ namespace Fitness
 
             string choose_id = (AllDataGridView[0, index1].Value.ToString());
             UpdateWorker();
-            NewWorker newWorker = new NewWorker(Convert.ToInt32(choose_id), a, b, c, d, ee, f, g, date, h);
+            NewWorker newWorker = new NewWorker(Convert.ToInt32(choose_id), a, b, c, d, ee, f, g, date);
             DialogResult dialogResult = new DialogResult();
             dialogResult = newWorker.ShowDialog();
             UpdateWorker();
@@ -548,7 +551,7 @@ namespace Fitness
                 {
                     index = cell.RowIndex;
                 }
-                string query = $"select * from [user] join worker on [User].ID_user=worker.Id_user";
+                string query = $"select * from [user] join admin on [User].ID_user=admin.Id_user";
                 AllDataGridView.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
                 AllDataGridView.AllowUserToAddRows = false;
 
@@ -567,13 +570,13 @@ namespace Fitness
 
                 string choose_id = (AllDataGridView[0, index].Value.ToString());
 
-                string delQuery = $"DELETE FROM [worker] WHERE ID_user = {choose_id}";
+                string delQuery = $"DELETE FROM [admin] WHERE ID_user = {choose_id}";
 
 
                 cmd = new SqlCommand(delQuery, connection);
 
                 cmd.ExecuteNonQuery();
-                delQuery = $"DELETE FROM [worker] WHERE ID_user = {choose_id}";
+                delQuery = $"DELETE FROM [admin] WHERE ID_user = {choose_id}";
 
 
                 cmd = new SqlCommand(delQuery, connection);
@@ -587,6 +590,11 @@ namespace Fitness
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void gunaButton4_Click_1(object sender, EventArgs e)
+        {
+            choosepanel.Hide();
         }
     }
 }

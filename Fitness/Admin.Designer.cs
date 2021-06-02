@@ -86,7 +86,7 @@
             this.label2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label2.Font = new System.Drawing.Font("Trebuchet MS", 20.25F);
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(771, 1);
+            this.label2.Location = new System.Drawing.Point(983, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(30, 35);
             this.label2.TabIndex = 7;
@@ -112,7 +112,7 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(-1, -1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 68);
+            this.panel1.Size = new System.Drawing.Size(1025, 68);
             this.panel1.TabIndex = 8;
             // 
             // gunaButton11
@@ -169,6 +169,7 @@
             this.gunaButton4.TabIndex = 14;
             this.gunaButton4.Text = "Статистика";
             this.gunaButton4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaButton4.Click += new System.EventHandler(this.gunaButton4_Click_1);
             // 
             // gunaButton3
             // 
@@ -306,9 +307,9 @@
             this.ClientPanel.Controls.Add(this.gunaButton6);
             this.ClientPanel.Controls.Add(this.gunaButton5);
             this.ClientPanel.Controls.Add(this.AllDataGridView);
-            this.ClientPanel.Location = new System.Drawing.Point(9, 71);
+            this.ClientPanel.Location = new System.Drawing.Point(9, 85);
             this.ClientPanel.Name = "ClientPanel";
-            this.ClientPanel.Size = new System.Drawing.Size(776, 365);
+            this.ClientPanel.Size = new System.Drawing.Size(997, 518);
             this.ClientPanel.TabIndex = 9;
             // 
             // gunaButton18
@@ -325,7 +326,7 @@
             this.gunaButton18.ForeColor = System.Drawing.Color.Black;
             this.gunaButton18.Image = null;
             this.gunaButton18.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton18.Location = new System.Drawing.Point(447, 311);
+            this.gunaButton18.Location = new System.Drawing.Point(601, 457);
             this.gunaButton18.Name = "gunaButton18";
             this.gunaButton18.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton18.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -353,7 +354,7 @@
             this.gunaButton19.ForeColor = System.Drawing.Color.Black;
             this.gunaButton19.Image = null;
             this.gunaButton19.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton19.Location = new System.Drawing.Point(281, 311);
+            this.gunaButton19.Location = new System.Drawing.Point(435, 457);
             this.gunaButton19.Name = "gunaButton19";
             this.gunaButton19.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton19.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -381,7 +382,7 @@
             this.gunaButton20.ForeColor = System.Drawing.Color.Black;
             this.gunaButton20.Image = null;
             this.gunaButton20.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton20.Location = new System.Drawing.Point(115, 311);
+            this.gunaButton20.Location = new System.Drawing.Point(269, 457);
             this.gunaButton20.Name = "gunaButton20";
             this.gunaButton20.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton20.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -409,7 +410,7 @@
             this.gunaButton10.ForeColor = System.Drawing.Color.Black;
             this.gunaButton10.Image = null;
             this.gunaButton10.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton10.Location = new System.Drawing.Point(447, 311);
+            this.gunaButton10.Location = new System.Drawing.Point(601, 457);
             this.gunaButton10.Name = "gunaButton10";
             this.gunaButton10.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton10.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -437,7 +438,7 @@
             this.gunaButton7.ForeColor = System.Drawing.Color.Black;
             this.gunaButton7.Image = null;
             this.gunaButton7.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton7.Location = new System.Drawing.Point(447, 311);
+            this.gunaButton7.Location = new System.Drawing.Point(601, 457);
             this.gunaButton7.Name = "gunaButton7";
             this.gunaButton7.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton7.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -465,7 +466,7 @@
             this.gunaButton9.ForeColor = System.Drawing.Color.Black;
             this.gunaButton9.Image = null;
             this.gunaButton9.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton9.Location = new System.Drawing.Point(281, 311);
+            this.gunaButton9.Location = new System.Drawing.Point(435, 457);
             this.gunaButton9.Name = "gunaButton9";
             this.gunaButton9.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton9.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -493,7 +494,7 @@
             this.gunaButton8.ForeColor = System.Drawing.Color.Black;
             this.gunaButton8.Image = null;
             this.gunaButton8.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton8.Location = new System.Drawing.Point(115, 311);
+            this.gunaButton8.Location = new System.Drawing.Point(269, 457);
             this.gunaButton8.Name = "gunaButton8";
             this.gunaButton8.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton8.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -521,7 +522,7 @@
             this.gunaButton6.ForeColor = System.Drawing.Color.Black;
             this.gunaButton6.Image = null;
             this.gunaButton6.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton6.Location = new System.Drawing.Point(281, 311);
+            this.gunaButton6.Location = new System.Drawing.Point(435, 457);
             this.gunaButton6.Name = "gunaButton6";
             this.gunaButton6.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton6.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -549,7 +550,7 @@
             this.gunaButton5.ForeColor = System.Drawing.Color.Black;
             this.gunaButton5.Image = null;
             this.gunaButton5.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton5.Location = new System.Drawing.Point(115, 311);
+            this.gunaButton5.Location = new System.Drawing.Point(269, 457);
             this.gunaButton5.Name = "gunaButton5";
             this.gunaButton5.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton5.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -599,7 +600,7 @@
             this.AllDataGridView.ReadOnly = true;
             this.AllDataGridView.RowHeadersVisible = false;
             this.AllDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.AllDataGridView.Size = new System.Drawing.Size(759, 295);
+            this.AllDataGridView.Size = new System.Drawing.Size(985, 441);
             this.AllDataGridView.TabIndex = 0;
             this.AllDataGridView.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Ember;
             this.AllDataGridView.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(248)))), ((int)(((byte)(196)))));
@@ -641,9 +642,9 @@
             // mainpanel
             // 
             this.mainpanel.BackColor = System.Drawing.Color.Yellow;
-            this.mainpanel.Location = new System.Drawing.Point(12, 71);
+            this.mainpanel.Location = new System.Drawing.Point(12, 82);
             this.mainpanel.Name = "mainpanel";
-            this.mainpanel.Size = new System.Drawing.Size(776, 364);
+            this.mainpanel.Size = new System.Drawing.Size(1000, 521);
             this.mainpanel.TabIndex = 11;
             // 
             // gunaElipse4
@@ -661,16 +662,16 @@
             this.choosepanel.Controls.Add(this.gunaButton15);
             this.choosepanel.Controls.Add(this.gunaButton13);
             this.choosepanel.Controls.Add(this.gunaButton12);
-            this.choosepanel.Location = new System.Drawing.Point(6, 70);
+            this.choosepanel.Location = new System.Drawing.Point(10, 82);
             this.choosepanel.Name = "choosepanel";
-            this.choosepanel.Size = new System.Drawing.Size(776, 365);
+            this.choosepanel.Size = new System.Drawing.Size(1002, 521);
             this.choosepanel.TabIndex = 10;
             // 
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(0, 10);
+            this.label1.Location = new System.Drawing.Point(112, 107);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(776, 61);
             this.label1.TabIndex = 3;
@@ -691,7 +692,7 @@
             this.gunaButton17.ForeColor = System.Drawing.Color.Black;
             this.gunaButton17.Image = null;
             this.gunaButton17.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton17.Location = new System.Drawing.Point(488, 189);
+            this.gunaButton17.Location = new System.Drawing.Point(600, 286);
             this.gunaButton17.Name = "gunaButton17";
             this.gunaButton17.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton17.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -719,7 +720,7 @@
             this.gunaButton16.ForeColor = System.Drawing.Color.Black;
             this.gunaButton16.Image = null;
             this.gunaButton16.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton16.Location = new System.Drawing.Point(300, 189);
+            this.gunaButton16.Location = new System.Drawing.Point(412, 286);
             this.gunaButton16.Name = "gunaButton16";
             this.gunaButton16.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton16.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -746,7 +747,7 @@
             this.gunaButton14.ForeColor = System.Drawing.Color.Black;
             this.gunaButton14.Image = null;
             this.gunaButton14.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton14.Location = new System.Drawing.Point(488, 119);
+            this.gunaButton14.Location = new System.Drawing.Point(600, 216);
             this.gunaButton14.Name = "gunaButton14";
             this.gunaButton14.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton14.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -774,7 +775,7 @@
             this.gunaButton15.ForeColor = System.Drawing.Color.Black;
             this.gunaButton15.Image = null;
             this.gunaButton15.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton15.Location = new System.Drawing.Point(112, 189);
+            this.gunaButton15.Location = new System.Drawing.Point(224, 286);
             this.gunaButton15.Name = "gunaButton15";
             this.gunaButton15.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton15.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -801,7 +802,7 @@
             this.gunaButton13.ForeColor = System.Drawing.Color.Black;
             this.gunaButton13.Image = null;
             this.gunaButton13.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton13.Location = new System.Drawing.Point(300, 119);
+            this.gunaButton13.Location = new System.Drawing.Point(412, 216);
             this.gunaButton13.Name = "gunaButton13";
             this.gunaButton13.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton13.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -829,7 +830,7 @@
             this.gunaButton12.ForeColor = System.Drawing.Color.Black;
             this.gunaButton12.Image = null;
             this.gunaButton12.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton12.Location = new System.Drawing.Point(112, 119);
+            this.gunaButton12.Location = new System.Drawing.Point(224, 216);
             this.gunaButton12.Name = "gunaButton12";
             this.gunaButton12.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton12.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -852,11 +853,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(47)))), ((int)(((byte)(40)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1024, 615);
+            this.Controls.Add(this.ClientPanel);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.choosepanel);
-            this.Controls.Add(this.ClientPanel);
             this.Controls.Add(this.mainpanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

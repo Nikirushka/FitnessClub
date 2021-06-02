@@ -184,5 +184,10 @@ namespace Fitness
         {
             gunaTextBox9.Text = "";
         }
+
+        private void gunaLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

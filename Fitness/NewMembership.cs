@@ -66,6 +66,25 @@ namespace Fitness
         private void ReferenceForAdmin_Load(object sender, EventArgs e)
         {
             Cat();
+            if(abon==0)
+            {
+                label5.Text = "АБОНЕМЕНТ РАЗОВЫЙ\n 1 ПОСЕЩЕНИЕ\n14 РУБЛЕЙ\n КРУГЛОСУТОЧНО";
+            }else if (abon==1)
+            {
+                label5.Text = "СЕМЕЙНЫЙ БЕЗЛИМИТ\n НЕОГРАНИЧЕННОЕ КОЛ-ВО ПОСЕЩЕНИЙ\n 149 РУБЛЕЙ";
+            }
+            else if (abon == 2)
+            {
+                label5.Text = "СТУДЕНЧЕКИЙ БЕЗЛИМИТ\n НЕОГРАНИЧЕННОЕ КОЛ-ВО ПОСЕЩЕНИЙ\n 59 РУБЛЕЙ";
+            }
+            else if (abon == 3)
+            {
+                label5.Text = "БЕЗЛИМИТ\n НЕОГРАНИЧЕННОЕ КОЛ-ВО ПОСЕЩЕНИЙ\n 74 РУБЛЕЙ";
+            }
+            else if (abon == 4)
+            {
+                label5.Text = "ы";
+            }
         }
 
         private void gunaButton2_Click(object sender, EventArgs e)
@@ -116,7 +135,62 @@ namespace Fitness
 
         private void gunaButton1_Click(object sender, EventArgs e)
         {
+            int CouchID=0;
+            try
+            {
+                connection = new SqlConnection(connectionString);
+                connection.Open();
+                string query1 = $"exec GetCouch N'{gunaComboBox1.Text}'";
+                cmd = new SqlCommand(query1, connection);
+                reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                   CouchID = reader.GetInt32(0);
+                    
+                }
+                connection.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            string query = $"INSERT INTO [Subscription] VALUES ({CouchID},{UserID},'1','1',1,1,'{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}','{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}',GETDATE())";
+            if (abon == 0)
+            {
+                query = $"INSERT INTO [Subscription] VALUES ({CouchID},{UserID},'2','2',2,2,'{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}','{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}',GETDATE())";
+            }
+            else if (abon == 1)
+            {
+                query = $"INSERT INTO [Subscription] VALUES ({CouchID},{UserID},'3','3',3,3,'{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}','{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}',GETDATE())";
+            }
+            else if (abon == 2)
+            {
+                query = $"INSERT INTO [Subscription] VALUES ({CouchID},{UserID},'4','4',4,4,'{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}','{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}',GETDATE())";
+            }
+            else if (abon == 3)
+            {
+                query = $"INSERT INTO [Subscription] VALUES ({CouchID},{UserID},'5','5',5,5,'{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}','{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}',GETDATE())";
+            }
+            else if (abon == 4)
+            {
+                query = $"INSERT INTO [Subscription] VALUES ({CouchID},{UserID},'6','6',6,6,'{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}','{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}',GETDATE())";
+            }
+            try
+            {
+                connection = new SqlConnection(connectionString);
+                connection.Open();
+                // добавление новой доставки
 
+                
+                cmd = new SqlCommand(query, connection);
+                cmd.ExecuteNonQuery();
+                connection.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            MessageBox.Show("Успешно приобретён абонемент", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

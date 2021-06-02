@@ -118,7 +118,6 @@
             this.LoginTextBox.Radius = 7;
             this.LoginTextBox.Size = new System.Drawing.Size(294, 38);
             this.LoginTextBox.TabIndex = 1;
-            this.LoginTextBox.Text = "Логин";
             this.LoginTextBox.Click += new System.EventHandler(this.LoginTextBox_Click);
             this.LoginTextBox.Enter += new System.EventHandler(this.LoginTextBox_Click);
             // 
@@ -182,7 +181,6 @@
             this.PasswordTextBox.Radius = 7;
             this.PasswordTextBox.Size = new System.Drawing.Size(294, 38);
             this.PasswordTextBox.TabIndex = 2;
-            this.PasswordTextBox.Text = "Пароль";
             this.PasswordTextBox.Enter += new System.EventHandler(this.PasswordTextBox_Click);
             // 
             // gunaElipse1

@@ -17,7 +17,7 @@ namespace Fitness
 
         string connectionString = @"Server=tcp:fitnessclub.database.windows.net,1433;Initial Catalog=fitnessclub;Persist Security Info=False;User ID=Vlad;Password=Chernick123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
 
-        int UserID;
+        int UserID; string ClientID;
         public Client()
         {
             InitializeComponent();
@@ -26,7 +26,15 @@ namespace Fitness
         {
             InitializeComponent();
             UserID = u;
+            connection = new SqlConnection(connectionString);
+            connection.Open();
+            string query = $"SELECT [ID_client] FROM [Client] WHERE [ID_user]={UserID}";
+            cmd = new SqlCommand(query, connection);
+            ClientID = cmd.ExecuteScalar().ToString();
+            connection.Close();
             openChildForm(new Profile(UserID));
+            MembershipDataGrid.Hide();
+            panel5.Hide();
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -71,6 +79,7 @@ namespace Fitness
             buyabon.Hide();
             main_menu.Location = location;
             main_menu.Show();
+            panel5.Hide();
         }
 
         private Form activeForm = null;
@@ -86,12 +95,14 @@ namespace Fitness
             mainpanel.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
+
         }
 
         private void UserButton_Click(object sender, EventArgs e)
         {
             openChildForm(new Profile(UserID));
             buyabon.Hide();
+            panel5.Hide();
         }
 
         private void gunaButton1_Click(object sender, EventArgs e)
@@ -99,11 +110,13 @@ namespace Fitness
             buyabon.Show();
             mainpanel.Hide();
             main_menu.Hide();
+            panel5.Hide();
         }
 
         private void gunaButton2_Click(object sender, EventArgs e)
         {
             buyabon.Hide();
+            panel5.Hide();
         }
 
         private void gunaButton19_Click(object sender, EventArgs e)
@@ -113,31 +126,53 @@ namespace Fitness
             openChildForm(new Profile(UserID));
             buyabon.Hide();
             main_menu.Hide();
+            panel5.Hide();
             mainpanel.Location = location;
             mainpanel.Show();
         }
 
         private void gunaButton5_Click(object sender, EventArgs e)
         {
+
             gunaButton1.Show();
             gunaButton1.Location = but_loc;
             buyabon.Location = location;
             mainpanel.Hide();
             buyabon.Show();
-
+            panel5.Hide();
             main_menu.Hide();
         }
 
         private void gunaButton6_Click(object sender, EventArgs e)
         {
+            UpdateMemberships();
+            MembershipDataGrid.Show();
             gunaButton1.Show();
             gunaButton1.Location = but_loc;
-            openChildForm(new Profile(UserID));
-            mainpanel.Location = location;
+            panel5.Show();
+            panel5.Location = location;
+            mainpanel.Hide();
             buyabon.Hide();
             main_menu.Hide();
         }
 
+        private void UpdateMemberships()
+        {
+            try
+            {
+                string query = $"exec ClientMemberships N'{UserID}'";
+                connection = new SqlConnection(connectionString);
+                connection.Open();
+                SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
+                DataSet ds = new DataSet();
+                adapter.Fill(ds);
+                MembershipDataGrid.DataSource = ds.Tables[0];
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
         private void gunaButton8_Click(object sender, EventArgs e)
         {
             gunaButton1.Show();
@@ -179,6 +214,7 @@ namespace Fitness
             buyabon.Hide();
             main_menu.Show();
             gunaButton1.Hide();
+            panel5.Hide();
         }
 
         Point but_loc = new Point(407, 525);

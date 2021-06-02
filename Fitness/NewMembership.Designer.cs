@@ -41,6 +41,8 @@ namespace Fitness
             this.label2 = new System.Windows.Forms.Label();
             this.gunaDateTimePicker1 = new Guna.UI.WinForms.GunaDateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // gunaElipse1
@@ -51,7 +53,7 @@ namespace Fitness
             // gunaLabel1
             // 
             this.gunaLabel1.Font = new System.Drawing.Font("Trebuchet MS", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.gunaLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(47)))), ((int)(((byte)(40)))));
+            this.gunaLabel1.ForeColor = System.Drawing.Color.Black;
             this.gunaLabel1.Location = new System.Drawing.Point(12, 9);
             this.gunaLabel1.Name = "gunaLabel1";
             this.gunaLabel1.Size = new System.Drawing.Size(377, 35);
@@ -63,7 +65,7 @@ namespace Fitness
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(47)))), ((int)(((byte)(40)))));
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(23, 123);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(205, 27);
@@ -106,7 +108,7 @@ namespace Fitness
             this.gunaButton1.ForeColor = System.Drawing.Color.Black;
             this.gunaButton1.Image = null;
             this.gunaButton1.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton1.Location = new System.Drawing.Point(132, 257);
+            this.gunaButton1.Location = new System.Drawing.Point(132, 398);
             this.gunaButton1.Name = "gunaButton1";
             this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton1.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -172,7 +174,7 @@ namespace Fitness
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(47)))), ((int)(((byte)(40)))));
+            this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(24, 57);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(222, 27);
@@ -205,19 +207,43 @@ namespace Fitness
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(47)))), ((int)(((byte)(40)))));
+            this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(25, 189);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(267, 27);
             this.label3.TabIndex = 26;
             this.label3.Text = "Дата первой тренировки :";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(25, 254);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(240, 27);
+            this.label4.TabIndex = 27;
+            this.label4.Text = "Описание абонемента :";
+            // 
+            // label5
+            // 
+            this.label5.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(25, 281);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(364, 114);
+            this.label5.TabIndex = 28;
+            this.label5.Text = "ТЕКСТ";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // NewMembership
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Yellow;
-            this.ClientSize = new System.Drawing.Size(419, 310);
+            this.ClientSize = new System.Drawing.Size(419, 457);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.gunaDateTimePicker1);
             this.Controls.Add(this.gunaComboBox2);
@@ -250,5 +276,7 @@ namespace Fitness
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private Guna.UI.WinForms.GunaDateTimePicker gunaDateTimePicker1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
     }
 }
