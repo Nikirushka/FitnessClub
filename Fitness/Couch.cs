@@ -52,9 +52,11 @@ namespace Fitness
 
         private void Client_Load(object sender, EventArgs e)
         {
+            mainpanel.Location = Point;
+            mainpanel.Show();
+            Clients.Hide();
             openChildForm(new Profile(UserID, 1));
-            AllDataGridView.Hide();
-            gunaButton19.Hide();
+
         }
 
         private Form activeForm = null;
@@ -71,18 +73,23 @@ namespace Fitness
             childForm.BringToFront();
             childForm.Show();
         }
-
+        Point Point = new Point(10, 74);
         private void UserButton_Click(object sender, EventArgs e)
         {
+            Clients.Hide();
+            mainpanel.Location = Point;
+            mainpanel.Show();
             openChildForm(new Profile(UserID,1));
-            AllDataGridView.Hide();
-            gunaButton19.Hide();
+            
         }
 
         private void gunaButton1_Click(object sender, EventArgs e)
         {
-            AllDataGridView.Show();
-            gunaButton19.Show();
+            UpdateClients();
+            mainpanel.Hide();
+            Clients.Show();
+            Clients.Location = Point;
+
         }
 
         private void gunaButton2_Click(object sender, EventArgs e)
@@ -97,8 +104,9 @@ namespace Fitness
 
         private void gunaButton3_Click(object sender, EventArgs e)
         {
-            AllDataGridView.Hide();
-            gunaButton19.Hide();
+            openChildForm(new ReferenceForCouch());
+            Clients.Hide();
+            mainpanel.Show();
         }
 
         private void UpdateClients()
@@ -121,6 +129,38 @@ namespace Fitness
             {
                 MessageBox.Show(ex.Message);
             }
+
+        }
+
+        private void gunaButton5_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string query = $"exec FindClients N'{UserID}',N'%{gunaTextBox2.Text}%'";
+
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+                    adapter = new SqlDataAdapter(query, connection);
+
+                    dataSet = new DataSet();
+                    adapter.Fill(dataSet);
+                    AllDataGridView.DataSource = dataSet.Tables[0];
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void gunaTextBox2_Enter(object sender, EventArgs e)
+        {
+            gunaTextBox2.Text = "";
+        }
+
+        private void gunaButton19_Click(object sender, EventArgs e)
+        {
 
         }
     }

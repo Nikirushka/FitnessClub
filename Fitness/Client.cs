@@ -17,7 +17,7 @@ namespace Fitness
 
         string connectionString = @"Server=tcp:fitnessclub.database.windows.net,1433;Initial Catalog=fitnessclub;Persist Security Info=False;User ID=Vlad;Password=Chernick123;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;";
 
-        int UserID; string ClientID;
+        int UserID; int ClientID;
         public Client()
         {
             InitializeComponent();
@@ -26,15 +26,10 @@ namespace Fitness
         {
             InitializeComponent();
             UserID = u;
-            connection = new SqlConnection(connectionString);
-            connection.Open();
-            string query = $"SELECT [ID_client] FROM [Client] WHERE [ID_user]={UserID}";
-            cmd = new SqlCommand(query, connection);
-            ClientID = cmd.ExecuteScalar().ToString();
-            connection.Close();
             openChildForm(new Profile(UserID));
             MembershipDataGrid.Hide();
             panel5.Hide();
+            groupBox1.Hide();
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -67,6 +62,23 @@ namespace Fitness
                 while (reader.Read())
                 {
                     label11.Text = $"Здравствуйте, {reader.GetString(0)}!\nВыберите действие :";
+                }
+                connection.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            try
+            {
+                connection = new SqlConnection(connectionString);
+                connection.Open();
+                string query = $"select [id_client] from [client] where [id_user]= {UserID}";
+                cmd = new SqlCommand(query, connection);
+                reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    ClientID = reader.GetInt32(0);
                 }
                 connection.Close();
             }
@@ -154,6 +166,7 @@ namespace Fitness
             mainpanel.Hide();
             buyabon.Hide();
             main_menu.Hide();
+            groupBox1.Hide();
         }
 
         private void UpdateMemberships()
@@ -167,6 +180,43 @@ namespace Fitness
                 DataSet ds = new DataSet();
                 adapter.Fill(ds);
                 MembershipDataGrid.DataSource = ds.Tables[0];
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        private void UpdateTrainings()
+        {
+            try
+            {
+                string query = $"exec ClientTrainings N'{UserID}'";
+                connection = new SqlConnection(connectionString);
+                connection.Open();
+                SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
+                DataSet ds = new DataSet();
+                adapter.Fill(ds);
+                MembershipDataGrid.DataSource = ds.Tables[0];
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+        private void UpdateTrainingsDates()
+        {
+            try
+            {
+                string query = $"exec ClientTrainingsDates N'{UserID}',N'{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}',N'{gunaDateTimePicker2.Value.ToString("yyyy-MM-dd")}'";
+                connection = new SqlConnection(connectionString);
+                connection.Open();
+                cmd = new SqlCommand(query, connection);
+                reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    label15.Text = reader.GetInt32(0).ToString();              
+                }
+                connection.Close();
             }
             catch (Exception ex)
             {
@@ -197,8 +247,16 @@ namespace Fitness
 
         private void gunaButton7_Click(object sender, EventArgs e)
         {
+            UpdateTrainings();
+            MembershipDataGrid.Show();
             gunaButton1.Show();
             gunaButton1.Location = but_loc;
+            panel5.Show();
+            panel5.Location = location;
+            mainpanel.Hide();
+            buyabon.Hide();
+            main_menu.Hide();
+            groupBox1.Show();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -228,7 +286,7 @@ namespace Fitness
 
         private void gunaButton3_Click(object sender, EventArgs e)
         {
-            NewMembership newMembership = new NewMembership(UserID, 0);
+            NewMembership newMembership = new NewMembership(ClientID, 0);
             DialogResult dialogResult = new DialogResult();
             dialogResult = newMembership.ShowDialog();
             this.Show();
@@ -236,7 +294,7 @@ namespace Fitness
 
         private void gunaButton4_Click(object sender, EventArgs e)
         {
-            NewMembership newMembership = new NewMembership(UserID,1);
+            NewMembership newMembership = new NewMembership(ClientID, 1);
             DialogResult dialogResult = new DialogResult();
             dialogResult = newMembership.ShowDialog();
             this.Show();
@@ -244,7 +302,7 @@ namespace Fitness
 
         private void gunaButton10_Click(object sender, EventArgs e)
         {
-            NewMembership newMembership = new NewMembership(UserID,2);
+            NewMembership newMembership = new NewMembership(ClientID, 2);
             DialogResult dialogResult = new DialogResult();
             dialogResult = newMembership.ShowDialog();
             this.Show();
@@ -252,10 +310,15 @@ namespace Fitness
 
         private void gunaButton11_Click(object sender, EventArgs e)
         {
-            NewMembership newMembership = new NewMembership(UserID, 3);
+            NewMembership newMembership = new NewMembership(ClientID, 3);
             DialogResult dialogResult = new DialogResult();
             dialogResult = newMembership.ShowDialog();
             this.Show();
+        }
+
+        private void gunaButton12_Click(object sender, EventArgs e)
+        {
+            UpdateTrainingsDates();
         }
     }
 }

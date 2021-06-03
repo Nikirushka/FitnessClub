@@ -27,11 +27,11 @@ namespace Fitness
             InitializeComponent();
         }
         int abon;
-        public NewMembership(int user,int nom)
+        public NewMembership(int Client,int nom)
         {
             InitializeComponent();
             abon = nom;
-            UserID = user;
+            UserID = Client;
         }
         
         private void Cat()
@@ -85,6 +85,7 @@ namespace Fitness
             {
                 label5.Text = "ы";
             }
+            gunaDateTimePicker1.Value = DateTime.Now;
         }
 
         private void gunaButton2_Click(object sender, EventArgs e)
@@ -191,6 +192,11 @@ namespace Fitness
                 MessageBox.Show(ex.Message);
             }
             MessageBox.Show("Успешно приобретён абонемент", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -49,10 +49,12 @@
             this.gunaElipse3 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.buyabon = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
             this.gunaButton11 = new Guna.UI.WinForms.GunaButton();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
             this.gunaButton10 = new Guna.UI.WinForms.GunaButton();
             this.label7 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -70,10 +72,15 @@
             this.gunaElipse4 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
             this.gunaButton2 = new Guna.UI.WinForms.GunaButton();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.gunaButton12 = new Guna.UI.WinForms.GunaButton();
+            this.label14 = new System.Windows.Forms.Label();
+            this.gunaDateTimePicker1 = new Guna.UI.WinForms.GunaDateTimePicker();
+            this.gunaDateTimePicker2 = new Guna.UI.WinForms.GunaDateTimePicker();
             this.MembershipDataGrid = new Guna.UI.WinForms.GunaDataGridView();
+            this.gunaElipse5 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.main_menu.SuspendLayout();
             this.buyabon.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -81,6 +88,7 @@
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MembershipDataGrid)).BeginInit();
             this.SuspendLayout();
             // 
@@ -109,7 +117,7 @@
             this.main_menu.Controls.Add(this.gunaButton5);
             this.main_menu.Controls.Add(this.gunaButton19);
             this.main_menu.Controls.Add(this.label11);
-            this.main_menu.Location = new System.Drawing.Point(71, 12);
+            this.main_menu.Location = new System.Drawing.Point(392, 297);
             this.main_menu.Name = "main_menu";
             this.main_menu.Size = new System.Drawing.Size(1011, 592);
             this.main_menu.TabIndex = 12;
@@ -197,7 +205,7 @@
             this.gunaButton7.Radius = 15;
             this.gunaButton7.Size = new System.Drawing.Size(260, 140);
             this.gunaButton7.TabIndex = 11;
-            this.gunaButton7.Text = "Динамика";
+            this.gunaButton7.Text = "Статистика";
             this.gunaButton7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.gunaButton7.Click += new System.EventHandler(this.gunaButton7_Click);
             // 
@@ -303,7 +311,7 @@
             // mainpanel
             // 
             this.mainpanel.BackColor = System.Drawing.Color.Yellow;
-            this.mainpanel.Location = new System.Drawing.Point(928, 50);
+            this.mainpanel.Location = new System.Drawing.Point(761, 163);
             this.mainpanel.Name = "mainpanel";
             this.mainpanel.Size = new System.Drawing.Size(1011, 592);
             this.mainpanel.TabIndex = 10;
@@ -326,7 +334,7 @@
             this.buyabon.Controls.Add(this.panel2);
             this.buyabon.Controls.Add(this.panel1);
             this.buyabon.Controls.Add(this.panel3);
-            this.buyabon.Location = new System.Drawing.Point(683, 524);
+            this.buyabon.Location = new System.Drawing.Point(687, 250);
             this.buyabon.Name = "buyabon";
             this.buyabon.Size = new System.Drawing.Size(1011, 592);
             this.buyabon.TabIndex = 11;
@@ -342,6 +350,16 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(214, 234);
             this.panel4.TabIndex = 0;
+            // 
+            // label10
+            // 
+            this.label10.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label10.Location = new System.Drawing.Point(3, 102);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(208, 68);
+            this.label10.TabIndex = 11;
+            this.label10.Text = "1 месяц\r\nНеограниченное кол-во\r\nпосещений\r\n";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // gunaButton11
             // 
@@ -403,6 +421,16 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(214, 234);
             this.panel2.TabIndex = 0;
+            // 
+            // label6
+            // 
+            this.label6.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label6.Location = new System.Drawing.Point(5, 102);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(208, 68);
+            this.label6.TabIndex = 10;
+            this.label6.Text = "1 месяц\r\nНеограниченное кол-во\r\nпосещений\r\n";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // gunaButton10
             // 
@@ -619,7 +647,7 @@
             this.gunaButton1.ForeColor = System.Drawing.Color.Black;
             this.gunaButton1.Image = null;
             this.gunaButton1.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton1.Location = new System.Drawing.Point(12, 418);
+            this.gunaButton1.Location = new System.Drawing.Point(3, 578);
             this.gunaButton1.Name = "gunaButton1";
             this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.Yellow;
             this.gunaButton1.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -648,7 +676,7 @@
             this.gunaButton2.ForeColor = System.Drawing.Color.Black;
             this.gunaButton2.Image = null;
             this.gunaButton2.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton2.Location = new System.Drawing.Point(13, 483);
+            this.gunaButton2.Location = new System.Drawing.Point(1003, 1);
             this.gunaButton2.Name = "gunaButton2";
             this.gunaButton2.OnHoverBaseColor = System.Drawing.Color.Yellow;
             this.gunaButton2.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -662,34 +690,123 @@
             this.gunaButton2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.gunaButton2.Click += new System.EventHandler(this.gunaButton2_Click_1);
             // 
-            // label6
-            // 
-            this.label6.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.Location = new System.Drawing.Point(5, 102);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(208, 68);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "1 месяц\r\nНеограниченное кол-во\r\nпосещений\r\n";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // label10
-            // 
-            this.label10.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label10.Location = new System.Drawing.Point(3, 102);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(208, 68);
-            this.label10.TabIndex = 11;
-            this.label10.Text = "1 месяц\r\nНеограниченное кол-во\r\nпосещений\r\n";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Yellow;
+            this.panel5.Controls.Add(this.groupBox1);
             this.panel5.Controls.Add(this.MembershipDataGrid);
-            this.panel5.Location = new System.Drawing.Point(213, 568);
+            this.panel5.Location = new System.Drawing.Point(216, 554);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1011, 592);
             this.panel5.TabIndex = 14;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.label15);
+            this.groupBox1.Controls.Add(this.gunaButton12);
+            this.groupBox1.Controls.Add(this.label14);
+            this.groupBox1.Controls.Add(this.gunaDateTimePicker1);
+            this.groupBox1.Controls.Add(this.gunaDateTimePicker2);
+            this.groupBox1.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Bold);
+            this.groupBox1.Location = new System.Drawing.Point(15, 370);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(985, 91);
+            this.groupBox1.TabIndex = 5;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Количество посещений за период:";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(134, 44);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(27, 29);
+            this.label15.TabIndex = 10;
+            this.label15.Text = "0";
+            // 
+            // gunaButton12
+            // 
+            this.gunaButton12.Animated = true;
+            this.gunaButton12.AnimationHoverSpeed = 0.07F;
+            this.gunaButton12.AnimationSpeed = 0.03F;
+            this.gunaButton12.BackColor = System.Drawing.Color.Transparent;
+            this.gunaButton12.BaseColor = System.Drawing.Color.Yellow;
+            this.gunaButton12.BorderColor = System.Drawing.Color.Black;
+            this.gunaButton12.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gunaButton12.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaButton12.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaButton12.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.gunaButton12.ForeColor = System.Drawing.Color.Black;
+            this.gunaButton12.Image = null;
+            this.gunaButton12.ImageSize = new System.Drawing.Size(20, 20);
+            this.gunaButton12.Location = new System.Drawing.Point(779, 34);
+            this.gunaButton12.Name = "gunaButton12";
+            this.gunaButton12.OnHoverBaseColor = System.Drawing.Color.Yellow;
+            this.gunaButton12.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaButton12.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaButton12.OnHoverImage = null;
+            this.gunaButton12.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaButton12.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.gunaButton12.Size = new System.Drawing.Size(190, 40);
+            this.gunaButton12.TabIndex = 9;
+            this.gunaButton12.Text = "Посчитать";
+            this.gunaButton12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaButton12.Click += new System.EventHandler(this.gunaButton12_Click);
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(577, 40);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(22, 29);
+            this.label14.TabIndex = 5;
+            this.label14.Text = "-";
+            // 
+            // gunaDateTimePicker1
+            // 
+            this.gunaDateTimePicker1.BaseColor = System.Drawing.Color.White;
+            this.gunaDateTimePicker1.BorderColor = System.Drawing.Color.Silver;
+            this.gunaDateTimePicker1.CustomFormat = null;
+            this.gunaDateTimePicker1.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.gunaDateTimePicker1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaDateTimePicker1.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.gunaDateTimePicker1.ForeColor = System.Drawing.Color.Black;
+            this.gunaDateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.gunaDateTimePicker1.Location = new System.Drawing.Point(403, 40);
+            this.gunaDateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.gunaDateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.gunaDateTimePicker1.Name = "gunaDateTimePicker1";
+            this.gunaDateTimePicker1.OnHoverBaseColor = System.Drawing.Color.White;
+            this.gunaDateTimePicker1.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaDateTimePicker1.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaDateTimePicker1.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaDateTimePicker1.Size = new System.Drawing.Size(168, 30);
+            this.gunaDateTimePicker1.TabIndex = 3;
+            this.gunaDateTimePicker1.Text = "03.06.2021";
+            this.gunaDateTimePicker1.Value = new System.DateTime(2021, 6, 3, 22, 6, 58, 201);
+            // 
+            // gunaDateTimePicker2
+            // 
+            this.gunaDateTimePicker2.BaseColor = System.Drawing.Color.White;
+            this.gunaDateTimePicker2.BorderColor = System.Drawing.Color.Silver;
+            this.gunaDateTimePicker2.CustomFormat = null;
+            this.gunaDateTimePicker2.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.gunaDateTimePicker2.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaDateTimePicker2.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.gunaDateTimePicker2.ForeColor = System.Drawing.Color.Black;
+            this.gunaDateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.gunaDateTimePicker2.Location = new System.Drawing.Point(605, 40);
+            this.gunaDateTimePicker2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.gunaDateTimePicker2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.gunaDateTimePicker2.Name = "gunaDateTimePicker2";
+            this.gunaDateTimePicker2.OnHoverBaseColor = System.Drawing.Color.White;
+            this.gunaDateTimePicker2.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaDateTimePicker2.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gunaDateTimePicker2.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaDateTimePicker2.Size = new System.Drawing.Size(168, 30);
+            this.gunaDateTimePicker2.TabIndex = 4;
+            this.gunaDateTimePicker2.Text = "03.06.2021";
+            this.gunaDateTimePicker2.Value = new System.DateTime(2021, 6, 3, 22, 6, 58, 201);
             // 
             // MembershipDataGrid
             // 
@@ -722,12 +839,12 @@
             this.MembershipDataGrid.DefaultCellStyle = dataGridViewCellStyle3;
             this.MembershipDataGrid.EnableHeadersVisualStyles = false;
             this.MembershipDataGrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(235)))), ((int)(((byte)(177)))));
-            this.MembershipDataGrid.Location = new System.Drawing.Point(13, 76);
+            this.MembershipDataGrid.Location = new System.Drawing.Point(14, 8);
             this.MembershipDataGrid.Name = "MembershipDataGrid";
             this.MembershipDataGrid.ReadOnly = true;
             this.MembershipDataGrid.RowHeadersVisible = false;
             this.MembershipDataGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.MembershipDataGrid.Size = new System.Drawing.Size(985, 441);
+            this.MembershipDataGrid.Size = new System.Drawing.Size(985, 356);
             this.MembershipDataGrid.TabIndex = 1;
             this.MembershipDataGrid.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Ember;
             this.MembershipDataGrid.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(248)))), ((int)(((byte)(196)))));
@@ -752,6 +869,11 @@
             this.MembershipDataGrid.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(213)))), ((int)(((byte)(89)))));
             this.MembershipDataGrid.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             // 
+            // gunaElipse5
+            // 
+            this.gunaElipse5.Radius = 10;
+            this.gunaElipse5.TargetControl = this.panel5;
+            // 
             // Client
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -760,10 +882,10 @@
             this.ClientSize = new System.Drawing.Size(1024, 615);
             this.Controls.Add(this.gunaButton2);
             this.Controls.Add(this.gunaButton1);
-            this.Controls.Add(this.panel5);
             this.Controls.Add(this.buyabon);
             this.Controls.Add(this.main_menu);
             this.Controls.Add(this.mainpanel);
+            this.Controls.Add(this.panel5);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Client";
@@ -777,6 +899,8 @@
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MembershipDataGrid)).EndInit();
             this.ResumeLayout(false);
 
@@ -825,5 +949,12 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Panel panel5;
         private Guna.UI.WinForms.GunaDataGridView MembershipDataGrid;
+        private Guna.UI.WinForms.GunaElipse gunaElipse5;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label15;
+        private Guna.UI.WinForms.GunaButton gunaButton12;
+        private System.Windows.Forms.Label label14;
+        private Guna.UI.WinForms.GunaDateTimePicker gunaDateTimePicker1;
+        private Guna.UI.WinForms.GunaDateTimePicker gunaDateTimePicker2;
     }
 }

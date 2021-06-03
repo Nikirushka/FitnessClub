@@ -235,6 +235,7 @@ namespace Fitness
             this.label5.TabIndex = 28;
             this.label5.Text = "ТЕКСТ";
             this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // NewMembership
             // 

@@ -49,18 +49,18 @@ namespace Fitness
             this.pictureBox1.Image = global::Fitness.Properties.Resources._bwcxQXHKlo;
             this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(241, 238);
+            this.pictureBox1.Size = new System.Drawing.Size(561, 568);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(47)))), ((int)(((byte)(40)))));
-            this.label1.Location = new System.Drawing.Point(251, 12);
+            this.label1.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(596, 184);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(523, 24);
+            this.label1.Size = new System.Drawing.Size(394, 24);
             this.label1.TabIndex = 1;
             this.label1.Text = "О программе\r\n";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -68,11 +68,11 @@ namespace Fitness
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(47)))), ((int)(((byte)(40)))));
-            this.label2.Location = new System.Drawing.Point(315, 47);
+            this.label2.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(591, 219);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(382, 108);
+            this.label2.Size = new System.Drawing.Size(399, 108);
             this.label2.TabIndex = 2;
             this.label2.Text = "Программа создана для фитнес клуба\r\n\"Колизей\"!\r\nСоздатель - Черник Владислав\r\n202" +
     "1\r\n";
@@ -81,11 +81,11 @@ namespace Fitness
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(47)))), ((int)(((byte)(40)))));
-            this.label3.Location = new System.Drawing.Point(414, 223);
+            this.label3.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(690, 395);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(192, 27);
+            this.label3.Size = new System.Drawing.Size(203, 27);
             this.label3.TabIndex = 3;
             this.label3.Text = "chernik@gmail.com";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -95,7 +95,7 @@ namespace Fitness
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Yellow;
-            this.ClientSize = new System.Drawing.Size(776, 262);
+            this.ClientSize = new System.Drawing.Size(1011, 592);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
