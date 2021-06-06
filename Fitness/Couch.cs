@@ -54,8 +54,10 @@ namespace Fitness
         {
             mainpanel.Location = Point;
             mainpanel.Show();
+            trainings.Hide();
             Clients.Hide();
             openChildForm(new Profile(UserID, 1));
+            Trainings();
 
         }
 
@@ -77,14 +79,17 @@ namespace Fitness
         private void UserButton_Click(object sender, EventArgs e)
         {
             Clients.Hide();
+            trainings.Hide();
             mainpanel.Location = Point;
             mainpanel.Show();
-            openChildForm(new Profile(UserID,1));
-            
+            openChildForm(new Profile(UserID, 1));
+
+
         }
 
         private void gunaButton1_Click(object sender, EventArgs e)
         {
+            trainings.Hide();
             UpdateClients();
             mainpanel.Hide();
             Clients.Show();
@@ -94,7 +99,12 @@ namespace Fitness
 
         private void gunaButton2_Click(object sender, EventArgs e)
         {
-           
+            Trainings();
+            trainings.Show();
+            UpdateClients();
+            mainpanel.Hide();
+            Clients.Hide();
+            trainings.Location = Point;
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -132,6 +142,48 @@ namespace Fitness
 
         }
 
+        private void Trainings()
+        {
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+                    string query = $"exec CouchProfileInfo {UserID}";
+                    cmd = new SqlCommand(query, connection);
+                    reader = cmd.ExecuteReader();
+                    string surn = "";
+                    while (reader.Read())
+                    {
+                        surn = reader.GetString(0);
+                    }
+                    reader.Close();
+                    int CouchID = 0;
+                    query = $"exec GetCouch N'{surn}'";
+                    cmd = new SqlCommand(query, connection);
+                    reader = cmd.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        CouchID = reader.GetInt32(0);
+
+                    }
+                    reader.Close();
+                    query = $"select [User].Surname as Клиент, Description as Описание, Date as Дата from Trainings  join Client on Client.ID_client = Trainings.ID_client join[User] on[User].ID_user = Client.ID_user where ID_couch = N'{CouchID}'";
+
+                    adapter = new SqlDataAdapter(query, connection);
+
+                    dataSet = new DataSet();
+                    adapter.Fill(dataSet);
+                    trainingsDataGrid.DataSource = dataSet.Tables[0];
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+        }
+
         private void gunaButton5_Click(object sender, EventArgs e)
         {
             try
@@ -160,6 +212,59 @@ namespace Fitness
         }
 
         private void gunaButton19_Click(object sender, EventArgs e)
+        {
+            int index = 0;
+            foreach (DataGridViewCell cell in AllDataGridView.SelectedCells)
+            {
+                index = cell.RowIndex;
+            }
+            string a = (AllDataGridView[0, index].Value.ToString());
+
+            int ClientID = 0;
+            try
+            {
+                connection = new SqlConnection(connectionString);
+                connection.Open();
+                string query1 = $"exec GetClient N'{a}'";
+                cmd = new SqlCommand(query1, connection);
+                reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    ClientID = reader.GetInt32(0);
+                }
+                reader.Close();
+                string query = $"exec CouchProfileInfo {UserID}";
+                cmd = new SqlCommand(query, connection);
+                reader = cmd.ExecuteReader();
+                string surn = "";
+                while (reader.Read())
+                {
+                    surn = reader.GetString(0);
+                }
+                reader.Close();
+                int CouchID = 0;
+                query = $"exec GetCouch N'{surn}'";
+                cmd = new SqlCommand(query1, connection);
+                reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    CouchID = reader.GetInt32(0);
+
+                }
+                reader.Close();
+                connection.Close();
+                NewTraining newTraining = new NewTraining(ClientID, CouchID, a);
+                DialogResult dialogResult = new DialogResult();
+                dialogResult = newTraining.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void gunaButton4_Click(object sender, EventArgs e)
         {
 
         }

@@ -46,9 +46,9 @@ namespace Fitness
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Fitness.Properties.Resources._bwcxQXHKlo;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 39);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(241, 238);
+            this.pictureBox1.Size = new System.Drawing.Size(395, 391);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -56,10 +56,10 @@ namespace Fitness
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(47)))), ((int)(((byte)(40)))));
-            this.label1.Location = new System.Drawing.Point(251, 12);
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(12, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(523, 24);
+            this.label1.Size = new System.Drawing.Size(987, 24);
             this.label1.TabIndex = 1;
             this.label1.Text = "Справка для клиента";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -68,8 +68,8 @@ namespace Fitness
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(47)))), ((int)(((byte)(40)))));
-            this.label3.Location = new System.Drawing.Point(259, 78);
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(732, 151);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(31, 135);
             this.label3.TabIndex = 3;
@@ -80,7 +80,7 @@ namespace Fitness
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Yellow;
-            this.ClientSize = new System.Drawing.Size(776, 364);
+            this.ClientSize = new System.Drawing.Size(1011, 592);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);

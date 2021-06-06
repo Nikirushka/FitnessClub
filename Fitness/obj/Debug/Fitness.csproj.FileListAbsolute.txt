@@ -65,3 +65,4 @@ D:\Fitness\Fitness\bin\Debug\Fitness.exe.config
 D:\Fitness\Fitness\bin\Debug\Fitness.exe
 D:\Fitness\Fitness\bin\Debug\Fitness.pdb
 D:\Fitness\Fitness\obj\Debug\Fitness.csproj.CopyComplete
+D:\Fitness\Fitness\obj\Debug\Fitness.NewTraining.resources

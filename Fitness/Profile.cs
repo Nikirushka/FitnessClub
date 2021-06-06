@@ -13,6 +13,7 @@ namespace Fitness
 {
     public partial class Profile : Form
     {
+        int s1=0;
         SqlConnection connection = null;
         SqlDataReader reader = null;
         SqlCommand cmd;
@@ -32,6 +33,7 @@ namespace Fitness
             UpdateProfile();
             gunaLabel10.Text = "Рост";
             gunaLabel9.Text = "Вес";
+            s1 = 0;
         }
         public Profile(int uid,int s)
         {
@@ -40,6 +42,7 @@ namespace Fitness
             UpdateProfileCouch();
             gunaLabel10.Text = "Специализация";
             gunaLabel9.Text = "Стаж";
+            s1 = s;
         }
 
         private void UpdateProfile()
@@ -109,22 +112,45 @@ namespace Fitness
         }
         private void EditButton_Click(object sender, EventArgs e)
         {
-            try
+            if(s1==0)
             {
-                connection = new SqlConnection(connectionString);
-                connection.Open();
-                string query = $"UPDATE [User] SET Surname =N'{gunaTextBox1.Text}', Name =N'{gunaTextBox2.Text}', Patronymic =N'{gunaTextBox3.Text}', [Phone] =N'{gunaTextBox4.Text}', Email =N'{gunaTextBox5.Text}', Login =N'{gunaTextBox6.Text}', [Password]=N'{gunaTextBox7.Text}',[Date_birth]=N'{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}' WHERE [id_user]={UserID}";
-                cmd = new SqlCommand(query, connection);
-                cmd.ExecuteNonQuery();
-                query = $"UPDATE [Client] SET Height =N'{gunaTextBox9.Text}', Weight =N'{gunaTextBox8.Text}' WHERE [id_user]={UserID}";
-                cmd = new SqlCommand(query, connection);
-                cmd.ExecuteNonQuery();
-                connection.Close();
+                try
+                {
+                    connection = new SqlConnection(connectionString);
+                    connection.Open();
+                    string query = $"UPDATE [User] SET Surname =N'{gunaTextBox1.Text}', Name =N'{gunaTextBox2.Text}', Patronymic =N'{gunaTextBox3.Text}', [Phone] =N'{gunaTextBox4.Text}', Email =N'{gunaTextBox5.Text}', Login =N'{gunaTextBox6.Text}', [Password]=N'{gunaTextBox7.Text}',[Date_birth]=N'{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}' WHERE [id_user]={UserID}";
+                    cmd = new SqlCommand(query, connection);
+                    cmd.ExecuteNonQuery();
+                    query = $"UPDATE [Client] SET Height =N'{gunaTextBox9.Text}', Weight =N'{gunaTextBox8.Text}' WHERE [id_user]={UserID}";
+                    cmd = new SqlCommand(query, connection);
+                    cmd.ExecuteNonQuery();
+                    connection.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show(ex.Message);
+                try
+                {
+                    connection = new SqlConnection(connectionString);
+                    connection.Open();
+                    string query = $"UPDATE [User] SET Surname =N'{gunaTextBox1.Text}', Name =N'{gunaTextBox2.Text}', Patronymic =N'{gunaTextBox3.Text}', [Phone] =N'{gunaTextBox4.Text}', Email =N'{gunaTextBox5.Text}', Login =N'{gunaTextBox6.Text}', [Password]=N'{gunaTextBox7.Text}',[Date_birth]=N'{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}' WHERE [id_user]={UserID}";
+                    cmd = new SqlCommand(query, connection);
+                    cmd.ExecuteNonQuery();
+                    query = $"UPDATE [Couch] SET Specialization =N'{gunaTextBox9.Text}', Work_exp =N'{gunaTextBox8.Text}' WHERE [id_user]={UserID}";
+                    cmd = new SqlCommand(query, connection);
+                    cmd.ExecuteNonQuery();
+                    connection.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
             }
+           
 
             UpdateProfile();
         }

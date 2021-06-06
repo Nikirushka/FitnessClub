@@ -92,6 +92,8 @@ namespace Fitness
             main_menu.Location = location;
             main_menu.Show();
             panel5.Hide();
+            gunaDateTimePicker1.Value = DateTime.Now;
+            gunaDateTimePicker2.Value = DateTime.Now;
         }
 
         private Form activeForm = null;

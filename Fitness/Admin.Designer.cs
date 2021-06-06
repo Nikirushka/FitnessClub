@@ -69,6 +69,7 @@
             this.gunaButton13 = new Guna.UI.WinForms.GunaButton();
             this.gunaButton12 = new Guna.UI.WinForms.GunaButton();
             this.gunaElipse5 = new Guna.UI.WinForms.GunaElipse(this.components);
+            this.gunaButton21 = new Guna.UI.WinForms.GunaButton();
             this.panel1.SuspendLayout();
             this.ClientPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AllDataGridView)).BeginInit();
@@ -297,6 +298,7 @@
             // ClientPanel
             // 
             this.ClientPanel.BackColor = System.Drawing.Color.Yellow;
+            this.ClientPanel.Controls.Add(this.gunaButton21);
             this.ClientPanel.Controls.Add(this.gunaButton18);
             this.ClientPanel.Controls.Add(this.gunaButton19);
             this.ClientPanel.Controls.Add(this.gunaButton20);
@@ -307,7 +309,7 @@
             this.ClientPanel.Controls.Add(this.gunaButton6);
             this.ClientPanel.Controls.Add(this.gunaButton5);
             this.ClientPanel.Controls.Add(this.AllDataGridView);
-            this.ClientPanel.Location = new System.Drawing.Point(9, 85);
+            this.ClientPanel.Location = new System.Drawing.Point(10, 82);
             this.ClientPanel.Name = "ClientPanel";
             this.ClientPanel.Size = new System.Drawing.Size(997, 518);
             this.ClientPanel.TabIndex = 9;
@@ -787,6 +789,7 @@
             this.gunaButton15.TabIndex = 2;
             this.gunaButton15.Text = "Тренировки";
             this.gunaButton15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaButton15.Click += new System.EventHandler(this.gunaButton3_Click);
             // 
             // gunaButton13
             // 
@@ -848,6 +851,34 @@
             // 
             this.gunaElipse5.Radius = 10;
             this.gunaElipse5.TargetControl = this.choosepanel;
+            // 
+            // gunaButton21
+            // 
+            this.gunaButton21.Animated = true;
+            this.gunaButton21.AnimationHoverSpeed = 0.07F;
+            this.gunaButton21.AnimationSpeed = 0.03F;
+            this.gunaButton21.BackColor = System.Drawing.Color.Transparent;
+            this.gunaButton21.BaseColor = System.Drawing.Color.White;
+            this.gunaButton21.BorderColor = System.Drawing.Color.Black;
+            this.gunaButton21.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaButton21.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaButton21.Font = new System.Drawing.Font("Trebuchet MS", 12F);
+            this.gunaButton21.ForeColor = System.Drawing.Color.Black;
+            this.gunaButton21.Image = null;
+            this.gunaButton21.ImageSize = new System.Drawing.Size(20, 20);
+            this.gunaButton21.Location = new System.Drawing.Point(433, 457);
+            this.gunaButton21.Name = "gunaButton21";
+            this.gunaButton21.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.gunaButton21.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaButton21.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaButton21.OnHoverImage = null;
+            this.gunaButton21.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaButton21.Radius = 15;
+            this.gunaButton21.Size = new System.Drawing.Size(160, 42);
+            this.gunaButton21.TabIndex = 9;
+            this.gunaButton21.Text = "Удалить";
+            this.gunaButton21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaButton21.Click += new System.EventHandler(this.gunaButton21_Click);
             // 
             // Admin
             // 
@@ -912,5 +943,6 @@
         private Guna.UI.WinForms.GunaButton gunaButton18;
         private Guna.UI.WinForms.GunaButton gunaButton19;
         private Guna.UI.WinForms.GunaButton gunaButton20;
+        private Guna.UI.WinForms.GunaButton gunaButton21;
     }
 }

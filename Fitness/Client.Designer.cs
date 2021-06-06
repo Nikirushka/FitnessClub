@@ -695,7 +695,7 @@
             this.panel5.BackColor = System.Drawing.Color.Yellow;
             this.panel5.Controls.Add(this.groupBox1);
             this.panel5.Controls.Add(this.MembershipDataGrid);
-            this.panel5.Location = new System.Drawing.Point(216, 554);
+            this.panel5.Location = new System.Drawing.Point(298, 501);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1011, 592);
             this.panel5.TabIndex = 14;
@@ -708,7 +708,7 @@
             this.groupBox1.Controls.Add(this.gunaDateTimePicker1);
             this.groupBox1.Controls.Add(this.gunaDateTimePicker2);
             this.groupBox1.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Bold);
-            this.groupBox1.Location = new System.Drawing.Point(15, 370);
+            this.groupBox1.Location = new System.Drawing.Point(15, 385);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(985, 91);
             this.groupBox1.TabIndex = 5;
@@ -839,7 +839,7 @@
             this.MembershipDataGrid.DefaultCellStyle = dataGridViewCellStyle3;
             this.MembershipDataGrid.EnableHeadersVisualStyles = false;
             this.MembershipDataGrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(235)))), ((int)(((byte)(177)))));
-            this.MembershipDataGrid.Location = new System.Drawing.Point(14, 8);
+            this.MembershipDataGrid.Location = new System.Drawing.Point(14, 23);
             this.MembershipDataGrid.Name = "MembershipDataGrid";
             this.MembershipDataGrid.ReadOnly = true;
             this.MembershipDataGrid.RowHeadersVisible = false;

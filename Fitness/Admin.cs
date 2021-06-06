@@ -117,6 +117,29 @@ namespace Fitness
 
         }
 
+        private void UpdateTranings()
+        {
+            try
+            {
+                string query = $"Select [User].Surname, TrainingsAll.[Тренер],TrainingsAll.[Специализация],TrainingsAll.[Описание], TrainingsAll.[Дата] from TrainingsAll inner join [Client] on [Client].ID_client = TrainingsAll.ID_client inner join [User] on[User].ID_user = Client.ID_user";
+
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+                    adapter = new SqlDataAdapter(query, connection);
+
+                    dataSet = new DataSet();
+                    adapter.Fill(dataSet);
+                    AllDataGridView.DataSource = dataSet.Tables[0];
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+        }
+
 
         private void Admin_Load(object sender, EventArgs e)
         {
@@ -247,6 +270,8 @@ namespace Fitness
             mainpanel.Hide();
             UpdateCouch();
             gunaButton20.Visible = false;
+            gunaButton21.Visible = false;
+
             gunaButton19.Visible = false;
             gunaButton18.Visible = false;
             gunaButton5.Visible = false;
@@ -269,6 +294,8 @@ namespace Fitness
             gunaButton20.Visible = false;
             gunaButton19.Visible = false;
             gunaButton18.Visible = false;
+            gunaButton21.Visible = false;
+
             gunaButton5.Visible = true;
             gunaButton6.Visible = true;
             gunaButton7.Visible = true;
@@ -407,6 +434,8 @@ namespace Fitness
             gunaButton20.Visible = false;
             gunaButton19.Visible = false;
             gunaButton18.Visible = false;
+            gunaButton21.Visible = false;
+
             gunaButton8.Visible = false;
             gunaButton9.Visible = false;
             gunaButton10.Visible = false;
@@ -421,6 +450,8 @@ namespace Fitness
             mainpanel.Hide();
             ClientPanel.Show();
             UpdateWorker();
+            gunaButton21.Visible = false;
+
             gunaButton20.Visible = true;
             gunaButton19.Visible = true;
             gunaButton18.Visible = true;
@@ -466,6 +497,7 @@ namespace Fitness
 
         private void gunaButton3_Click(object sender, EventArgs e)
         {
+            UpdateTranings();
             choosepanel.Hide();
             ClientPanel.Show();
             mainpanel.Hide();
@@ -478,6 +510,8 @@ namespace Fitness
             gunaButton5.Visible = false;
             gunaButton6.Visible = false;
             gunaButton7.Visible = false;
+            gunaButton21.Visible = true;
+
         }
 
         private void gunaButton4_Click(object sender, EventArgs e)
@@ -595,6 +629,57 @@ namespace Fitness
         private void gunaButton4_Click_1(object sender, EventArgs e)
         {
             choosepanel.Hide();
+        }
+
+        private void gunaButton21_Click(object sender, EventArgs e)
+        {
+            //try
+            //{
+
+            //    int index = 0;
+            //    foreach (DataGridViewCell cell in AllDataGridView.SelectedCells)
+            //    {
+            //        index = cell.RowIndex;
+            //    }
+            //    string query = $"select * from [user] join admin on [User].ID_user=admin.Id_user";
+            //    AllDataGridView.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            //    AllDataGridView.AllowUserToAddRows = false;
+
+            //    using (SqlConnection connection = new SqlConnection(connectionString))
+            //    {
+            //        connection.Open();
+            //        adapter = new SqlDataAdapter(query, connection);
+
+            //        dataSet = new DataSet();
+            //        adapter.Fill(dataSet);
+            //        AllDataGridView.DataSource = dataSet.Tables[0];
+            //        connection.Close();
+            //    }
+            //    connection = new SqlConnection(connectionString);
+            //    connection.Open();
+
+            //    string choose_id = (AllDataGridView[0, index].Value.ToString());
+
+            //    string delQuery = $"DELETE FROM [admin] WHERE ID_user = {choose_id}";
+
+
+            //    cmd = new SqlCommand(delQuery, connection);
+
+            //    cmd.ExecuteNonQuery();
+            //    delQuery = $"DELETE FROM [admin] WHERE ID_user = {choose_id}";
+
+
+            //    cmd = new SqlCommand(delQuery, connection);
+
+            //    cmd.ExecuteNonQuery();
+            //    connection.Close();
+            //    UpdateWorker();
+            //}
+
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show(ex.Message);
+            //}
         }
     }
 }
