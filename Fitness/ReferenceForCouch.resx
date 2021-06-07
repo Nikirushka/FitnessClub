@@ -120,6 +120,16 @@
   <metadata name="gunaElipse1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <data name="label3.Text" xml:space="preserve">
+    <value>1) Кнопка "Профиль" - откроется панель с вашими данными, где вы можете их изменить при нажатии на кнопку "Изменить".
+2) Кнопка "Клиенты" -  вам покажутся ваши клиенты, при нажатии на кнопку "Отметить тренировку" - вы заносите информации о выполненной тренировке клиента и нажимаете кнопку "Оформить".
+3) Кнопка "Тренировки" - вы можете прсомотреть информацию о своих тренировках с клиентами.
+4) Кнопка "Статистика" - вы можете просмотреть свою статистику по клиентам.
+5) Кнопка "Справка" - помощь для новых тренеров.
+6) Кнопка "О программе" - информациия о данном программном продукте.
+
+</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

@@ -117,6 +117,8 @@ namespace Fitness
             openChildForm(new ReferenceForCouch());
             Clients.Hide();
             mainpanel.Show();
+            Clients.Hide();
+            trainings.Hide();
         }
 
         private void UpdateClients()
@@ -244,12 +246,11 @@ namespace Fitness
                 reader.Close();
                 int CouchID = 0;
                 query = $"exec GetCouch N'{surn}'";
-                cmd = new SqlCommand(query1, connection);
+                cmd = new SqlCommand(query, connection);
                 reader = cmd.ExecuteReader();
                 while (reader.Read())
                 {
                     CouchID = reader.GetInt32(0);
-
                 }
                 reader.Close();
                 connection.Close();
@@ -267,6 +268,15 @@ namespace Fitness
         private void gunaButton4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void gunaButton6_Click(object sender, EventArgs e)
+        {
+            openChildForm(new About());
+            Clients.Hide();
+            mainpanel.Show();
+            Clients.Hide();
+            trainings.Hide();
         }
     }
 }

@@ -46,9 +46,9 @@ namespace Fitness
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Fitness.Properties.Resources._bwcxQXHKlo;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(17, 85);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(241, 238);
+            this.pictureBox1.Size = new System.Drawing.Size(440, 432);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -57,23 +57,22 @@ namespace Fitness
             // 
             this.label1.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(251, 12);
+            this.label1.Location = new System.Drawing.Point(12, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(523, 24);
+            this.label1.Size = new System.Drawing.Size(987, 24);
             this.label1.TabIndex = 1;
             this.label1.Text = "Справка для тренера";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(259, 78);
+            this.label3.Location = new System.Drawing.Point(463, 95);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(31, 135);
+            this.label3.Size = new System.Drawing.Size(520, 432);
             this.label3.TabIndex = 3;
-            this.label3.Text = "1)\r\n2)\r\n3)\r\n4)\r\n5)";
+            this.label3.Text = resources.GetString("label3.Text");
             // 
             // ReferenceForCouch
             // 
@@ -91,7 +90,6 @@ namespace Fitness
             this.Load += new System.EventHandler(this.ReferenceForAdmin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

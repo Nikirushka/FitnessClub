@@ -117,7 +117,7 @@
             this.main_menu.Controls.Add(this.gunaButton5);
             this.main_menu.Controls.Add(this.gunaButton19);
             this.main_menu.Controls.Add(this.label11);
-            this.main_menu.Location = new System.Drawing.Point(392, 297);
+            this.main_menu.Location = new System.Drawing.Point(24, 25);
             this.main_menu.Name = "main_menu";
             this.main_menu.Size = new System.Drawing.Size(1011, 592);
             this.main_menu.TabIndex = 12;
@@ -695,7 +695,7 @@
             this.panel5.BackColor = System.Drawing.Color.Yellow;
             this.panel5.Controls.Add(this.groupBox1);
             this.panel5.Controls.Add(this.MembershipDataGrid);
-            this.panel5.Location = new System.Drawing.Point(298, 501);
+            this.panel5.Location = new System.Drawing.Point(388, 511);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1011, 592);
             this.panel5.TabIndex = 14;

@@ -120,6 +120,17 @@
   <metadata name="gunaElipse1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <data name="label3.Text" xml:space="preserve">
+    <value>1) Кнопка "Профиль" - откроется панель с вашими данными, где вы можете их изменить при нажатии на кнопку "Изменить".
+2) Кнопка "Купить абонемнт" -  вам предоставляется выбор из различных абонементов, в которомы вы выбираете дату первого посещения, категорию тренировок и тренера. Затем ужно нажать на кнопку "Оформить".
+3) Кнопка "Мои абонементы" - вы можете прсомотреть информацию о своих абонементах.
+4) Кнопка "Статистика" - вы можете просмотреть свои тренировки и описание тренировок, есть возможность подсчитать количество тренировок за определенный период.
+5) Кнопка "Справка" - помощь для новых пользователей.
+6) Кнопка "О программе" - информациия о данном программном продукте.
+
+
+</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

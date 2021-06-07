@@ -175,7 +175,7 @@ namespace Fitness
         {
             try
             {
-                string query = $"exec ClientMemberships N'{UserID}'";
+                string query = $"exec ClientMemberships N'{ClientID}'";
                 connection = new SqlConnection(connectionString);
                 connection.Open();
                 SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
@@ -192,7 +192,7 @@ namespace Fitness
         {
             try
             {
-                string query = $"exec ClientTrainings N'{UserID}'";
+                string query = $"exec ClientTrainings N'{ClientID}'";
                 connection = new SqlConnection(connectionString);
                 connection.Open();
                 SqlDataAdapter adapter = new SqlDataAdapter(query, connection);
@@ -209,7 +209,7 @@ namespace Fitness
         {
             try
             {
-                string query = $"exec ClientTrainingsDates N'{UserID}',N'{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}',N'{gunaDateTimePicker2.Value.ToString("yyyy-MM-dd")}'";
+                string query = $"exec ClientTrainingsDates N'{ClientID}',N'{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}',N'{gunaDateTimePicker2.Value.ToString("yyyy-MM-dd")}'";
                 connection = new SqlConnection(connectionString);
                 connection.Open();
                 cmd = new SqlCommand(query, connection);

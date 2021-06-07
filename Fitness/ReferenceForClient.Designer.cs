@@ -46,7 +46,7 @@ namespace Fitness
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Fitness.Properties.Resources._bwcxQXHKlo;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 39);
+            this.pictureBox1.Location = new System.Drawing.Point(17, 77);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(395, 391);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -66,14 +66,13 @@ namespace Fitness
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(732, 151);
+            this.label3.Location = new System.Drawing.Point(435, 47);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(31, 135);
+            this.label3.Size = new System.Drawing.Size(564, 469);
             this.label3.TabIndex = 3;
-            this.label3.Text = "1)\r\n2)\r\n3)\r\n4)\r\n5)";
+            this.label3.Text = resources.GetString("label3.Text");
             // 
             // ReferenceForClient
             // 
@@ -91,7 +90,6 @@ namespace Fitness
             this.Load += new System.EventHandler(this.ReferenceForAdmin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

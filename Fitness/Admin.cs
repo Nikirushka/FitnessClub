@@ -681,5 +681,24 @@ namespace Fitness
             //    MessageBox.Show(ex.Message);
             //}
         }
+
+        private void gunaButton22_Click(object sender, EventArgs e)
+        {
+            choosepanel.Hide();
+            ClientPanel.Hide();
+            mainpanel.Show();
+            openChildForm(new About());
+            gunaButton20.Visible = false;
+            gunaButton19.Visible = false;
+            gunaButton18.Visible = false;
+            gunaButton21.Visible = false;
+
+            gunaButton8.Visible = false;
+            gunaButton9.Visible = false;
+            gunaButton10.Visible = false;
+            gunaButton5.Visible = false;
+            gunaButton6.Visible = false;
+            gunaButton7.Visible = false;
+        }
     }
 }

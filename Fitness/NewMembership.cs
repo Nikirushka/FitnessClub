@@ -155,26 +155,26 @@ namespace Fitness
             {
                 MessageBox.Show(ex.Message);
             }
-            string query = $"INSERT INTO [Subscription] VALUES ({CouchID},{UserID},'1','1',1,1,'{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}','{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}',GETDATE())";
+            string query = $"INSERT INTO [Subscription] VALUES ({CouchID},{UserID},'1','1',1,'{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}','{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}',GETDATE())";
             if (abon == 0)
             {
-                query = $"INSERT INTO [Subscription] VALUES ({CouchID},{UserID},'2','2',2,2,'{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}','{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}',GETDATE())";
+                query = $"INSERT INTO [Subscription] VALUES ({CouchID},{UserID},'2','2',2,'{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}','{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}',GETDATE())";
             }
             else if (abon == 1)
             {
-                query = $"INSERT INTO [Subscription] VALUES ({CouchID},{UserID},'3','3',3,3,'{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}','{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}',GETDATE())";
+                query = $"INSERT INTO [Subscription] VALUES ({CouchID},{UserID},'3','3',3,'{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}','{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}',GETDATE())";
             }
             else if (abon == 2)
             {
-                query = $"INSERT INTO [Subscription] VALUES ({CouchID},{UserID},'4','4',4,4,'{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}','{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}',GETDATE())";
+                query = $"INSERT INTO [Subscription] VALUES ({CouchID},{UserID},'4','4',4,'{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}','{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}',GETDATE())";
             }
             else if (abon == 3)
             {
-                query = $"INSERT INTO [Subscription] VALUES ({CouchID},{UserID},'5','5',5,5,'{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}','{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}',GETDATE())";
+                query = $"INSERT INTO [Subscription] VALUES ({CouchID},{UserID},'5','5',5,'{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}','{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}',GETDATE())";
             }
             else if (abon == 4)
             {
-                query = $"INSERT INTO [Subscription] VALUES ({CouchID},{UserID},'6','6',6,6,'{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}','{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}',GETDATE())";
+                query = $"INSERT INTO [Subscription] VALUES ({CouchID},{UserID},'6','6',6,'{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}','{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}',GETDATE())";
             }
             try
             {
