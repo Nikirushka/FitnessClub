@@ -53,7 +53,6 @@ D:\Fitness\Fitness\obj\Debug\Fitness.Profile.resources
 D:\Fitness\Fitness\obj\Debug\Fitness.Properties.Resources.resources
 D:\Fitness\Fitness\obj\Debug\Fitness.About.resources
 D:\Fitness\Fitness\obj\Debug\Fitness.NewMembership.resources
-D:\Fitness\Fitness\obj\Debug\Fitness.ReferenceForWorker.resources
 D:\Fitness\Fitness\obj\Debug\Fitness.ReferenceForCouch.resources
 D:\Fitness\Fitness\obj\Debug\Fitness.ReferenceForClient.resources
 D:\Fitness\Fitness\obj\Debug\Fitness.ReferenceForAdmin.resources
@@ -66,3 +65,4 @@ D:\Fitness\Fitness\bin\Debug\Fitness.exe
 D:\Fitness\Fitness\bin\Debug\Fitness.pdb
 D:\Fitness\Fitness\obj\Debug\Fitness.csproj.CopyComplete
 D:\Fitness\Fitness\obj\Debug\Fitness.NewTraining.resources
+D:\Fitness\Fitness\obj\Debug\Fitness.StatForAdmin.resources
