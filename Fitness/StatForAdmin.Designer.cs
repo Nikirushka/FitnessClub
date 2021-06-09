@@ -68,7 +68,7 @@ namespace Fitness
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(987, 37);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Статистика";
+            this.label1.Text = "ОТЧЁТ ПО КЛУБУ";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label2
