@@ -267,7 +267,11 @@ namespace Fitness
 
         private void gunaButton4_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new StatForCouch(UserID));
+            Clients.Hide();
+            mainpanel.Show();
+            Clients.Hide();
+            trainings.Hide();
         }
 
         private void gunaButton6_Click(object sender, EventArgs e)

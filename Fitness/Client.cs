@@ -322,5 +322,101 @@ namespace Fitness
         {
             UpdateTrainingsDates();
         }
+
+        private void gunaButton25_Click(object sender, EventArgs e)
+        {
+            AboutMembership AboutMembership = new AboutMembership(4);
+            DialogResult dialogResult = new DialogResult();
+            dialogResult = AboutMembership.ShowDialog();
+            this.Show();
+        }
+
+        private void gunaButton3_Click_1(object sender, EventArgs e)
+        {
+            AboutMembership AboutMembership = new AboutMembership(0);
+            DialogResult dialogResult = new DialogResult();
+            dialogResult = AboutMembership.ShowDialog();
+            this.Show();
+        }
+
+        private void gunaButton14_Click(object sender, EventArgs e)
+        {
+            AboutMembership AboutMembership = new AboutMembership(1);
+            DialogResult dialogResult = new DialogResult();
+            dialogResult = AboutMembership.ShowDialog();
+            this.Show();
+        }
+
+        private void gunaButton15_Click(object sender, EventArgs e)
+        {
+            AboutMembership AboutMembership = new AboutMembership(2);
+            DialogResult dialogResult = new DialogResult();
+            dialogResult = AboutMembership.ShowDialog();
+            this.Show();
+        }
+
+        private void gunaButton16_Click(object sender, EventArgs e)
+        {
+            AboutMembership AboutMembership = new AboutMembership(3);
+            DialogResult dialogResult = new DialogResult();
+            dialogResult = AboutMembership.ShowDialog();
+            this.Show();
+        }
+
+        private void gunaButton22_Click(object sender, EventArgs e)
+        {
+            AboutMembership AboutMembership = new AboutMembership(5);
+            DialogResult dialogResult = new DialogResult();
+            dialogResult = AboutMembership.ShowDialog();
+            this.Show();
+        }
+
+        private void gunaButton20_Click(object sender, EventArgs e)
+        {
+            AboutMembership AboutMembership = new AboutMembership(6);
+            DialogResult dialogResult = new DialogResult();
+            dialogResult = AboutMembership.ShowDialog();
+            this.Show();
+        }
+
+        private void gunaButton17_Click(object sender, EventArgs e)
+        {
+            AboutMembership AboutMembership = new AboutMembership(7);
+            DialogResult dialogResult = new DialogResult();
+            dialogResult = AboutMembership.ShowDialog();
+            this.Show();
+        }
+
+        private void gunaButton24_Click(object sender, EventArgs e)
+        {
+            NewMembership newMembership = new NewMembership(ClientID,4);
+            DialogResult dialogResult = new DialogResult();
+            dialogResult = newMembership.ShowDialog();
+            this.Show();
+        }
+
+        private void gunaButton23_Click(object sender, EventArgs e)
+        {
+            NewMembership newMembership = new NewMembership(ClientID, 5);
+            DialogResult dialogResult = new DialogResult();
+            dialogResult = newMembership.ShowDialog();
+            this.Show();
+        }
+
+        private void gunaButton21_Click(object sender, EventArgs e)
+        {
+            NewMembership newMembership = new NewMembership(ClientID, 6);
+            DialogResult dialogResult = new DialogResult();
+            dialogResult = newMembership.ShowDialog();
+            this.Show();
+        }
+
+        private void gunaButton18_Click(object sender, EventArgs e)
+        {
+            NewMembership newMembership = new NewMembership(ClientID, 7);
+            DialogResult dialogResult = new DialogResult();
+            dialogResult = newMembership.ShowDialog();
+            this.Show();
+        }
     }
 }

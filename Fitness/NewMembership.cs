@@ -66,10 +66,11 @@ namespace Fitness
         private void ReferenceForAdmin_Load(object sender, EventArgs e)
         {
             Cat();
-            if(abon==0)
+            if (abon == 0)
             {
                 label5.Text = "АБОНЕМЕНТ РАЗОВЫЙ\n 1 ПОСЕЩЕНИЕ\n14 РУБЛЕЙ\n КРУГЛОСУТОЧНО";
-            }else if (abon==1)
+            }
+            else if (abon == 1)
             {
                 label5.Text = "СЕМЕЙНЫЙ БЕЗЛИМИТ\n НЕОГРАНИЧЕННОЕ КОЛ-ВО ПОСЕЩЕНИЙ\n 149 РУБЛЕЙ";
             }
@@ -83,7 +84,19 @@ namespace Fitness
             }
             else if (abon == 4)
             {
-                label5.Text = "ы";
+                label5.Text = "3 МЕСЯЦА БЕЗЛИМИТ\n НЕОГРАНИЧЕННОЕ КОЛ-ВО ПОСЕЩЕНИЙ\n 200 РУБЛЕЙ";
+            }
+            else if (abon == 5)
+            {
+                label5.Text = "6 МЕСЯЦЕВ БЕЗЛИМИТ\n НЕОГРАНИЧЕННОЕ КОЛ-ВО ПОСЕЩЕНИЙ\n 375 РУБЛЕЙ";
+            }
+            else if (abon == 6)
+            {
+                label5.Text = "12 МЕСЯЦЕВ БЕЗЛИМИТ\n НЕОГРАНИЧЕННОЕ КОЛ-ВО ПОСЕЩЕНИЙ\n 750 РУБЛЕЙ";
+            }
+            else if (abon == 7)
+            {
+                label5.Text = "24 МЕСЯЦА БЕЗЛИМИТ\n НЕОГРАНИЧЕННОЕ КОЛ-ВО ПОСЕЩЕНИЙ\n 1400 РУБЛЕЙ";
             }
             gunaDateTimePicker1.Value = DateTime.Now;
         }
@@ -155,26 +168,38 @@ namespace Fitness
             {
                 MessageBox.Show(ex.Message);
             }
-            string query = $"INSERT INTO [Subscription] VALUES ({CouchID},{UserID},'1','1',1,'{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}','{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}',GETDATE())";
+            string query = $"INSERT INTO [Subscription] VALUES ({CouchID},{UserID},N'АБОНЕМЕНТ РАЗОВЫЙ',N'1 ПОСЕЩЕНИЕ',14,'{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}','{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}',DATEADD(DAY, +30, '{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}')";
             if (abon == 0)
             {
-                query = $"INSERT INTO [Subscription] VALUES ({CouchID},{UserID},'2','2',2,'{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}','{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}',GETDATE())";
+                query = $"INSERT INTO [Subscription] VALUES ({CouchID},{UserID},N'АБОНЕМЕНТ РАЗОВЫЙ',N'1 ПОСЕЩЕНИЕ',14,'{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}','{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}',GETDATE())";
             }
             else if (abon == 1)
             {
-                query = $"INSERT INTO [Subscription] VALUES ({CouchID},{UserID},'3','3',3,'{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}','{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}',GETDATE())";
+                query = $"INSERT INTO [Subscription] VALUES ({CouchID},{UserID},N'СЕМЕЙНЫЙ БЕЗЛИМИТ',N'НЕОГРАНИЧЕННОЕ КОЛ-ВО ПОСЕЩЕНИЙ',149,'{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}',DATEADD(DAY, +30, '{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}'),GETDATE())";
             }
             else if (abon == 2)
             {
-                query = $"INSERT INTO [Subscription] VALUES ({CouchID},{UserID},'4','4',4,'{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}','{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}',GETDATE())";
+                query = $"INSERT INTO [Subscription] VALUES ({CouchID},{UserID},N'СТУДЕНЧЕКИЙ БЕЗЛИМИТ',N'НЕОГРАНИЧЕННОЕ КОЛ-ВО ПОСЕЩЕНИЙ',59,'{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}',DATEADD(DAY, +30, '{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}'),GETDATE())";
             }
             else if (abon == 3)
             {
-                query = $"INSERT INTO [Subscription] VALUES ({CouchID},{UserID},'5','5',5,'{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}','{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}',GETDATE())";
+                query = $"INSERT INTO [Subscription] VALUES ({CouchID},{UserID},N'БЕЗЛИМИТ',N'НЕОГРАНИЧЕННОЕ КОЛ-ВО ПОСЕЩЕНИЙ',74,'{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}',DATEADD(DAY, +30, '{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}'),GETDATE())";
             }
             else if (abon == 4)
             {
-                query = $"INSERT INTO [Subscription] VALUES ({CouchID},{UserID},'6','6',6,'{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}','{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}',GETDATE())";
+                query = $"INSERT INTO [Subscription] VALUES ({CouchID},{UserID},N'3 МЕСЯЦА БЕЗЛИМИТ',N'НЕОГРАНИЧЕННОЕ КОЛ-ВО ПОСЕЩЕНИЙ',200,'{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}',DATEADD(DAY, +90, '{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}'),GETDATE())";
+            }
+            else if (abon == 5)
+            {
+                query = $"INSERT INTO [Subscription] VALUES ({CouchID},{UserID},N'6 МЕСЯЦЕВ БЕЗЛИМИТ',N'НЕОГРАНИЧЕННОЕ КОЛ-ВО ПОСЕЩЕНИЙ',375,'{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}',DATEADD(DAY, 180, '{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}'),GETDATE())";
+            }
+            else if (abon == 6)
+            {
+                query = $"INSERT INTO [Subscription] VALUES ({CouchID},{UserID},N'12 МЕСЯЦЕВ БЕЗЛИМИТ',N'НЕОГРАНИЧЕННОЕ КОЛ-ВО ПОСЕЩЕНИЙ',750,'{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}',DATEADD(DAY, +365, '{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}'),GETDATE())";
+            }
+            else if (abon == 7)
+            {
+                query = $"INSERT INTO [Subscription] VALUES ({CouchID},{UserID},N'24 МЕСЯЦА БЕЗЛИМИТ',N'НЕОГРАНИЧЕННОЕ КОЛ-ВО ПОСЕЩЕНИЙ',1400,'{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}',DATEADD(DAY, +730, '{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}'),GETDATE())";
             }
             try
             {
@@ -192,6 +217,8 @@ namespace Fitness
                 MessageBox.Show(ex.Message);
             }
             MessageBox.Show("Успешно приобретён абонемент", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            this.DialogResult = DialogResult.OK;
+            this.Close();
         }
 
         private void label5_Click(object sender, EventArgs e)
