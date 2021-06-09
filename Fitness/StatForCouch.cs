@@ -39,15 +39,15 @@ namespace Fitness
                 reader.Close();
                 connection = new SqlConnection(connectionString);
                 connection.Open();
-                 query = $"select count(*) from Subscription join Couch on Couch.ID_Couch=Subscription.ID_couch where Couch.ID_user={iduser}";
+                 query = $"select count(*) from Subscription join Couch on Couch.ID_Couch=Subscription.ID_couch where Couch.ID_user=4 and  GETDATE() between Subscription.DateFirst and Subscription.DateLast";
                 cmd = new SqlCommand(query, connection);
                 reader = cmd.ExecuteReader();
                 while (reader.Read())
                 {
-                   label2.Text = "Клиентов у вас - " + reader.GetInt32(0);
+                   label2.Text = "На "+DateTime.Now.ToString("d")+ " клиентов \nс активными абонементами у вас - " + reader.GetInt32(0);
                 }
                 reader.Close();
-                query = $"select count(*) from Client";
+                query = $"select count(*) from Trainings where ID_couch={couchid}";
                 cmd = new SqlCommand(query, connection);
                 reader = cmd.ExecuteReader();
                 while (reader.Read())

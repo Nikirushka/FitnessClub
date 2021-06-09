@@ -71,36 +71,33 @@ namespace Fitness
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Trebuchet MS", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(507, 212);
+            this.label2.Location = new System.Drawing.Point(453, 191);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(221, 35);
+            this.label2.Size = new System.Drawing.Size(221, 70);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Клиентов у вас :";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label2.Text = "Клиентов у вас :\r\nasd";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Trebuchet MS", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(507, 247);
+            this.label4.Location = new System.Drawing.Point(453, 261);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(264, 35);
             this.label4.TabIndex = 4;
             this.label4.Text = "Всего тренировок - ";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Trebuchet MS", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(506, 282);
+            this.label5.Location = new System.Drawing.Point(452, 296);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(238, 35);
             this.label5.TabIndex = 5;
             this.label5.Text = "Ваша категория - ";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // StatForCouch

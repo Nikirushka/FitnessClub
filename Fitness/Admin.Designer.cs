@@ -70,7 +70,9 @@
             this.gunaButton13 = new Guna.UI.WinForms.GunaButton();
             this.gunaButton12 = new Guna.UI.WinForms.GunaButton();
             this.gunaElipse5 = new Guna.UI.WinForms.GunaElipse(this.components);
+            this.gunaButton2 = new Guna.UI.WinForms.GunaButton();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.ClientPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AllDataGridView)).BeginInit();
             this.choosepanel.SuspendLayout();
@@ -288,6 +290,7 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.gunaButton2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
@@ -879,6 +882,32 @@
             this.gunaElipse5.Radius = 10;
             this.gunaElipse5.TargetControl = this.choosepanel;
             // 
+            // gunaButton2
+            // 
+            this.gunaButton2.Animated = true;
+            this.gunaButton2.AnimationHoverSpeed = 0.07F;
+            this.gunaButton2.AnimationSpeed = 0.03F;
+            this.gunaButton2.BaseColor = System.Drawing.Color.Empty;
+            this.gunaButton2.BorderColor = System.Drawing.Color.GhostWhite;
+            this.gunaButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gunaButton2.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaButton2.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaButton2.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.gunaButton2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(47)))), ((int)(((byte)(40)))));
+            this.gunaButton2.Image = null;
+            this.gunaButton2.ImageSize = new System.Drawing.Size(20, 20);
+            this.gunaButton2.Location = new System.Drawing.Point(13, 0);
+            this.gunaButton2.Name = "gunaButton2";
+            this.gunaButton2.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.gunaButton2.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaButton2.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaButton2.OnHoverImage = null;
+            this.gunaButton2.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaButton2.Size = new System.Drawing.Size(117, 68);
+            this.gunaButton2.TabIndex = 17;
+            this.gunaButton2.Text = "Абонементы";
+            this.gunaButton2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -897,6 +926,7 @@
             this.Load += new System.EventHandler(this.Admin_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
             this.ClientPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.AllDataGridView)).EndInit();
             this.choosepanel.ResumeLayout(false);
@@ -943,5 +973,6 @@
         private Guna.UI.WinForms.GunaButton gunaButton20;
         private Guna.UI.WinForms.GunaButton gunaButton21;
         private Guna.UI.WinForms.GunaButton gunaButton22;
+        private Guna.UI.WinForms.GunaButton gunaButton2;
     }
 }
