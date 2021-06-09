@@ -70,6 +70,28 @@ namespace Fitness
             }
 
         }
+        private void UpdateMemberships()
+        {
+            try
+            {
+                string query = $"select * from AllMembership";
+
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+                    adapter = new SqlDataAdapter(query, connection);
+
+                    dataSet = new DataSet();
+                    adapter.Fill(dataSet);
+                    AllDataGridView.DataSource = dataSet.Tables[0];
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+        }
 
         private void UpdateCouch()
         {
@@ -271,7 +293,7 @@ namespace Fitness
             UpdateCouch();
             gunaButton20.Visible = false;
             gunaButton21.Visible = false;
-
+            gunaButton23.Hide();
             gunaButton19.Visible = false;
             gunaButton18.Visible = false;
             gunaButton5.Visible = false;
@@ -295,7 +317,7 @@ namespace Fitness
             gunaButton19.Visible = false;
             gunaButton18.Visible = false;
             gunaButton21.Visible = false;
-
+            gunaButton23.Hide();
             gunaButton5.Visible = true;
             gunaButton6.Visible = true;
             gunaButton7.Visible = true;
@@ -435,7 +457,7 @@ namespace Fitness
             gunaButton19.Visible = false;
             gunaButton18.Visible = false;
             gunaButton21.Visible = false;
-
+            gunaButton23.Hide();
             gunaButton8.Visible = false;
             gunaButton9.Visible = false;
             gunaButton10.Visible = false;
@@ -511,6 +533,7 @@ namespace Fitness
             gunaButton6.Visible = false;
             gunaButton7.Visible = false;
             gunaButton21.Visible = true;
+            gunaButton23.Hide();
 
         }
 
@@ -636,7 +659,7 @@ namespace Fitness
             gunaButton19.Visible = false;
             gunaButton18.Visible = false;
             gunaButton21.Visible = false;
-
+            gunaButton23.Hide();
             gunaButton8.Visible = false;
             gunaButton9.Visible = false;
             gunaButton10.Visible = false;
@@ -655,7 +678,7 @@ namespace Fitness
             gunaButton19.Visible = false;
             gunaButton18.Visible = false;
             gunaButton21.Visible = false;
-
+            gunaButton23.Hide();
             gunaButton8.Visible = false;
             gunaButton9.Visible = false;
             gunaButton10.Visible = false;
@@ -703,6 +726,61 @@ namespace Fitness
                 
                 connection.Close();
                 UpdateTranings();
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void gunaButton2_Click_1(object sender, EventArgs e)
+        {
+            gunaButton23.Show();
+            UpdateMemberships();
+            ClientPanel.Show();
+            mainpanel.Hide();
+            gunaButton8.Visible = false;
+            gunaButton9.Visible = false;
+            gunaButton10.Visible = false;
+            choosepanel.Hide();
+            gunaButton20.Visible = false;
+            gunaButton19.Visible = false;
+            gunaButton18.Visible = false;
+            gunaButton21.Visible = false;
+
+            gunaButton5.Visible = false;
+            gunaButton6.Visible = false;
+            gunaButton7.Visible = false;
+        }
+
+        private void AllDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void gunaButton23_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                int index = 0;
+                foreach (DataGridViewCell cell in AllDataGridView.SelectedCells)
+                {
+                    index = cell.RowIndex;
+                }
+
+                string choose_id = (AllDataGridView[0, index].Value.ToString());
+                string delQuery = $"DELETE FROM [Subscription] WHERE id_subscription = {choose_id}";
+                connection = new SqlConnection(connectionString);
+                connection.Open();
+
+                cmd = new SqlCommand(delQuery, connection);
+
+                cmd.ExecuteNonQuery();
+
+                connection.Close();
+                UpdateMemberships();
             }
 
             catch (Exception ex)
