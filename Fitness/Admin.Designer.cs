@@ -199,7 +199,7 @@
             this.gunaButton4.OnPressedColor = System.Drawing.Color.Black;
             this.gunaButton4.Size = new System.Drawing.Size(115, 68);
             this.gunaButton4.TabIndex = 14;
-            this.gunaButton4.Text = "Статистика";
+            this.gunaButton4.Text = "Отчёт по клубу";
             this.gunaButton4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.gunaButton4.Click += new System.EventHandler(this.gunaButton4_Click_1);
             // 
