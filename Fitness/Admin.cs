@@ -663,6 +663,53 @@ namespace Fitness
             gunaButton6.Visible = false;
             gunaButton7.Visible = false;
         }
+
+        private void gunaButton21_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                int index = 0;
+                foreach (DataGridViewCell cell in AllDataGridView.SelectedCells)
+                {
+                    index = cell.RowIndex;
+                }
+                string query = $"select * from Trainings";
+                AllDataGridView.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+                AllDataGridView.AllowUserToAddRows = false;
+
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+                    adapter = new SqlDataAdapter(query, connection);
+
+                    dataSet = new DataSet();
+                    adapter.Fill(dataSet);
+                    AllDataGridView.DataSource = dataSet.Tables[0];
+                    connection.Close();
+                }
+                connection = new SqlConnection(connectionString);
+                connection.Open();
+
+
+                string choose_id = (AllDataGridView[0, index].Value.ToString());
+                UpdateTranings();
+                string delQuery = $"DELETE FROM [Trainings] WHERE id_trainings = {choose_id}";
+
+
+                cmd = new SqlCommand(delQuery, connection);
+
+                cmd.ExecuteNonQuery();
+                
+                connection.Close();
+                UpdateTranings();
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 
 

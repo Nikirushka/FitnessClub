@@ -342,6 +342,7 @@
             this.gunaButton21.TabIndex = 9;
             this.gunaButton21.Text = "Удалить";
             this.gunaButton21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaButton21.Click += new System.EventHandler(this.gunaButton21_Click);
             // 
             // gunaButton18
             // 
