@@ -55,7 +55,8 @@ namespace Fitness
 
         private void NewClient_Load(object sender, EventArgs e)
         {
-            gunaDateTimePicker1.Value = DateTime.Now;
+          
+            gunaDateTimePicker1.MaxDate = DateTime.Today;
         }
 
         private void gunaTextBox7_TextChanged(object sender, EventArgs e)

@@ -29,7 +29,7 @@ namespace Fitness
 
         }
         int UserID;
-        public NewClient(int UserID_,string sur, string name,string patr, string phone, string email, string login, string pass, DateTime birth, int rost, int ves)
+        public NewClient(int UserID_, string sur, string name, string patr, string phone, string email, string login, string pass, DateTime birth, int rost, int ves)
         {
             InitializeComponent();
             gunaButton1.Show();
@@ -57,6 +57,7 @@ namespace Fitness
 
         private void NewClient_Load(object sender, EventArgs e)
         {
+            gunaDateTimePicker1.MaxDate = DateTime.Today;
 
         }
 
@@ -81,7 +82,11 @@ namespace Fitness
         }
         private void gunaButton5_Click(object sender, EventArgs e)
         {
-            if (IsDigitsOnly(gunaTextBox8.Text) && IsDigitsOnly(gunaTextBox9.Text))
+            if (gunaTextBox1.Text == "" || gunaTextBox2.Text == "" || gunaTextBox3.Text == "" || gunaTextBox4.Text == "" || gunaTextBox5.Text == "" || gunaTextBox6.Text == "" || gunaTextBox7.Text == "" || gunaTextBox8.Text == "" || gunaTextBox9.Text == "")
+            {
+                MessageBox.Show("Неправильный ввод, заполните все поля", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
+            }
+            else
             {
                 try
                 {
@@ -112,32 +117,35 @@ namespace Fitness
                 MessageBox.Show("Новый пользователь добавлен!", "Регистрация", MessageBoxButtons.OK, MessageBoxIcon.Information, MessageBoxDefaultButton.Button1);
                 this.Close();
             }
-            else
-            {
-                MessageBox.Show("Неправильный ввод", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1, MessageBoxOptions.DefaultDesktopOnly);
-            }
-            
+
         }
 
         private void gunaButton1_Click(object sender, EventArgs e)
         {
-            try
+            if (gunaTextBox1.Text == "" || gunaTextBox2.Text == "" || gunaTextBox3.Text == "" || gunaTextBox4.Text == "" || gunaTextBox5.Text == "" || gunaTextBox6.Text == "" || gunaTextBox7.Text == "" || gunaTextBox8.Text == "" || gunaTextBox9.Text == "")
             {
-                connection = new SqlConnection(connectionString);
-                connection.Open();
-                string query = $"update [User] set Surname=N'{gunaTextBox2.Text}', Name=N'{gunaTextBox1.Text}', Patronymic=N'{gunaTextBox3.Text}', Phone=N'{gunaTextBox4.Text}', Date_birth=N'{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}', Email=N'{gunaTextBox5.Text}',Login=N'{gunaTextBox6.Text}',Password=N'{gunaTextBox7.Text}' where ID_user={UserID}";
-                cmd = new SqlCommand(query, connection);
-                cmd.ExecuteNonQuery();
-                query = $"update [Client] set Height=N'{gunaTextBox8.Text}', Weight=N'{gunaTextBox9.Text}' where ID_user={UserID}";
-                cmd = new SqlCommand(query, connection);
-                cmd.ExecuteNonQuery();
-                connection.Close();
+                MessageBox.Show("Неправильный ввод, заполните все поля", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show(ex.Message);
+                try
+                {
+                    connection = new SqlConnection(connectionString);
+                    connection.Open();
+                    string query = $"update [User] set Surname=N'{gunaTextBox2.Text}', Name=N'{gunaTextBox1.Text}', Patronymic=N'{gunaTextBox3.Text}', Phone=N'{gunaTextBox4.Text}', Date_birth=N'{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}', Email=N'{gunaTextBox5.Text}',Login=N'{gunaTextBox6.Text}',Password=N'{gunaTextBox7.Text}' where ID_user={UserID}";
+                    cmd = new SqlCommand(query, connection);
+                    cmd.ExecuteNonQuery();
+                    query = $"update [Client] set Height=N'{gunaTextBox8.Text}', Weight=N'{gunaTextBox9.Text}' where ID_user={UserID}";
+                    cmd = new SqlCommand(query, connection);
+                    cmd.ExecuteNonQuery();
+                    connection.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                this.Close();
             }
-            this.Close();
         }
 
         private void gunaTextBox2_Enter(object sender, EventArgs e)
