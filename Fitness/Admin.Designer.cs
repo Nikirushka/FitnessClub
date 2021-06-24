@@ -47,6 +47,19 @@
             this.gunaButton2 = new Guna.UI.WinForms.GunaButton();
             this.gunaDragControl2 = new Guna.UI.WinForms.GunaDragControl(this.components);
             this.gunaElipse2 = new Guna.UI.WinForms.GunaElipse(this.components);
+            this.ClientPanel = new System.Windows.Forms.Panel();
+            this.gunaButton23 = new Guna.UI.WinForms.GunaButton();
+            this.gunaButton21 = new Guna.UI.WinForms.GunaButton();
+            this.gunaButton18 = new Guna.UI.WinForms.GunaButton();
+            this.gunaButton19 = new Guna.UI.WinForms.GunaButton();
+            this.gunaButton20 = new Guna.UI.WinForms.GunaButton();
+            this.gunaButton10 = new Guna.UI.WinForms.GunaButton();
+            this.gunaButton7 = new Guna.UI.WinForms.GunaButton();
+            this.gunaButton9 = new Guna.UI.WinForms.GunaButton();
+            this.gunaButton8 = new Guna.UI.WinForms.GunaButton();
+            this.gunaButton6 = new Guna.UI.WinForms.GunaButton();
+            this.gunaButton5 = new Guna.UI.WinForms.GunaButton();
+            this.AllDataGridView = new Guna.UI.WinForms.GunaDataGridView();
             this.gunaElipse3 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.mainpanel = new System.Windows.Forms.Panel();
             this.gunaElipse4 = new Guna.UI.WinForms.GunaElipse(this.components);
@@ -59,24 +72,12 @@
             this.gunaButton13 = new Guna.UI.WinForms.GunaButton();
             this.gunaButton12 = new Guna.UI.WinForms.GunaButton();
             this.gunaElipse5 = new Guna.UI.WinForms.GunaElipse(this.components);
-            this.AllDataGridView = new Guna.UI.WinForms.GunaDataGridView();
-            this.gunaButton5 = new Guna.UI.WinForms.GunaButton();
-            this.gunaButton6 = new Guna.UI.WinForms.GunaButton();
-            this.gunaButton8 = new Guna.UI.WinForms.GunaButton();
-            this.gunaButton9 = new Guna.UI.WinForms.GunaButton();
-            this.gunaButton7 = new Guna.UI.WinForms.GunaButton();
-            this.gunaButton10 = new Guna.UI.WinForms.GunaButton();
-            this.gunaButton20 = new Guna.UI.WinForms.GunaButton();
-            this.gunaButton19 = new Guna.UI.WinForms.GunaButton();
-            this.gunaButton18 = new Guna.UI.WinForms.GunaButton();
-            this.gunaButton21 = new Guna.UI.WinForms.GunaButton();
-            this.ClientPanel = new System.Windows.Forms.Panel();
-            this.gunaButton23 = new Guna.UI.WinForms.GunaButton();
+            this.gunaButton24 = new Guna.UI.WinForms.GunaButton();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.choosepanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.AllDataGridView)).BeginInit();
             this.ClientPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.AllDataGridView)).BeginInit();
+            this.choosepanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // gunaElipse1
@@ -134,14 +135,14 @@
             this.gunaButton22.ForeColor = System.Drawing.Color.Black;
             this.gunaButton22.Image = null;
             this.gunaButton22.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton22.Location = new System.Drawing.Point(632, 0);
+            this.gunaButton22.Location = new System.Drawing.Point(655, 0);
             this.gunaButton22.Name = "gunaButton22";
             this.gunaButton22.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton22.OnHoverBorderColor = System.Drawing.Color.Black;
             this.gunaButton22.OnHoverForeColor = System.Drawing.Color.White;
             this.gunaButton22.OnHoverImage = null;
             this.gunaButton22.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton22.Size = new System.Drawing.Size(114, 68);
+            this.gunaButton22.Size = new System.Drawing.Size(138, 68);
             this.gunaButton22.TabIndex = 16;
             this.gunaButton22.Text = "О программе";
             this.gunaButton22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -162,14 +163,14 @@
             this.gunaButton11.ForeColor = System.Drawing.Color.Black;
             this.gunaButton11.Image = null;
             this.gunaButton11.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton11.Location = new System.Drawing.Point(558, 0);
+            this.gunaButton11.Location = new System.Drawing.Point(572, 0);
             this.gunaButton11.Name = "gunaButton11";
             this.gunaButton11.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton11.OnHoverBorderColor = System.Drawing.Color.Black;
             this.gunaButton11.OnHoverForeColor = System.Drawing.Color.White;
             this.gunaButton11.OnHoverImage = null;
             this.gunaButton11.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton11.Size = new System.Drawing.Size(74, 68);
+            this.gunaButton11.Size = new System.Drawing.Size(83, 68);
             this.gunaButton11.TabIndex = 15;
             this.gunaButton11.Text = "Справка";
             this.gunaButton11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -197,7 +198,7 @@
             this.gunaButton4.OnHoverForeColor = System.Drawing.Color.White;
             this.gunaButton4.OnHoverImage = null;
             this.gunaButton4.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton4.Size = new System.Drawing.Size(115, 68);
+            this.gunaButton4.Size = new System.Drawing.Size(129, 68);
             this.gunaButton4.TabIndex = 14;
             this.gunaButton4.Text = "Отчёт по клубу";
             this.gunaButton4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -335,6 +336,396 @@
             this.gunaElipse2.Radius = 10;
             this.gunaElipse2.TargetControl = this.ClientPanel;
             // 
+            // ClientPanel
+            // 
+            this.ClientPanel.BackColor = System.Drawing.Color.Yellow;
+            this.ClientPanel.Controls.Add(this.gunaButton23);
+            this.ClientPanel.Controls.Add(this.gunaButton21);
+            this.ClientPanel.Controls.Add(this.gunaButton18);
+            this.ClientPanel.Controls.Add(this.gunaButton19);
+            this.ClientPanel.Controls.Add(this.gunaButton20);
+            this.ClientPanel.Controls.Add(this.gunaButton10);
+            this.ClientPanel.Controls.Add(this.gunaButton7);
+            this.ClientPanel.Controls.Add(this.gunaButton9);
+            this.ClientPanel.Controls.Add(this.gunaButton8);
+            this.ClientPanel.Controls.Add(this.gunaButton6);
+            this.ClientPanel.Controls.Add(this.gunaButton5);
+            this.ClientPanel.Controls.Add(this.AllDataGridView);
+            this.ClientPanel.Location = new System.Drawing.Point(10, 82);
+            this.ClientPanel.Name = "ClientPanel";
+            this.ClientPanel.Size = new System.Drawing.Size(997, 518);
+            this.ClientPanel.TabIndex = 9;
+            // 
+            // gunaButton23
+            // 
+            this.gunaButton23.Animated = true;
+            this.gunaButton23.AnimationHoverSpeed = 0.07F;
+            this.gunaButton23.AnimationSpeed = 0.03F;
+            this.gunaButton23.BackColor = System.Drawing.Color.Transparent;
+            this.gunaButton23.BaseColor = System.Drawing.Color.White;
+            this.gunaButton23.BorderColor = System.Drawing.Color.Black;
+            this.gunaButton23.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaButton23.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaButton23.Font = new System.Drawing.Font("Trebuchet MS", 12F);
+            this.gunaButton23.ForeColor = System.Drawing.Color.Black;
+            this.gunaButton23.Image = null;
+            this.gunaButton23.ImageSize = new System.Drawing.Size(20, 20);
+            this.gunaButton23.Location = new System.Drawing.Point(435, 457);
+            this.gunaButton23.Name = "gunaButton23";
+            this.gunaButton23.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.gunaButton23.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaButton23.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaButton23.OnHoverImage = null;
+            this.gunaButton23.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaButton23.Radius = 15;
+            this.gunaButton23.Size = new System.Drawing.Size(160, 42);
+            this.gunaButton23.TabIndex = 10;
+            this.gunaButton23.Text = "Удалить";
+            this.gunaButton23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaButton23.Click += new System.EventHandler(this.gunaButton23_Click);
+            // 
+            // gunaButton21
+            // 
+            this.gunaButton21.Animated = true;
+            this.gunaButton21.AnimationHoverSpeed = 0.07F;
+            this.gunaButton21.AnimationSpeed = 0.03F;
+            this.gunaButton21.BackColor = System.Drawing.Color.Transparent;
+            this.gunaButton21.BaseColor = System.Drawing.Color.White;
+            this.gunaButton21.BorderColor = System.Drawing.Color.Black;
+            this.gunaButton21.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaButton21.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaButton21.Font = new System.Drawing.Font("Trebuchet MS", 12F);
+            this.gunaButton21.ForeColor = System.Drawing.Color.Black;
+            this.gunaButton21.Image = null;
+            this.gunaButton21.ImageSize = new System.Drawing.Size(20, 20);
+            this.gunaButton21.Location = new System.Drawing.Point(433, 457);
+            this.gunaButton21.Name = "gunaButton21";
+            this.gunaButton21.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.gunaButton21.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaButton21.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaButton21.OnHoverImage = null;
+            this.gunaButton21.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaButton21.Radius = 15;
+            this.gunaButton21.Size = new System.Drawing.Size(160, 42);
+            this.gunaButton21.TabIndex = 9;
+            this.gunaButton21.Text = "Удалить";
+            this.gunaButton21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaButton21.Click += new System.EventHandler(this.gunaButton21_Click);
+            // 
+            // gunaButton18
+            // 
+            this.gunaButton18.Animated = true;
+            this.gunaButton18.AnimationHoverSpeed = 0.07F;
+            this.gunaButton18.AnimationSpeed = 0.03F;
+            this.gunaButton18.BackColor = System.Drawing.Color.Transparent;
+            this.gunaButton18.BaseColor = System.Drawing.Color.White;
+            this.gunaButton18.BorderColor = System.Drawing.Color.Black;
+            this.gunaButton18.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaButton18.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaButton18.Font = new System.Drawing.Font("Trebuchet MS", 12F);
+            this.gunaButton18.ForeColor = System.Drawing.Color.Black;
+            this.gunaButton18.Image = null;
+            this.gunaButton18.ImageSize = new System.Drawing.Size(20, 20);
+            this.gunaButton18.Location = new System.Drawing.Point(601, 457);
+            this.gunaButton18.Name = "gunaButton18";
+            this.gunaButton18.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.gunaButton18.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaButton18.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaButton18.OnHoverImage = null;
+            this.gunaButton18.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaButton18.Radius = 15;
+            this.gunaButton18.Size = new System.Drawing.Size(160, 42);
+            this.gunaButton18.TabIndex = 6;
+            this.gunaButton18.Text = "Удалить";
+            this.gunaButton18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaButton18.Click += new System.EventHandler(this.gunaButton18_Click);
+            // 
+            // gunaButton19
+            // 
+            this.gunaButton19.Animated = true;
+            this.gunaButton19.AnimationHoverSpeed = 0.07F;
+            this.gunaButton19.AnimationSpeed = 0.03F;
+            this.gunaButton19.BackColor = System.Drawing.Color.Transparent;
+            this.gunaButton19.BaseColor = System.Drawing.Color.White;
+            this.gunaButton19.BorderColor = System.Drawing.Color.Black;
+            this.gunaButton19.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaButton19.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaButton19.Font = new System.Drawing.Font("Trebuchet MS", 12F);
+            this.gunaButton19.ForeColor = System.Drawing.Color.Black;
+            this.gunaButton19.Image = null;
+            this.gunaButton19.ImageSize = new System.Drawing.Size(20, 20);
+            this.gunaButton19.Location = new System.Drawing.Point(435, 457);
+            this.gunaButton19.Name = "gunaButton19";
+            this.gunaButton19.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.gunaButton19.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaButton19.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaButton19.OnHoverImage = null;
+            this.gunaButton19.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaButton19.Radius = 15;
+            this.gunaButton19.Size = new System.Drawing.Size(160, 42);
+            this.gunaButton19.TabIndex = 5;
+            this.gunaButton19.Text = "Изменить";
+            this.gunaButton19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaButton19.Click += new System.EventHandler(this.gunaButton19_Click);
+            // 
+            // gunaButton20
+            // 
+            this.gunaButton20.Animated = true;
+            this.gunaButton20.AnimationHoverSpeed = 0.07F;
+            this.gunaButton20.AnimationSpeed = 0.03F;
+            this.gunaButton20.BackColor = System.Drawing.Color.Transparent;
+            this.gunaButton20.BaseColor = System.Drawing.Color.White;
+            this.gunaButton20.BorderColor = System.Drawing.Color.Black;
+            this.gunaButton20.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaButton20.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaButton20.Font = new System.Drawing.Font("Trebuchet MS", 12F);
+            this.gunaButton20.ForeColor = System.Drawing.Color.Black;
+            this.gunaButton20.Image = null;
+            this.gunaButton20.ImageSize = new System.Drawing.Size(20, 20);
+            this.gunaButton20.Location = new System.Drawing.Point(269, 457);
+            this.gunaButton20.Name = "gunaButton20";
+            this.gunaButton20.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.gunaButton20.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaButton20.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaButton20.OnHoverImage = null;
+            this.gunaButton20.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaButton20.Radius = 15;
+            this.gunaButton20.Size = new System.Drawing.Size(160, 42);
+            this.gunaButton20.TabIndex = 4;
+            this.gunaButton20.Text = "Добавить";
+            this.gunaButton20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaButton20.Click += new System.EventHandler(this.gunaButton20_Click);
+            // 
+            // gunaButton10
+            // 
+            this.gunaButton10.Animated = true;
+            this.gunaButton10.AnimationHoverSpeed = 0.07F;
+            this.gunaButton10.AnimationSpeed = 0.03F;
+            this.gunaButton10.BackColor = System.Drawing.Color.Transparent;
+            this.gunaButton10.BaseColor = System.Drawing.Color.White;
+            this.gunaButton10.BorderColor = System.Drawing.Color.Black;
+            this.gunaButton10.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaButton10.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaButton10.Font = new System.Drawing.Font("Trebuchet MS", 12F);
+            this.gunaButton10.ForeColor = System.Drawing.Color.Black;
+            this.gunaButton10.Image = null;
+            this.gunaButton10.ImageSize = new System.Drawing.Size(20, 20);
+            this.gunaButton10.Location = new System.Drawing.Point(601, 457);
+            this.gunaButton10.Name = "gunaButton10";
+            this.gunaButton10.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.gunaButton10.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaButton10.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaButton10.OnHoverImage = null;
+            this.gunaButton10.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaButton10.Radius = 15;
+            this.gunaButton10.Size = new System.Drawing.Size(160, 42);
+            this.gunaButton10.TabIndex = 3;
+            this.gunaButton10.Text = "Удалить";
+            this.gunaButton10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaButton10.Click += new System.EventHandler(this.gunaButton10_Click);
+            // 
+            // gunaButton7
+            // 
+            this.gunaButton7.Animated = true;
+            this.gunaButton7.AnimationHoverSpeed = 0.07F;
+            this.gunaButton7.AnimationSpeed = 0.03F;
+            this.gunaButton7.BackColor = System.Drawing.Color.Transparent;
+            this.gunaButton7.BaseColor = System.Drawing.Color.White;
+            this.gunaButton7.BorderColor = System.Drawing.Color.Black;
+            this.gunaButton7.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaButton7.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaButton7.Font = new System.Drawing.Font("Trebuchet MS", 12F);
+            this.gunaButton7.ForeColor = System.Drawing.Color.Black;
+            this.gunaButton7.Image = null;
+            this.gunaButton7.ImageSize = new System.Drawing.Size(20, 20);
+            this.gunaButton7.Location = new System.Drawing.Point(601, 457);
+            this.gunaButton7.Name = "gunaButton7";
+            this.gunaButton7.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.gunaButton7.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaButton7.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaButton7.OnHoverImage = null;
+            this.gunaButton7.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaButton7.Radius = 15;
+            this.gunaButton7.Size = new System.Drawing.Size(160, 42);
+            this.gunaButton7.TabIndex = 3;
+            this.gunaButton7.Text = "Удалить";
+            this.gunaButton7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaButton7.Click += new System.EventHandler(this.gunaButton7_Click);
+            // 
+            // gunaButton9
+            // 
+            this.gunaButton9.Animated = true;
+            this.gunaButton9.AnimationHoverSpeed = 0.07F;
+            this.gunaButton9.AnimationSpeed = 0.03F;
+            this.gunaButton9.BackColor = System.Drawing.Color.Transparent;
+            this.gunaButton9.BaseColor = System.Drawing.Color.White;
+            this.gunaButton9.BorderColor = System.Drawing.Color.Black;
+            this.gunaButton9.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaButton9.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaButton9.Font = new System.Drawing.Font("Trebuchet MS", 12F);
+            this.gunaButton9.ForeColor = System.Drawing.Color.Black;
+            this.gunaButton9.Image = null;
+            this.gunaButton9.ImageSize = new System.Drawing.Size(20, 20);
+            this.gunaButton9.Location = new System.Drawing.Point(435, 457);
+            this.gunaButton9.Name = "gunaButton9";
+            this.gunaButton9.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.gunaButton9.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaButton9.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaButton9.OnHoverImage = null;
+            this.gunaButton9.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaButton9.Radius = 15;
+            this.gunaButton9.Size = new System.Drawing.Size(160, 42);
+            this.gunaButton9.TabIndex = 2;
+            this.gunaButton9.Text = "Изменить";
+            this.gunaButton9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaButton9.Click += new System.EventHandler(this.gunaButton9_Click);
+            // 
+            // gunaButton8
+            // 
+            this.gunaButton8.Animated = true;
+            this.gunaButton8.AnimationHoverSpeed = 0.07F;
+            this.gunaButton8.AnimationSpeed = 0.03F;
+            this.gunaButton8.BackColor = System.Drawing.Color.Transparent;
+            this.gunaButton8.BaseColor = System.Drawing.Color.White;
+            this.gunaButton8.BorderColor = System.Drawing.Color.Black;
+            this.gunaButton8.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaButton8.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaButton8.Font = new System.Drawing.Font("Trebuchet MS", 12F);
+            this.gunaButton8.ForeColor = System.Drawing.Color.Black;
+            this.gunaButton8.Image = null;
+            this.gunaButton8.ImageSize = new System.Drawing.Size(20, 20);
+            this.gunaButton8.Location = new System.Drawing.Point(269, 457);
+            this.gunaButton8.Name = "gunaButton8";
+            this.gunaButton8.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.gunaButton8.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaButton8.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaButton8.OnHoverImage = null;
+            this.gunaButton8.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaButton8.Radius = 15;
+            this.gunaButton8.Size = new System.Drawing.Size(160, 42);
+            this.gunaButton8.TabIndex = 1;
+            this.gunaButton8.Text = "Добавить";
+            this.gunaButton8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaButton8.Click += new System.EventHandler(this.gunaButton8_Click);
+            // 
+            // gunaButton6
+            // 
+            this.gunaButton6.Animated = true;
+            this.gunaButton6.AnimationHoverSpeed = 0.07F;
+            this.gunaButton6.AnimationSpeed = 0.03F;
+            this.gunaButton6.BackColor = System.Drawing.Color.Transparent;
+            this.gunaButton6.BaseColor = System.Drawing.Color.White;
+            this.gunaButton6.BorderColor = System.Drawing.Color.Black;
+            this.gunaButton6.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaButton6.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaButton6.Font = new System.Drawing.Font("Trebuchet MS", 12F);
+            this.gunaButton6.ForeColor = System.Drawing.Color.Black;
+            this.gunaButton6.Image = null;
+            this.gunaButton6.ImageSize = new System.Drawing.Size(20, 20);
+            this.gunaButton6.Location = new System.Drawing.Point(435, 457);
+            this.gunaButton6.Name = "gunaButton6";
+            this.gunaButton6.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.gunaButton6.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaButton6.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaButton6.OnHoverImage = null;
+            this.gunaButton6.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaButton6.Radius = 15;
+            this.gunaButton6.Size = new System.Drawing.Size(160, 42);
+            this.gunaButton6.TabIndex = 2;
+            this.gunaButton6.Text = "Изменить";
+            this.gunaButton6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaButton6.Click += new System.EventHandler(this.gunaButton6_Click);
+            // 
+            // gunaButton5
+            // 
+            this.gunaButton5.Animated = true;
+            this.gunaButton5.AnimationHoverSpeed = 0.07F;
+            this.gunaButton5.AnimationSpeed = 0.03F;
+            this.gunaButton5.BackColor = System.Drawing.Color.Transparent;
+            this.gunaButton5.BaseColor = System.Drawing.Color.White;
+            this.gunaButton5.BorderColor = System.Drawing.Color.Black;
+            this.gunaButton5.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaButton5.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaButton5.Font = new System.Drawing.Font("Trebuchet MS", 12F);
+            this.gunaButton5.ForeColor = System.Drawing.Color.Black;
+            this.gunaButton5.Image = null;
+            this.gunaButton5.ImageSize = new System.Drawing.Size(20, 20);
+            this.gunaButton5.Location = new System.Drawing.Point(269, 457);
+            this.gunaButton5.Name = "gunaButton5";
+            this.gunaButton5.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.gunaButton5.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaButton5.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaButton5.OnHoverImage = null;
+            this.gunaButton5.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaButton5.Radius = 15;
+            this.gunaButton5.Size = new System.Drawing.Size(160, 42);
+            this.gunaButton5.TabIndex = 1;
+            this.gunaButton5.Text = "Добавить";
+            this.gunaButton5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaButton5.Click += new System.EventHandler(this.gunaButton5_Click);
+            // 
+            // AllDataGridView
+            // 
+            this.AllDataGridView.AllowUserToAddRows = false;
+            this.AllDataGridView.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(248)))), ((int)(((byte)(196)))));
+            this.AllDataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.AllDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.AllDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.AllDataGridView.BackgroundColor = System.Drawing.Color.White;
+            this.AllDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.AllDataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.AllDataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(192)))), ((int)(((byte)(7)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Trebuchet MS", 12F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.AllDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.AllDataGridView.ColumnHeadersHeight = 24;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(250)))), ((int)(((byte)(215)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Trebuchet MS", 12F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(213)))), ((int)(((byte)(89)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.AllDataGridView.DefaultCellStyle = dataGridViewCellStyle3;
+            this.AllDataGridView.EnableHeadersVisualStyles = false;
+            this.AllDataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(235)))), ((int)(((byte)(177)))));
+            this.AllDataGridView.Location = new System.Drawing.Point(9, 10);
+            this.AllDataGridView.Name = "AllDataGridView";
+            this.AllDataGridView.ReadOnly = true;
+            this.AllDataGridView.RowHeadersVisible = false;
+            this.AllDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.AllDataGridView.Size = new System.Drawing.Size(985, 441);
+            this.AllDataGridView.TabIndex = 0;
+            this.AllDataGridView.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Ember;
+            this.AllDataGridView.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(248)))), ((int)(((byte)(196)))));
+            this.AllDataGridView.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.AllDataGridView.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.AllDataGridView.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.AllDataGridView.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.AllDataGridView.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.AllDataGridView.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(235)))), ((int)(((byte)(177)))));
+            this.AllDataGridView.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(192)))), ((int)(((byte)(7)))));
+            this.AllDataGridView.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.AllDataGridView.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Trebuchet MS", 12F);
+            this.AllDataGridView.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.AllDataGridView.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.AllDataGridView.ThemeStyle.HeaderStyle.Height = 24;
+            this.AllDataGridView.ThemeStyle.ReadOnly = true;
+            this.AllDataGridView.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(250)))), ((int)(((byte)(215)))));
+            this.AllDataGridView.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.AllDataGridView.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Trebuchet MS", 12F);
+            this.AllDataGridView.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.AllDataGridView.ThemeStyle.RowsStyle.Height = 22;
+            this.AllDataGridView.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(213)))), ((int)(((byte)(89)))));
+            this.AllDataGridView.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.AllDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.AllDataGridView_CellContentClick);
+            // 
             // gunaElipse3
             // 
             this.gunaElipse3.Radius = 10;
@@ -356,6 +747,7 @@
             // choosepanel
             // 
             this.choosepanel.BackColor = System.Drawing.Color.Yellow;
+            this.choosepanel.Controls.Add(this.gunaButton24);
             this.choosepanel.Controls.Add(this.label1);
             this.choosepanel.Controls.Add(this.gunaButton17);
             this.choosepanel.Controls.Add(this.gunaButton16);
@@ -431,7 +823,7 @@
             this.gunaButton16.Radius = 15;
             this.gunaButton16.Size = new System.Drawing.Size(182, 64);
             this.gunaButton16.TabIndex = 2;
-            this.gunaButton16.Text = "Статистика";
+            this.gunaButton16.Text = "Отчёт";
             this.gunaButton16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.gunaButton16.Click += new System.EventHandler(this.gunaButton4_Click_1);
             // 
@@ -459,7 +851,7 @@
             this.gunaButton14.Radius = 15;
             this.gunaButton14.Size = new System.Drawing.Size(182, 64);
             this.gunaButton14.TabIndex = 2;
-            this.gunaButton14.Text = "Сотрудники";
+            this.gunaButton14.Text = "Абонементы";
             this.gunaButton14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.gunaButton14.Click += new System.EventHandler(this.gunaButton14_Click);
             // 
@@ -552,395 +944,33 @@
             this.gunaElipse5.Radius = 10;
             this.gunaElipse5.TargetControl = this.choosepanel;
             // 
-            // AllDataGridView
+            // gunaButton24
             // 
-            this.AllDataGridView.AllowUserToAddRows = false;
-            this.AllDataGridView.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(248)))), ((int)(((byte)(196)))));
-            this.AllDataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.AllDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.AllDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.AllDataGridView.BackgroundColor = System.Drawing.Color.White;
-            this.AllDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.AllDataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.AllDataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(192)))), ((int)(((byte)(7)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Trebuchet MS", 12F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.AllDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.AllDataGridView.ColumnHeadersHeight = 24;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(250)))), ((int)(((byte)(215)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Trebuchet MS", 12F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(213)))), ((int)(((byte)(89)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.AllDataGridView.DefaultCellStyle = dataGridViewCellStyle3;
-            this.AllDataGridView.EnableHeadersVisualStyles = false;
-            this.AllDataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(235)))), ((int)(((byte)(177)))));
-            this.AllDataGridView.Location = new System.Drawing.Point(9, 10);
-            this.AllDataGridView.Name = "AllDataGridView";
-            this.AllDataGridView.ReadOnly = true;
-            this.AllDataGridView.RowHeadersVisible = false;
-            this.AllDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.AllDataGridView.Size = new System.Drawing.Size(985, 441);
-            this.AllDataGridView.TabIndex = 0;
-            this.AllDataGridView.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Ember;
-            this.AllDataGridView.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(248)))), ((int)(((byte)(196)))));
-            this.AllDataGridView.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.AllDataGridView.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.AllDataGridView.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.AllDataGridView.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.AllDataGridView.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.AllDataGridView.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(235)))), ((int)(((byte)(177)))));
-            this.AllDataGridView.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(192)))), ((int)(((byte)(7)))));
-            this.AllDataGridView.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.AllDataGridView.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Trebuchet MS", 12F);
-            this.AllDataGridView.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.AllDataGridView.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.AllDataGridView.ThemeStyle.HeaderStyle.Height = 24;
-            this.AllDataGridView.ThemeStyle.ReadOnly = true;
-            this.AllDataGridView.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(250)))), ((int)(((byte)(215)))));
-            this.AllDataGridView.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.AllDataGridView.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Trebuchet MS", 12F);
-            this.AllDataGridView.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.AllDataGridView.ThemeStyle.RowsStyle.Height = 22;
-            this.AllDataGridView.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(213)))), ((int)(((byte)(89)))));
-            this.AllDataGridView.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            this.AllDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.AllDataGridView_CellContentClick);
-            // 
-            // gunaButton5
-            // 
-            this.gunaButton5.Animated = true;
-            this.gunaButton5.AnimationHoverSpeed = 0.07F;
-            this.gunaButton5.AnimationSpeed = 0.03F;
-            this.gunaButton5.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton5.BaseColor = System.Drawing.Color.White;
-            this.gunaButton5.BorderColor = System.Drawing.Color.Black;
-            this.gunaButton5.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton5.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton5.Font = new System.Drawing.Font("Trebuchet MS", 12F);
-            this.gunaButton5.ForeColor = System.Drawing.Color.Black;
-            this.gunaButton5.Image = null;
-            this.gunaButton5.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton5.Location = new System.Drawing.Point(269, 457);
-            this.gunaButton5.Name = "gunaButton5";
-            this.gunaButton5.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.gunaButton5.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaButton5.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaButton5.OnHoverImage = null;
-            this.gunaButton5.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton5.Radius = 15;
-            this.gunaButton5.Size = new System.Drawing.Size(160, 42);
-            this.gunaButton5.TabIndex = 1;
-            this.gunaButton5.Text = "Добавить";
-            this.gunaButton5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.gunaButton5.Click += new System.EventHandler(this.gunaButton5_Click);
-            // 
-            // gunaButton6
-            // 
-            this.gunaButton6.Animated = true;
-            this.gunaButton6.AnimationHoverSpeed = 0.07F;
-            this.gunaButton6.AnimationSpeed = 0.03F;
-            this.gunaButton6.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton6.BaseColor = System.Drawing.Color.White;
-            this.gunaButton6.BorderColor = System.Drawing.Color.Black;
-            this.gunaButton6.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton6.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton6.Font = new System.Drawing.Font("Trebuchet MS", 12F);
-            this.gunaButton6.ForeColor = System.Drawing.Color.Black;
-            this.gunaButton6.Image = null;
-            this.gunaButton6.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton6.Location = new System.Drawing.Point(435, 457);
-            this.gunaButton6.Name = "gunaButton6";
-            this.gunaButton6.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.gunaButton6.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaButton6.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaButton6.OnHoverImage = null;
-            this.gunaButton6.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton6.Radius = 15;
-            this.gunaButton6.Size = new System.Drawing.Size(160, 42);
-            this.gunaButton6.TabIndex = 2;
-            this.gunaButton6.Text = "Изменить";
-            this.gunaButton6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.gunaButton6.Click += new System.EventHandler(this.gunaButton6_Click);
-            // 
-            // gunaButton8
-            // 
-            this.gunaButton8.Animated = true;
-            this.gunaButton8.AnimationHoverSpeed = 0.07F;
-            this.gunaButton8.AnimationSpeed = 0.03F;
-            this.gunaButton8.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton8.BaseColor = System.Drawing.Color.White;
-            this.gunaButton8.BorderColor = System.Drawing.Color.Black;
-            this.gunaButton8.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton8.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton8.Font = new System.Drawing.Font("Trebuchet MS", 12F);
-            this.gunaButton8.ForeColor = System.Drawing.Color.Black;
-            this.gunaButton8.Image = null;
-            this.gunaButton8.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton8.Location = new System.Drawing.Point(269, 457);
-            this.gunaButton8.Name = "gunaButton8";
-            this.gunaButton8.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.gunaButton8.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaButton8.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaButton8.OnHoverImage = null;
-            this.gunaButton8.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton8.Radius = 15;
-            this.gunaButton8.Size = new System.Drawing.Size(160, 42);
-            this.gunaButton8.TabIndex = 1;
-            this.gunaButton8.Text = "Добавить";
-            this.gunaButton8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.gunaButton8.Click += new System.EventHandler(this.gunaButton8_Click);
-            // 
-            // gunaButton9
-            // 
-            this.gunaButton9.Animated = true;
-            this.gunaButton9.AnimationHoverSpeed = 0.07F;
-            this.gunaButton9.AnimationSpeed = 0.03F;
-            this.gunaButton9.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton9.BaseColor = System.Drawing.Color.White;
-            this.gunaButton9.BorderColor = System.Drawing.Color.Black;
-            this.gunaButton9.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton9.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton9.Font = new System.Drawing.Font("Trebuchet MS", 12F);
-            this.gunaButton9.ForeColor = System.Drawing.Color.Black;
-            this.gunaButton9.Image = null;
-            this.gunaButton9.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton9.Location = new System.Drawing.Point(435, 457);
-            this.gunaButton9.Name = "gunaButton9";
-            this.gunaButton9.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.gunaButton9.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaButton9.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaButton9.OnHoverImage = null;
-            this.gunaButton9.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton9.Radius = 15;
-            this.gunaButton9.Size = new System.Drawing.Size(160, 42);
-            this.gunaButton9.TabIndex = 2;
-            this.gunaButton9.Text = "Изменить";
-            this.gunaButton9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.gunaButton9.Click += new System.EventHandler(this.gunaButton9_Click);
-            // 
-            // gunaButton7
-            // 
-            this.gunaButton7.Animated = true;
-            this.gunaButton7.AnimationHoverSpeed = 0.07F;
-            this.gunaButton7.AnimationSpeed = 0.03F;
-            this.gunaButton7.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton7.BaseColor = System.Drawing.Color.White;
-            this.gunaButton7.BorderColor = System.Drawing.Color.Black;
-            this.gunaButton7.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton7.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton7.Font = new System.Drawing.Font("Trebuchet MS", 12F);
-            this.gunaButton7.ForeColor = System.Drawing.Color.Black;
-            this.gunaButton7.Image = null;
-            this.gunaButton7.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton7.Location = new System.Drawing.Point(601, 457);
-            this.gunaButton7.Name = "gunaButton7";
-            this.gunaButton7.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.gunaButton7.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaButton7.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaButton7.OnHoverImage = null;
-            this.gunaButton7.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton7.Radius = 15;
-            this.gunaButton7.Size = new System.Drawing.Size(160, 42);
-            this.gunaButton7.TabIndex = 3;
-            this.gunaButton7.Text = "Удалить";
-            this.gunaButton7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.gunaButton7.Click += new System.EventHandler(this.gunaButton7_Click);
-            // 
-            // gunaButton10
-            // 
-            this.gunaButton10.Animated = true;
-            this.gunaButton10.AnimationHoverSpeed = 0.07F;
-            this.gunaButton10.AnimationSpeed = 0.03F;
-            this.gunaButton10.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton10.BaseColor = System.Drawing.Color.White;
-            this.gunaButton10.BorderColor = System.Drawing.Color.Black;
-            this.gunaButton10.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton10.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton10.Font = new System.Drawing.Font("Trebuchet MS", 12F);
-            this.gunaButton10.ForeColor = System.Drawing.Color.Black;
-            this.gunaButton10.Image = null;
-            this.gunaButton10.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton10.Location = new System.Drawing.Point(601, 457);
-            this.gunaButton10.Name = "gunaButton10";
-            this.gunaButton10.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.gunaButton10.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaButton10.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaButton10.OnHoverImage = null;
-            this.gunaButton10.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton10.Radius = 15;
-            this.gunaButton10.Size = new System.Drawing.Size(160, 42);
-            this.gunaButton10.TabIndex = 3;
-            this.gunaButton10.Text = "Удалить";
-            this.gunaButton10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.gunaButton10.Click += new System.EventHandler(this.gunaButton10_Click);
-            // 
-            // gunaButton20
-            // 
-            this.gunaButton20.Animated = true;
-            this.gunaButton20.AnimationHoverSpeed = 0.07F;
-            this.gunaButton20.AnimationSpeed = 0.03F;
-            this.gunaButton20.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton20.BaseColor = System.Drawing.Color.White;
-            this.gunaButton20.BorderColor = System.Drawing.Color.Black;
-            this.gunaButton20.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton20.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton20.Font = new System.Drawing.Font("Trebuchet MS", 12F);
-            this.gunaButton20.ForeColor = System.Drawing.Color.Black;
-            this.gunaButton20.Image = null;
-            this.gunaButton20.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton20.Location = new System.Drawing.Point(269, 457);
-            this.gunaButton20.Name = "gunaButton20";
-            this.gunaButton20.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.gunaButton20.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaButton20.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaButton20.OnHoverImage = null;
-            this.gunaButton20.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton20.Radius = 15;
-            this.gunaButton20.Size = new System.Drawing.Size(160, 42);
-            this.gunaButton20.TabIndex = 4;
-            this.gunaButton20.Text = "Добавить";
-            this.gunaButton20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.gunaButton20.Click += new System.EventHandler(this.gunaButton20_Click);
-            // 
-            // gunaButton19
-            // 
-            this.gunaButton19.Animated = true;
-            this.gunaButton19.AnimationHoverSpeed = 0.07F;
-            this.gunaButton19.AnimationSpeed = 0.03F;
-            this.gunaButton19.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton19.BaseColor = System.Drawing.Color.White;
-            this.gunaButton19.BorderColor = System.Drawing.Color.Black;
-            this.gunaButton19.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton19.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton19.Font = new System.Drawing.Font("Trebuchet MS", 12F);
-            this.gunaButton19.ForeColor = System.Drawing.Color.Black;
-            this.gunaButton19.Image = null;
-            this.gunaButton19.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton19.Location = new System.Drawing.Point(435, 457);
-            this.gunaButton19.Name = "gunaButton19";
-            this.gunaButton19.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.gunaButton19.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaButton19.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaButton19.OnHoverImage = null;
-            this.gunaButton19.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton19.Radius = 15;
-            this.gunaButton19.Size = new System.Drawing.Size(160, 42);
-            this.gunaButton19.TabIndex = 5;
-            this.gunaButton19.Text = "Изменить";
-            this.gunaButton19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.gunaButton19.Click += new System.EventHandler(this.gunaButton19_Click);
-            // 
-            // gunaButton18
-            // 
-            this.gunaButton18.Animated = true;
-            this.gunaButton18.AnimationHoverSpeed = 0.07F;
-            this.gunaButton18.AnimationSpeed = 0.03F;
-            this.gunaButton18.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton18.BaseColor = System.Drawing.Color.White;
-            this.gunaButton18.BorderColor = System.Drawing.Color.Black;
-            this.gunaButton18.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton18.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton18.Font = new System.Drawing.Font("Trebuchet MS", 12F);
-            this.gunaButton18.ForeColor = System.Drawing.Color.Black;
-            this.gunaButton18.Image = null;
-            this.gunaButton18.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton18.Location = new System.Drawing.Point(601, 457);
-            this.gunaButton18.Name = "gunaButton18";
-            this.gunaButton18.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.gunaButton18.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaButton18.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaButton18.OnHoverImage = null;
-            this.gunaButton18.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton18.Radius = 15;
-            this.gunaButton18.Size = new System.Drawing.Size(160, 42);
-            this.gunaButton18.TabIndex = 6;
-            this.gunaButton18.Text = "Удалить";
-            this.gunaButton18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.gunaButton18.Click += new System.EventHandler(this.gunaButton18_Click);
-            // 
-            // gunaButton21
-            // 
-            this.gunaButton21.Animated = true;
-            this.gunaButton21.AnimationHoverSpeed = 0.07F;
-            this.gunaButton21.AnimationSpeed = 0.03F;
-            this.gunaButton21.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton21.BaseColor = System.Drawing.Color.White;
-            this.gunaButton21.BorderColor = System.Drawing.Color.Black;
-            this.gunaButton21.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton21.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton21.Font = new System.Drawing.Font("Trebuchet MS", 12F);
-            this.gunaButton21.ForeColor = System.Drawing.Color.Black;
-            this.gunaButton21.Image = null;
-            this.gunaButton21.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton21.Location = new System.Drawing.Point(433, 457);
-            this.gunaButton21.Name = "gunaButton21";
-            this.gunaButton21.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.gunaButton21.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaButton21.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaButton21.OnHoverImage = null;
-            this.gunaButton21.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton21.Radius = 15;
-            this.gunaButton21.Size = new System.Drawing.Size(160, 42);
-            this.gunaButton21.TabIndex = 9;
-            this.gunaButton21.Text = "Удалить";
-            this.gunaButton21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.gunaButton21.Click += new System.EventHandler(this.gunaButton21_Click);
-            // 
-            // ClientPanel
-            // 
-            this.ClientPanel.BackColor = System.Drawing.Color.Yellow;
-            this.ClientPanel.Controls.Add(this.gunaButton23);
-            this.ClientPanel.Controls.Add(this.gunaButton21);
-            this.ClientPanel.Controls.Add(this.gunaButton18);
-            this.ClientPanel.Controls.Add(this.gunaButton19);
-            this.ClientPanel.Controls.Add(this.gunaButton20);
-            this.ClientPanel.Controls.Add(this.gunaButton10);
-            this.ClientPanel.Controls.Add(this.gunaButton7);
-            this.ClientPanel.Controls.Add(this.gunaButton9);
-            this.ClientPanel.Controls.Add(this.gunaButton8);
-            this.ClientPanel.Controls.Add(this.gunaButton6);
-            this.ClientPanel.Controls.Add(this.gunaButton5);
-            this.ClientPanel.Controls.Add(this.AllDataGridView);
-            this.ClientPanel.Location = new System.Drawing.Point(10, 82);
-            this.ClientPanel.Name = "ClientPanel";
-            this.ClientPanel.Size = new System.Drawing.Size(997, 518);
-            this.ClientPanel.TabIndex = 9;
-            // 
-            // gunaButton23
-            // 
-            this.gunaButton23.Animated = true;
-            this.gunaButton23.AnimationHoverSpeed = 0.07F;
-            this.gunaButton23.AnimationSpeed = 0.03F;
-            this.gunaButton23.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton23.BaseColor = System.Drawing.Color.White;
-            this.gunaButton23.BorderColor = System.Drawing.Color.Black;
-            this.gunaButton23.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton23.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton23.Font = new System.Drawing.Font("Trebuchet MS", 12F);
-            this.gunaButton23.ForeColor = System.Drawing.Color.Black;
-            this.gunaButton23.Image = null;
-            this.gunaButton23.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton23.Location = new System.Drawing.Point(435, 457);
-            this.gunaButton23.Name = "gunaButton23";
-            this.gunaButton23.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.gunaButton23.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaButton23.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaButton23.OnHoverImage = null;
-            this.gunaButton23.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton23.Radius = 15;
-            this.gunaButton23.Size = new System.Drawing.Size(160, 42);
-            this.gunaButton23.TabIndex = 10;
-            this.gunaButton23.Text = "Удалить";
-            this.gunaButton23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.gunaButton23.Click += new System.EventHandler(this.gunaButton23_Click);
+            this.gunaButton24.Animated = true;
+            this.gunaButton24.AnimationHoverSpeed = 0.07F;
+            this.gunaButton24.AnimationSpeed = 0.03F;
+            this.gunaButton24.BackColor = System.Drawing.Color.Transparent;
+            this.gunaButton24.BaseColor = System.Drawing.Color.White;
+            this.gunaButton24.BorderColor = System.Drawing.Color.Black;
+            this.gunaButton24.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaButton24.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaButton24.Font = new System.Drawing.Font("Trebuchet MS", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.gunaButton24.ForeColor = System.Drawing.Color.Black;
+            this.gunaButton24.Image = null;
+            this.gunaButton24.ImageSize = new System.Drawing.Size(20, 20);
+            this.gunaButton24.Location = new System.Drawing.Point(412, 356);
+            this.gunaButton24.Name = "gunaButton24";
+            this.gunaButton24.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.gunaButton24.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaButton24.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaButton24.OnHoverImage = null;
+            this.gunaButton24.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaButton24.Radius = 15;
+            this.gunaButton24.Size = new System.Drawing.Size(182, 64);
+            this.gunaButton24.TabIndex = 10;
+            this.gunaButton24.Text = "О программе";
+            this.gunaButton24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaButton24.Click += new System.EventHandler(this.gunaButton24_Click);
             // 
             // Admin
             // 
@@ -948,8 +978,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1022, 615);
-            this.Controls.Add(this.ClientPanel);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.ClientPanel);
             this.Controls.Add(this.choosepanel);
             this.Controls.Add(this.mainpanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -961,9 +991,9 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
-            this.choosepanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.AllDataGridView)).EndInit();
             this.ClientPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.AllDataGridView)).EndInit();
+            this.choosepanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1009,5 +1039,6 @@
         private Guna.UI.WinForms.GunaButton gunaButton5;
         private Guna.UI.WinForms.GunaDataGridView AllDataGridView;
         private Guna.UI.WinForms.GunaButton gunaButton23;
+        private Guna.UI.WinForms.GunaButton gunaButton24;
     }
 }

@@ -128,6 +128,7 @@
             this.gunaTextBox1.TabIndex = 2;
             this.gunaTextBox1.Text = "Имя";
             this.gunaTextBox1.Enter += new System.EventHandler(this.gunaTextBox1_Enter);
+            this.gunaTextBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.gunaTextBox1_KeyPress);
             // 
             // gunaLabel1
             // 
@@ -171,6 +172,7 @@
             this.gunaTextBox2.TabIndex = 1;
             this.gunaTextBox2.Text = "Фамилия";
             this.gunaTextBox2.Enter += new System.EventHandler(this.gunaTextBox2_Enter);
+            this.gunaTextBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.gunaTextBox2_KeyPress);
             // 
             // gunaLabel3
             // 
@@ -202,6 +204,7 @@
             this.gunaTextBox3.TabIndex = 3;
             this.gunaTextBox3.Text = "Отчество";
             this.gunaTextBox3.Enter += new System.EventHandler(this.gunaTextBox3_Enter);
+            this.gunaTextBox3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.gunaTextBox3_KeyPress);
             // 
             // gunaTextBox4
             // 
@@ -222,6 +225,7 @@
             this.gunaTextBox4.TabIndex = 4;
             this.gunaTextBox4.Text = "Телефон";
             this.gunaTextBox4.Enter += new System.EventHandler(this.gunaTextBox4_Enter);
+            this.gunaTextBox4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.gunaTextBox4_KeyPress);
             // 
             // gunaLabel4
             // 
@@ -396,6 +400,7 @@
             this.gunaTextBox8.Text = "Рост";
             this.gunaTextBox8.TextChanged += new System.EventHandler(this.gunaTextBox5_TextChanged);
             this.gunaTextBox8.Enter += new System.EventHandler(this.gunaTextBox8_Enter);
+            this.gunaTextBox8.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.gunaTextBox8_KeyPress);
             // 
             // gunaTextBox9
             // 
@@ -415,7 +420,9 @@
             this.gunaTextBox9.Size = new System.Drawing.Size(184, 38);
             this.gunaTextBox9.TabIndex = 10;
             this.gunaTextBox9.Text = "Вес";
+            this.gunaTextBox9.TextChanged += new System.EventHandler(this.gunaTextBox9_TextChanged);
             this.gunaTextBox9.Enter += new System.EventHandler(this.gunaTextBox9_Enter);
+            this.gunaTextBox9.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.gunaTextBox9_KeyPress);
             // 
             // gunaLabel10
             // 
@@ -454,7 +461,7 @@
             this.gunaButton1.ForeColor = System.Drawing.Color.White;
             this.gunaButton1.Image = null;
             this.gunaButton1.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton1.Location = new System.Drawing.Point(145, 394);
+            this.gunaButton1.Location = new System.Drawing.Point(115, 394);
             this.gunaButton1.Name = "gunaButton1";
             this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaButton1.OnHoverBorderColor = System.Drawing.Color.Black;

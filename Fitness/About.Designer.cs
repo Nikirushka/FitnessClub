@@ -83,11 +83,11 @@ namespace Fitness
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Trebuchet MS", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(645, 370);
+            this.label3.Location = new System.Drawing.Point(600, 364);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(203, 27);
+            this.label3.Size = new System.Drawing.Size(292, 27);
             this.label3.TabIndex = 3;
-            this.label3.Text = "chernik@gmail.com";
+            this.label3.Text = "vladchernik4513@gmail.com";
             this.label3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // About

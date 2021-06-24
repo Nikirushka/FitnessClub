@@ -130,6 +130,7 @@
             this.gunaTextBox1.TabIndex = 2;
             this.gunaTextBox1.Text = "Имя";
             this.gunaTextBox1.Enter += new System.EventHandler(this.gunaTextBox1_Enter);
+            this.gunaTextBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.gunaTextBox1_KeyPress);
             // 
             // gunaLabel1
             // 
@@ -172,6 +173,7 @@
             this.gunaTextBox2.TabIndex = 1;
             this.gunaTextBox2.Text = "Фамилия";
             this.gunaTextBox2.Enter += new System.EventHandler(this.gunaTextBox2_Enter);
+            this.gunaTextBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.gunaTextBox2_KeyPress);
             // 
             // gunaLabel3
             // 
@@ -203,6 +205,7 @@
             this.gunaTextBox3.TabIndex = 3;
             this.gunaTextBox3.Text = "Отчество";
             this.gunaTextBox3.Enter += new System.EventHandler(this.gunaTextBox3_Enter);
+            this.gunaTextBox3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.gunaTextBox3_KeyPress);
             this.gunaTextBox3.Leave += new System.EventHandler(this.gunaTextBox3_Leave);
             // 
             // gunaTextBox4
@@ -224,6 +227,7 @@
             this.gunaTextBox4.TabIndex = 4;
             this.gunaTextBox4.Text = "Телефон";
             this.gunaTextBox4.Enter += new System.EventHandler(this.gunaTextBox4_Enter);
+            this.gunaTextBox4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.gunaTextBox4_KeyPress);
             // 
             // gunaLabel4
             // 
@@ -399,6 +403,7 @@
             this.gunaTextBox8.Text = "Специализация";
             this.gunaTextBox8.TextChanged += new System.EventHandler(this.gunaTextBox5_TextChanged);
             this.gunaTextBox8.Enter += new System.EventHandler(this.gunaTextBox8_Enter);
+            this.gunaTextBox8.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.gunaTextBox8_KeyPress);
             // 
             // gunaTextBox9
             // 
@@ -419,6 +424,7 @@
             this.gunaTextBox9.TabIndex = 10;
             this.gunaTextBox9.Text = "Оклад";
             this.gunaTextBox9.Enter += new System.EventHandler(this.gunaTextBox9_Enter);
+            this.gunaTextBox9.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.gunaTextBox9_KeyPress);
             // 
             // gunaLabel10
             // 
@@ -501,6 +507,7 @@
             this.gunaTextBox10.TabIndex = 11;
             this.gunaTextBox10.Text = "Стаж";
             this.gunaTextBox10.Enter += new System.EventHandler(this.gunaTextBox10_Enter);
+            this.gunaTextBox10.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.gunaTextBox10_KeyPress);
             // 
             // NewCouch
             // 
