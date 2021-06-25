@@ -208,47 +208,50 @@ namespace Fitness
         private void gunaTextBox2_KeyPress(object sender, KeyPressEventArgs e)
         {
             string Symbol = e.KeyChar.ToString();
-            if (!Regex.Match(Symbol, @"[а-яА-Я]|[a-zA-Z]").Success)
+            if ((Regex.Match(Symbol, @"[а-яА-Я]|[a-zA-Z]").Success) || e.KeyChar == 32 || e.KeyChar == 8 )
             {
-                e.Handled = true;
+                return;
             }
+            else e.Handled = true;
         }
 
         private void gunaTextBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
             string Symbol = e.KeyChar.ToString();
-            if (!Regex.Match(Symbol, @"[а-яА-Я]|[a-zA-Z]").Success)
+            if ((Regex.Match(Symbol, @"[а-яА-Я]|[a-zA-Z]").Success) || e.KeyChar == 32 || e.KeyChar == 8)
             {
-                e.Handled = true;
+                return;
             }
+            else e.Handled = true;
         }
 
         private void gunaTextBox3_KeyPress(object sender, KeyPressEventArgs e)
         {
             string Symbol = e.KeyChar.ToString();
-            if (!Regex.Match(Symbol, @"[а-яА-Я]|[a-zA-Z]").Success)
+            if ((Regex.Match(Symbol, @"[а-яА-Я]|[a-zA-Z]").Success) || e.KeyChar == 32 || e.KeyChar == 8)
             {
-                e.Handled = true;
+                return;
             }
+            else e.Handled = true;
         }
 
         private void gunaTextBox4_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (Char.IsDigit(e.KeyChar)) return;
+            if (Char.IsDigit(e.KeyChar) || e.KeyChar == 32 || e.KeyChar == 8) return;
             else
                 e.Handled = true;
         }
 
         private void gunaTextBox8_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (Char.IsDigit(e.KeyChar)) return;
+            if (Char.IsDigit(e.KeyChar) || e.KeyChar == 32 || e.KeyChar == 8) return;
             else
                 e.Handled = true;
         }
 
         private void gunaTextBox9_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (Char.IsDigit(e.KeyChar)) return;
+            if (Char.IsDigit(e.KeyChar) || e.KeyChar == 32 || e.KeyChar == 8) return;
             else
                 e.Handled = true;
         }
