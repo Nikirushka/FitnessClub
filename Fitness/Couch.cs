@@ -282,5 +282,20 @@ namespace Fitness
             Clients.Hide();
             trainings.Hide();
         }
+
+        private void gunaButton7_Click(object sender, EventArgs e)
+        {
+            int index = 0;
+            foreach (DataGridViewCell cell in trainingsDataGrid.SelectedCells)
+            {
+                index = cell.RowIndex;
+            }
+            string a = (trainingsDataGrid[0, index].Value.ToString());
+            string b = (trainingsDataGrid[1, index].Value.ToString());
+            DateTime c =Convert.ToDateTime(trainingsDataGrid[2, index].Value);
+            Infotrainings Infotrainings = new Infotrainings(a,b,c);
+            DialogResult dialogResult = new DialogResult();
+            dialogResult = Infotrainings.ShowDialog();
+        }
     }
 }

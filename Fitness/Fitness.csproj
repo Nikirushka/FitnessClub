@@ -124,6 +124,12 @@
     <Compile Include="AboutMembership.Designer.cs">
       <DependentUpon>AboutMembership.cs</DependentUpon>
     </Compile>
+    <Compile Include="Infotrainings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Infotrainings.Designer.cs">
+      <DependentUpon>Infotrainings.cs</DependentUpon>
+    </Compile>
     <Compile Include="StatForCouch.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -199,6 +205,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AboutMembership.resx">
       <DependentUpon>AboutMembership.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Infotrainings.resx">
+      <DependentUpon>Infotrainings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StatForCouch.resx">
       <DependentUpon>StatForCouch.cs</DependentUpon>
