@@ -143,7 +143,7 @@ namespace Fitness
         {
             try
             {
-                string query = $"Select [User].Surname, TrainingsAll.[Тренер],TrainingsAll.[Специализация],TrainingsAll.[Описание], TrainingsAll.[Дата] from TrainingsAll inner join [Client] on [Client].ID_client = TrainingsAll.ID_client inner join [User] on[User].ID_user = Client.ID_user";
+                string query = $"Select [User].Surname as 'Клиент', TrainingsAll.[Тренер],TrainingsAll.[Специализация],TrainingsAll.[Описание], TrainingsAll.[Дата] from TrainingsAll inner join [Client] on [Client].ID_client = TrainingsAll.ID_client inner join [User] on[User].ID_user = Client.ID_user";
 
                 using (SqlConnection connection = new SqlConnection(connectionString))
                 {
@@ -287,6 +287,7 @@ namespace Fitness
 
         private void gunaButton1_Click(object sender, EventArgs e)
         {
+            gunaButton25.Hide();
             choosepanel.Hide();
             ClientPanel.Show();
             mainpanel.Hide();
@@ -306,6 +307,7 @@ namespace Fitness
 
         private void UserButton_Click(object sender, EventArgs e)
         {
+            gunaButton25.Hide();
             ClientPanel.Show();
             UpdateClients();
             mainpanel.Hide();
@@ -449,6 +451,7 @@ namespace Fitness
 
         private void gunaButton11_Click(object sender, EventArgs e)
         {
+            gunaButton25.Hide();
             choosepanel.Hide();
             ClientPanel.Hide();
             mainpanel.Show();
@@ -522,6 +525,7 @@ namespace Fitness
 
         private void gunaButton3_Click(object sender, EventArgs e)
         {
+            gunaButton25.Show();
             UpdateTranings();
             choosepanel.Hide();
             ClientPanel.Show();
@@ -654,6 +658,7 @@ namespace Fitness
 
         private void gunaButton4_Click_1(object sender, EventArgs e)
         {
+            gunaButton25.Hide();
             choosepanel.Hide();
             ClientPanel.Hide();
             mainpanel.Show();
@@ -673,6 +678,7 @@ namespace Fitness
 
         private void gunaButton22_Click(object sender, EventArgs e)
         {
+            gunaButton25.Hide();
             choosepanel.Hide();
             ClientPanel.Hide();
             mainpanel.Show();
@@ -739,6 +745,7 @@ namespace Fitness
 
         private void gunaButton2_Click_1(object sender, EventArgs e)
         {
+            gunaButton25.Hide();
             gunaButton23.Show();
             UpdateMemberships();
             ClientPanel.Show();
@@ -809,6 +816,22 @@ namespace Fitness
             gunaButton5.Visible = false;
             gunaButton6.Visible = false;
             gunaButton7.Visible = false;
+        }
+
+        private void gunaButton25_Click(object sender, EventArgs e)
+        {
+            int index = 0;
+            foreach (DataGridViewCell cell in AllDataGridView.SelectedCells)
+            {
+                index = cell.RowIndex;
+            }
+            string a = (AllDataGridView[0, index].Value.ToString());
+            string b = (AllDataGridView[3, index].Value.ToString());
+            string d = (AllDataGridView[1, index].Value.ToString());
+            DateTime c = Convert.ToDateTime(AllDataGridView[4, index].Value);
+            Infotrainings2 Infotrainings2 = new Infotrainings2(a, b, c,d);
+            DialogResult dialogResult = new DialogResult();
+            dialogResult = Infotrainings2.ShowDialog();
         }
     }
 

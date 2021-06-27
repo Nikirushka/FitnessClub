@@ -69,3 +69,4 @@ D:\Fitness\Fitness\obj\Debug\Fitness.StatForAdmin.resources
 D:\Fitness\Fitness\obj\Debug\Fitness.StatForCouch.resources
 D:\Fitness\Fitness\obj\Debug\Fitness.AboutMembership.resources
 D:\Fitness\Fitness\obj\Debug\Fitness.Infotrainings.resources
+D:\Fitness\Fitness\obj\Debug\Fitness.Infotrainings2.resources

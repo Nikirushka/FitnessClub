@@ -39,7 +39,7 @@ namespace Fitness
                 reader.Close();
                 connection = new SqlConnection(connectionString);
                 connection.Open();
-                 query = $"select count(*) from Subscription join Couch on Couch.ID_Couch=Subscription.ID_couch where Couch.ID_user={couchid} and  GETDATE() between Subscription.DateFirst and Subscription.DateLast";
+                 query = $"select count(*) from Subscription join Couch on Couch.ID_Couch=Subscription.ID_couch where Couch.ID_Couch={couchid} and  GETDATE() between Subscription.DateFirst and Subscription.DateLast";
                 cmd = new SqlCommand(query, connection);
                 reader = cmd.ExecuteReader();
                 while (reader.Read())
