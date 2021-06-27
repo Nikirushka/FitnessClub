@@ -210,18 +210,26 @@ namespace Fitness
 
                 string choose_id = (AllDataGridView[0, index].Value.ToString());
 
-                string delQuery = $"DELETE FROM [client] WHERE ID_user = {choose_id}";
+                string query1 = $"SELECT [id_client] FROM [Client] WHERE [id_user]={choose_id}";
+                cmd = new SqlCommand(query1, connection);
+                string clientid = cmd.ExecuteScalar().ToString();
 
-
+                string delQuery = $"DELETE FROM [Subscription] WHERE ID_client = {clientid}";
                 cmd = new SqlCommand(delQuery, connection);
-
                 cmd.ExecuteNonQuery();
+
+                delQuery = $"DELETE FROM [Trainings] WHERE ID_client = {clientid}";
+                cmd = new SqlCommand(delQuery, connection);
+                cmd.ExecuteNonQuery();
+
+                delQuery = $"DELETE FROM [client] WHERE ID_user = {choose_id}";
+                cmd = new SqlCommand(delQuery, connection);
+                cmd.ExecuteNonQuery();
+
                 delQuery = $"DELETE FROM [user] WHERE ID_user = {choose_id}";
-
-
                 cmd = new SqlCommand(delQuery, connection);
-
                 cmd.ExecuteNonQuery();
+
                 connection.Close();
                 UpdateClients();
 
@@ -413,18 +421,27 @@ namespace Fitness
 
                 string choose_id = (AllDataGridView[0, index].Value.ToString());
 
-                string delQuery = $"DELETE FROM [couch] WHERE ID_user = {choose_id}";
 
+                string query1 = $"SELECT [id_couch] FROM [Couch] WHERE [id_user]={choose_id}";
+                cmd = new SqlCommand(query1, connection);
+                string clientid = cmd.ExecuteScalar().ToString();
 
+                string delQuery = $"DELETE FROM [Subscription] WHERE ID_couch = {clientid}";
                 cmd = new SqlCommand(delQuery, connection);
-
                 cmd.ExecuteNonQuery();
+
+                delQuery = $"DELETE FROM [Trainings] WHERE ID_couch = {clientid}";
+                cmd = new SqlCommand(delQuery, connection);
+                cmd.ExecuteNonQuery();
+
+                delQuery = $"DELETE FROM [couch] WHERE ID_user = {choose_id}";
+                cmd = new SqlCommand(delQuery, connection);
+                cmd.ExecuteNonQuery();
+
                 delQuery = $"DELETE FROM [user] WHERE ID_user = {choose_id}";
-
-
                 cmd = new SqlCommand(delQuery, connection);
-
                 cmd.ExecuteNonQuery();
+
                 connection.Close();
                 UpdateCouch();
             }
@@ -732,7 +749,7 @@ namespace Fitness
                 cmd = new SqlCommand(delQuery, connection);
 
                 cmd.ExecuteNonQuery();
-                
+
                 connection.Close();
                 UpdateTranings();
             }
@@ -829,7 +846,7 @@ namespace Fitness
             string b = (AllDataGridView[3, index].Value.ToString());
             string d = (AllDataGridView[1, index].Value.ToString());
             DateTime c = Convert.ToDateTime(AllDataGridView[4, index].Value);
-            Infotrainings2 Infotrainings2 = new Infotrainings2(a, b, c,d);
+            Infotrainings2 Infotrainings2 = new Infotrainings2(a, b, c, d);
             DialogResult dialogResult = new DialogResult();
             dialogResult = Infotrainings2.ShowDialog();
         }
