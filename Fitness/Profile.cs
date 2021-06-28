@@ -13,7 +13,7 @@ namespace Fitness
 {
     public partial class Profile : Form
     {
-        int s1=0;
+        int s1 = 0;
         SqlConnection connection = null;
         SqlDataReader reader = null;
         SqlCommand cmd;
@@ -35,7 +35,7 @@ namespace Fitness
             gunaLabel9.Text = "Вес";
             s1 = 0;
         }
-        public Profile(int uid,int s)
+        public Profile(int uid, int s)
         {
             InitializeComponent();
             UserID = uid;
@@ -57,7 +57,7 @@ namespace Fitness
                 while (reader.Read())
                 {
                     gunaTextBox1.Text = reader.GetString(0);
-                    gunaTextBox2.Text= reader.GetString(1);
+                    gunaTextBox2.Text = reader.GetString(1);
                     gunaTextBox3.Text = reader.GetString(2);
                     gunaTextBox4.Text = reader.GetString(3);
                     gunaTextBox5.Text = reader.GetString(4);
@@ -112,52 +112,67 @@ namespace Fitness
         }
         private void EditButton_Click(object sender, EventArgs e)
         {
-            if(s1==0)
+
+            if (s1 == 0)
             {
-                try
+                if (gunaTextBox1.Text == "" || gunaTextBox2.Text == "" || gunaTextBox3.Text == "" || gunaTextBox4.Text == "" || gunaTextBox5.Text == "" || gunaTextBox6.Text == "" || gunaTextBox7.Text == "" || gunaTextBox8.Text == "" || gunaTextBox9.Text == "" || Convert.ToInt32(gunaTextBox9.Text) > 300 || Convert.ToInt32(gunaTextBox8.Text) > 500)
                 {
-                    connection = new SqlConnection(connectionString);
-                    connection.Open();
-                    string query = $"UPDATE [User] SET Surname =N'{gunaTextBox1.Text}', Name =N'{gunaTextBox2.Text}', Patronymic =N'{gunaTextBox3.Text}', [Phone] =N'{gunaTextBox4.Text}', Email =N'{gunaTextBox5.Text}', Login =N'{gunaTextBox6.Text}', [Password]=N'{gunaTextBox7.Text}',[Date_birth]=N'{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}' WHERE [id_user]={UserID}";
-                    cmd = new SqlCommand(query, connection);
-                    cmd.ExecuteNonQuery();
-                    query = $"UPDATE [Client] SET Height =N'{gunaTextBox9.Text}', Weight =N'{gunaTextBox8.Text}' WHERE [id_user]={UserID}";
-                    cmd = new SqlCommand(query, connection);
-                    cmd.ExecuteNonQuery();
-                    connection.Close();
+                    MessageBox.Show("Неправильный ввод, заполните все поля", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
                 }
-                catch (Exception ex)
+                else
                 {
-                    MessageBox.Show(ex.Message);
+                    try
+                    {
+                        connection = new SqlConnection(connectionString);
+                        connection.Open();
+                        string query = $"UPDATE [User] SET Surname =N'{gunaTextBox1.Text}', Name =N'{gunaTextBox2.Text}', Patronymic =N'{gunaTextBox3.Text}', [Phone] =N'{gunaTextBox4.Text}', Email =N'{gunaTextBox5.Text}', Login =N'{gunaTextBox6.Text}', [Password]=N'{gunaTextBox7.Text}',[Date_birth]=N'{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}' WHERE [id_user]={UserID}";
+                        cmd = new SqlCommand(query, connection);
+                        cmd.ExecuteNonQuery();
+                        query = $"UPDATE [Client] SET Height =N'{gunaTextBox9.Text}', Weight =N'{gunaTextBox8.Text}' WHERE [id_user]={UserID}";
+                        cmd = new SqlCommand(query, connection);
+                        cmd.ExecuteNonQuery();
+                        connection.Close();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
                 }
             }
             else
             {
-                try
+                if (gunaTextBox1.Text == "" || gunaTextBox2.Text == "" || gunaTextBox3.Text == "" || gunaTextBox4.Text == "" || gunaTextBox5.Text == "" || gunaTextBox6.Text == "" || gunaTextBox7.Text == "" || gunaTextBox8.Text == "" || gunaTextBox9.Text == "" || Convert.ToInt32(gunaTextBox8.Text) > 100 )
                 {
-                    connection = new SqlConnection(connectionString);
-                    connection.Open();
-                    string query = $"UPDATE [User] SET Surname =N'{gunaTextBox1.Text}', Name =N'{gunaTextBox2.Text}', Patronymic =N'{gunaTextBox3.Text}', [Phone] =N'{gunaTextBox4.Text}', Email =N'{gunaTextBox5.Text}', Login =N'{gunaTextBox6.Text}', [Password]=N'{gunaTextBox7.Text}',[Date_birth]=N'{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}' WHERE [id_user]={UserID}";
-                    cmd = new SqlCommand(query, connection);
-                    cmd.ExecuteNonQuery();
-                    query = $"UPDATE [Couch] SET Specialization =N'{gunaTextBox9.Text}', Work_exp =N'{gunaTextBox8.Text}' WHERE [id_user]={UserID}";
-                    cmd = new SqlCommand(query, connection);
-                    cmd.ExecuteNonQuery();
-                    connection.Close();
+                    MessageBox.Show("Неправильный ввод, заполните все поля", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
                 }
-                catch (Exception ex)
+                else
                 {
-                    MessageBox.Show(ex.Message);
+                    try
+                    {
+                        connection = new SqlConnection(connectionString);
+                        connection.Open();
+                        string query = $"UPDATE [User] SET Surname =N'{gunaTextBox1.Text}', Name =N'{gunaTextBox2.Text}', Patronymic =N'{gunaTextBox3.Text}', [Phone] =N'{gunaTextBox4.Text}', Email =N'{gunaTextBox5.Text}', Login =N'{gunaTextBox6.Text}', [Password]=N'{gunaTextBox7.Text}',[Date_birth]=N'{gunaDateTimePicker1.Value.ToString("yyyy-MM-dd")}' WHERE [id_user]={UserID}";
+                        cmd = new SqlCommand(query, connection);
+                        cmd.ExecuteNonQuery();
+                        query = $"UPDATE [Couch] SET Specialization =N'{gunaTextBox9.Text}', Work_exp =N'{gunaTextBox8.Text}' WHERE [id_user]={UserID}";
+                        cmd = new SqlCommand(query, connection);
+                        cmd.ExecuteNonQuery();
+                        connection.Close();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+                    UpdateProfile();
                 }
             }
-           
-
-            UpdateProfile();
         }
 
         private void Profile_Load(object sender, EventArgs e)
         {
-            
+            gunaDateTimePicker1.MaxDate = DateTime.Now;
+            gunaDateTimePicker1.MinDate = new DateTime(1945, 1, 1);
         }
     }
 }
+

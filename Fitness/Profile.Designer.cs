@@ -472,6 +472,7 @@ namespace Fitness
             this.Controls.Add(this.gunaTextBox1);
             this.Controls.Add(this.gunaLabel1);
             this.Controls.Add(this.pictureBox1);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Profile";

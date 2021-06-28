@@ -89,7 +89,7 @@ namespace Fitness
         }
         private void gunaButton5_Click(object sender, EventArgs e)
         {
-            if (gunaTextBox1.Text == "" || gunaTextBox2.Text == "" || gunaTextBox3.Text == "" || gunaTextBox4.Text == "" || gunaTextBox5.Text == "" || gunaTextBox6.Text == "" || gunaTextBox7.Text == "" || gunaTextBox8.Text == "" || gunaTextBox9.Text == "" || gunaTextBox10.Text == "")
+            if (gunaTextBox1.Text == "" || gunaTextBox2.Text == "" || gunaTextBox3.Text == "" || gunaTextBox4.Text == "" || gunaTextBox5.Text == "" || gunaTextBox6.Text == "" || gunaTextBox7.Text == "" || gunaTextBox8.Text == "" || gunaTextBox9.Text == "" || gunaTextBox10.Text == "" || Convert.ToInt32(gunaTextBox10.Text) > 100)
             {
                 MessageBox.Show("Неправильный ввод, заполните все поля", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
             }
@@ -130,7 +130,7 @@ namespace Fitness
 
         private void gunaButton1_Click(object sender, EventArgs e)
         {
-            if(gunaTextBox1.Text=="" || gunaTextBox2.Text == "" || gunaTextBox3.Text == "" || gunaTextBox4.Text == "" || gunaTextBox5.Text == "" || gunaTextBox6.Text == "" || gunaTextBox7.Text == "" || gunaTextBox8.Text == "" || gunaTextBox9.Text == "" || gunaTextBox10.Text == "" )
+            if(gunaTextBox1.Text=="" || gunaTextBox2.Text == "" || gunaTextBox3.Text == "" || gunaTextBox4.Text == "" || gunaTextBox5.Text == "" || gunaTextBox6.Text == "" || gunaTextBox7.Text == "" || gunaTextBox8.Text == "" || gunaTextBox9.Text == "" || gunaTextBox10.Text == "" || Convert.ToInt32(gunaTextBox10.Text) > 100)
             {
                 MessageBox.Show("Неправильный ввод, заполните все поля", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error, MessageBoxDefaultButton.Button1);
             }

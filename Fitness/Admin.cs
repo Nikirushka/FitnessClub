@@ -295,6 +295,10 @@ namespace Fitness
 
         private void gunaButton1_Click(object sender, EventArgs e)
         {
+            gunaButton27.Hide();
+            gunaButton26.Hide();
+            gunaButton29.Hide();
+            gunaButton28.Show();
             gunaButton25.Hide();
             choosepanel.Hide();
             ClientPanel.Show();
@@ -315,6 +319,10 @@ namespace Fitness
 
         private void UserButton_Click(object sender, EventArgs e)
         {
+            gunaButton26.Hide();
+            gunaButton28.Hide();
+            gunaButton29.Hide();
+            gunaButton27.Show();
             gunaButton25.Hide();
             ClientPanel.Show();
             UpdateClients();
@@ -542,6 +550,10 @@ namespace Fitness
 
         private void gunaButton3_Click(object sender, EventArgs e)
         {
+            gunaButton27.Hide();
+            gunaButton28.Hide();
+            gunaButton26.Hide();
+            gunaButton29.Show();
             gunaButton25.Show();
             UpdateTranings();
             choosepanel.Hide();
@@ -675,6 +687,7 @@ namespace Fitness
 
         private void gunaButton4_Click_1(object sender, EventArgs e)
         {
+
             gunaButton25.Hide();
             choosepanel.Hide();
             ClientPanel.Hide();
@@ -762,6 +775,10 @@ namespace Fitness
 
         private void gunaButton2_Click_1(object sender, EventArgs e)
         {
+            gunaButton27.Hide();
+            gunaButton28.Hide();
+            gunaButton29.Hide();
+            gunaButton26.Show();
             gunaButton25.Hide();
             gunaButton23.Show();
             UpdateMemberships();
@@ -849,6 +866,99 @@ namespace Fitness
             Infotrainings2 Infotrainings2 = new Infotrainings2(a, b, c, d);
             DialogResult dialogResult = new DialogResult();
             dialogResult = Infotrainings2.ShowDialog();
+        }
+
+        private void gunaTextBox6_Click(object sender, EventArgs e)
+        {
+            gunaTextBox6.Text = "";
+        }
+
+        private void gunaButton26_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string query = $"select * from AllMembership where Фамилия like N'%{gunaTextBox6.Text}%' ";
+
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+                    adapter = new SqlDataAdapter(query, connection);
+
+                    dataSet = new DataSet();
+                    adapter.Fill(dataSet);
+                    AllDataGridView.DataSource = dataSet.Tables[0];
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void gunaButton27_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string query = $"select * from ClientInfo where Фамилия like N'%{gunaTextBox6.Text}%'";
+
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+                    adapter = new SqlDataAdapter(query, connection);
+
+                    dataSet = new DataSet();
+                    adapter.Fill(dataSet);
+                    AllDataGridView.DataSource = dataSet.Tables[0];
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void gunaButton28_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string query = $"select * from CouchInfo where Фамилия like N'%{gunaTextBox6.Text}%'";
+
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+                    adapter = new SqlDataAdapter(query, connection);
+
+                    dataSet = new DataSet();
+                    adapter.Fill(dataSet);
+                    AllDataGridView.DataSource = dataSet.Tables[0];
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void gunaButton29_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string query = $"Select [User].Surname as 'Клиент', TrainingsAll.[Тренер],TrainingsAll.[Специализация],TrainingsAll.[Описание], TrainingsAll.[Дата] from TrainingsAll inner join [Client] on [Client].ID_client = TrainingsAll.ID_client inner join [User] on[User].ID_user = Client.ID_user where [User].Surname like N'%{gunaTextBox6.Text}%'";
+
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+                    adapter = new SqlDataAdapter(query, connection);
+
+                    dataSet = new DataSet();
+                    adapter.Fill(dataSet);
+                    AllDataGridView.DataSource = dataSet.Tables[0];
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 
