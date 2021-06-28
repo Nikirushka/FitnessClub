@@ -99,6 +99,7 @@ namespace Fitness
                 label5.Text = "24 МЕСЯЦА БЕЗЛИМИТ\n НЕОГРАНИЧЕННОЕ КОЛ-ВО ПОСЕЩЕНИЙ\n 1400 РУБЛЕЙ";
             }
             gunaDateTimePicker1.Value = DateTime.Now;
+            gunaDateTimePicker1.MinDate = DateTime.Now;
         }
 
         private void gunaButton2_Click(object sender, EventArgs e)
